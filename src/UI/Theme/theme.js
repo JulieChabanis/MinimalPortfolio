@@ -86,17 +86,22 @@ export const themeSettings = (mode) => {
 
     typography: {
       fontFamily: ["Lato", "sans-serif"].join(","),
-      fontSize: 12,
+      fontSize: "0.75rem",
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize: 70,
+        fontSize: "3.75rem",
         fontWeight: 100,
         fontStyle: "italic",
       },
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
-        fontSize: 120,
-        fontWeight: 600,
+        fontSize: "7.5rem",
+        fontWeight: 500,
+      }, 
+      body1: {
+        fontFamily: ["lato", "sans-serif"].join(","),
+        fontSize: "0.75rem",
+        fontWeight: 300,
       }
     }
   };

@@ -1,5 +1,5 @@
 import { ColorModeContext, useMode } from './UI/Theme/theme'; 
-import { CssBaseline, ThemeProvider, Typography } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { motion } from "framer-motion"
 import './App.css';
 
