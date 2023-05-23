@@ -1,6 +1,7 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material";
 
+
 // color design tokens
 export const tokens = (mode) => ({
   ...(mode === "dark"
@@ -56,6 +57,11 @@ export const themeSettings = (mode) => {
         secondary: {
           main: colors.grey[500],
         }, 
+        neutral: {
+          dark: colors.grey[700],
+          main: colors.grey[500],
+          light: colors.grey[300],
+        }, 
         background: {
           default: "#000000", 
         }, 
@@ -67,11 +73,32 @@ export const themeSettings = (mode) => {
         secondary: {
           main: colors.grey[500],
         }, 
+        neutral: {
+          dark: colors.grey[700],
+          main: colors.grey[500],
+          light: colors.grey[300],
+        }, 
         background: {
           default: "#f2f2f2"
         }, 
       }),
     },
+
+    typography: {
+      fontFamily: ["Lato", "sans-serif"].join(","),
+      fontSize: 12,
+      h1: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        fontSize: 70,
+        fontWeight: 100,
+        fontStyle: "italic",
+      },
+      h2: {
+        fontFamily: ["lato", "sans-serif"].join(","),
+        fontSize: 120,
+        fontWeight: 600,
+      }
+    }
   };
 };
 
