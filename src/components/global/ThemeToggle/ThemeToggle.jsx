@@ -15,7 +15,7 @@ const ThemeToggleButton = () => {
     <Box 
       display='flex'       
       justifyContent="flex-end"
-      position="absolute"
+      position="fixed"
       top={35}
       right={35}
       p={1}>

@@ -89,24 +89,41 @@ export const themeSettings = (mode) => {
       fontSize: "0.75rem",
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize: "3.75rem",
+        fontSize: "8rem",
         fontWeight: 100,
         fontStyle: "italic",
       },
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
-        fontSize: "7.5rem",
-        fontWeight: 500,
+        fontSize: "2.7rem",
+        fontWeight: 300,
       }, 
       h3: {
+        fontFamily: ["lato", "sans-serif"].join(","), 
+        fontSize : "6rem",
+        fontWeight:600,
+      },
+      h4: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        fontSize : "25px",
+        fontWeight:100,
+        fontStyle: "italic",
+      },
+      h5: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        fontSize: "1.5rem",
+        fontWeight: 100,
+        fontStyle: "italic",
+      },
+      h6: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         fontSize : "18px",
         fontWeight:400,
       },
       body1: {
-        fontFamily: ["lato", "sans-serif"].join(","),
-        fontSize: "0.75rem",
-        fontWeight: 300,
+        fontFamily: ["lato", "sans-serif"].join(","), 
+        fontSize : "18px",
+        fontWeight:400,
       }
     }
   };
