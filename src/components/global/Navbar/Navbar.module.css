@@ -27,11 +27,12 @@
 }
 
 .navList {
-  transform: rotate(-90deg) translate3d(-50%, -170%, 0);
+  transform: rotate(-90deg) translate3d(-50%, -230%, 0);
   display: flex;
   flex-direction: row-reverse;
   position: relative;
   top: calc(var(--spaceM) * -1);
+  top: 25px; 
 }
 
 .navLink {
@@ -80,27 +81,15 @@
 }
 
 .navIcons {
+  transform: rotate(90deg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: var(--zIndex2);
+  right : 100px;
+  font-size: 23px;
 
-  @media (--mediaMobile), (--mediaMobileLS) {
-    flex-direction: row;
-    position: absolute;
-    bottom: var(--spaceXL);
-    left: var(--spaceXL);
-  }
-
-  @media (max-width: 820px) and (max-height: 420px) {
-    left: var(--spaceL);
-    transform: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .navIconLink {

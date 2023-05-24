@@ -1,31 +1,36 @@
 import styles from './Navbar.module.css'; 
-import { Box, List, ListItem, ListItemText, useTheme } from '@mui/material';
+import { Box, List, ListItem, ListItemText, useTheme, IconButton } from '@mui/material';
 import { tokens } from '../../UItheme/theme';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 const NavBar = () => {
   const theme = useTheme();
-  const colors = tokens(theme.palette.mode); 
+  // const colors = tokens(theme.palette.mode); 
 
   return (
     <nav className={styles.navBar}>
       <Box className={styles.nav}>
-      <List className={styles.navList} style={theme.typography.body1}>
-        <ListItem>
-          <ListItemText primaryTypographyProps={{ variant: "h3" }}>Skills</ListItemText>
-        </ListItem>
-        <ListItem>
-        <ListItemText primaryTypographyProps={{ variant: "h3" }}>Projects</ListItemText>
-        </ListItem>
-        <ListItem>
-        <ListItemText primaryTypographyProps={{ variant: "h3" }}>Portfolio</ListItemText>
-        </ListItem>
-        <ListItem>
-        <ListItemText primaryTypographyProps={{ variant: "h3" }}>Contact</ListItemText>
-        </ListItem>
-
-      </List>
+        <List className={styles.navList} style={theme.typography.body1}>
+          <ListItem>
+            <ListItemText primaryTypographyProps={{ variant: "h3" }}>Skills</ListItemText>
+          </ListItem>
+          <ListItem>
+          <ListItemText primaryTypographyProps={{ variant: "h3" }}>Projects</ListItemText>
+          </ListItem>
+          <ListItem>
+          <ListItemText primaryTypographyProps={{ variant: "h3" }}>Portfolio</ListItemText>
+          </ListItem>
+          <ListItem>
+          <ListItemText primaryTypographyProps={{ variant: "h3" }}>Contact</ListItemText>
+          </ListItem>
+          <ListItem>
+          <IconButton className={styles.navIcons}>
+            <GitHubIcon/>
+          </IconButton>
+          </ListItem>
+        </List>
       </Box>
     </nav>
 
