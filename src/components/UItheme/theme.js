@@ -98,6 +98,11 @@ export const themeSettings = (mode) => {
         fontSize: "7.5rem",
         fontWeight: 500,
       }, 
+      h3: {
+        fontFamily: ["lato", "sans-serif"].join(","), 
+        fontSize : "19px",
+        fontWeight:300,
+      },
       body1: {
         fontFamily: ["lato", "sans-serif"].join(","),
         fontSize: "0.75rem",

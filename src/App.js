@@ -1,7 +1,10 @@
-import { ColorModeContext, useMode } from './Theme/theme'; 
+import { ColorModeContext, useMode } from './components/UItheme/theme'; 
 import { CssBaseline, ThemeProvider } from '@mui/material';
+import { Routes, Route } from 'react-router-dom';
 import { motion, useCycle } from "framer-motion"
 import './App.css';
+
+import NavBar from './components/global/Navbar/Navbar';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -37,8 +40,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <div className="App">
+          <NavBar/>
           <header className="App-header">
-            <TextAnimation />
+          <Routes>
+            <Route path="/" element={<TextAnimation/>}></Route>
+          </Routes>
           </header>
         </div>
       </ThemeProvider>
