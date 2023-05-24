@@ -13,6 +13,11 @@ const HeroPage = () => {
     { word: 'Góðan dag', translation: 'Bonjour en islandais' },
   ];
 
+  const skills = [
+    { stack: 'front'},
+    { stack: 'back'}, 
+  ];
+
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
   useEffect(() => {
@@ -32,7 +37,7 @@ const HeroPage = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         style={theme.typography.h1}
-        transition={{ duration: 0.5 }} // Ajouter une durée de transition
+        transition={{ duration: 0.4 }} // Ajouter une durée de transition
       >
         {words[currentLanguageIndex].word}
       </motion.div>

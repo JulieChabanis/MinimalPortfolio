@@ -6,29 +6,22 @@ import { createTheme } from "@mui/material";
 export const tokens = (mode) => ({
   ...(mode === "dark"
   ? {
-    grey: {
+    primary: {
       100: "#B799FF",
       200: "#B799FF", 
       300: "#B799FF",
       400: "#B799FF",
       500: "#B799FF",
     }, 
-    primary: {
-      100: "#ACBCFF",
-      200: "#ACBCFF", 
-      300: "#ACBCFF",
-      400: "#ACBCFF",
-      500: "#ACBCFF",
+    grey: {
+      100: "#71dbaf",
+      200: "#71dbaf", 
+      300: "#71dbaf",
+      400: "#71dbaf",
+      500: "#71dbaf",
     },
   }
   : {
-    grey: {
-      100: "#C4DFDF",
-      200: "#C4DFDF", 
-      300: "#C4DFDF",
-      400: "#C4DFDF",
-      500: "#C4DFDF",
-    }, 
     primary: {
       100: "#F266AB",
       200: "#F266AB", 
@@ -36,6 +29,13 @@ export const tokens = (mode) => ({
       400: "#F266AB",
       500: "#F266AB",
     },
+    grey: {
+      100: "#C4DFDF",
+      200: "#C4DFDF", 
+      300: "#C4DFDF",
+      400: "#C4DFDF",
+      500: "#C4DFDF",
+    }, 
 
   }),
 }); 
@@ -92,6 +92,7 @@ export const themeSettings = (mode) => {
         fontSize: "8rem",
         fontWeight: 100,
         fontStyle: "italic",
+        color: mode === "dark" ? colors.primary[500] : colors.grey[500],
       },
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
