@@ -14,7 +14,7 @@ export const tokens = (mode) => ({
       500: "#B799FF",
     }, 
     grey: {
-      100: "#71dbaf",
+      100: "#f2f2f2",
       200: "#71dbaf", 
       300: "#71dbaf",
       400: "#71dbaf",
@@ -30,7 +30,7 @@ export const tokens = (mode) => ({
       500: "#F266AB",
     },
     grey: {
-      100: "#C4DFDF",
+      100: "#121212",
       200: "#C4DFDF", 
       300: "#C4DFDF",
       400: "#C4DFDF",
@@ -92,34 +92,40 @@ export const themeSettings = (mode) => {
         fontSize: "8rem",
         fontWeight: 100,
         fontStyle: "italic",
-        color: mode === "dark" ? colors.primary[500] : colors.grey[500],
+        color: mode === "dark" ? colors.primary[500] :  colors.grey[100],
       },
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
-        fontSize: "2.7rem",
-        fontWeight: 300,
+        fontSize: "3rem",
+        fontWeight: 400,
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
       }, 
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         fontSize : "6rem",
         fontWeight:600,
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
       h4: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         fontSize : "25px",
         fontWeight:100,
         fontStyle: "italic",
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
       h5: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         fontSize: "1.5rem",
         fontWeight: 100,
         fontStyle: "italic",
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
       h6: {
         fontFamily: ["lato", "sans-serif"].join(","), 
-        fontSize : "18px",
-        fontWeight:400,
+        fontSize : "16px",
+        fontWeight:600,
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+
       },
       body1: {
         fontFamily: ["lato", "sans-serif"].join(","), 

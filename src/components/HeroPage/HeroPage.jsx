@@ -7,10 +7,10 @@ const HeroPage = () => {
   const theme = useTheme();
 
   const words = [
-    { word: 'Hello', translation: 'BONJOUR' },
-    { word: 'Bonjour', translation: 'Bonjour en français'},
+    { word: 'Hello,', translation: 'BONJOUR' },
+    { word: 'Bonjour,', translation: 'Bonjour en français'},
     { word: 'こんにちは', translation: 'Bonjour en japonais' },
-    { word: 'Góðan dag', translation: 'Bonjour en islandais' },
+    { word: 'Góðan dag,', translation: 'Bonjour en islandais' },
   ];
 
 
@@ -45,15 +45,15 @@ const HeroPage = () => {
         I'm Julie Chabanis,
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, x: -80 }} // Initial position (outside the screen)
-        animate={{ opacity: 1, x: 0 }} // Final position (slide in from left)
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         style={theme.typography.h3}
       >
         DEVELOPPER
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, x: -1200 }} // Initial position (outside the screen)
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         style={theme.typography.h4}
       >
         From Montpellier, FR
