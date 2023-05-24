@@ -1,6 +1,6 @@
 import styles from './Navbar.module.css'; 
 import { Box, List, ListItem, ListItemText, useTheme, IconButton } from '@mui/material';
-import { tokens } from '../../UItheme/theme';
+import { tokens } from '../../Theme/theme';
 // import { Link } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 

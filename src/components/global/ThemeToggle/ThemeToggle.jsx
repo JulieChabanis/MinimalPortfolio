@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Box, IconButton, useTheme } from "@mui/material";
-import { ColorModeContext, tokens } from "../../UItheme/theme";
+import { ColorModeContext, tokens } from "../../Theme/theme";
 import styles from './ThemeToggle.module.css';
 
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';

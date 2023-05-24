@@ -1,40 +1,14 @@
-import { ColorModeContext, useMode } from './components/UItheme/theme'; 
+import { ColorModeContext, useMode } from './components/Theme/theme'
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
-import { motion, useCycle } from "framer-motion"
 import './App.css';
 
 import NavBar from './components/global/Navbar/Navbar';
 import ThemeToggleButton from './components/global/ThemeToggle/ThemeToggle';
+import HeroPage from './components/HeroPage/HeroPage';
 
 function App() {
   const [theme, colorMode] = useMode();
-
-  const TextAnimation = () => {
-    // eslint-disable-next-line no-unused-vars
-    const [isTyping, setIsTyping] = useCycle(true, false);
-
-    return (
-      <div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          style={theme.typography.h1}
-        >
-          Julie Chabanis
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          style={theme.typography.h2}
-        >
-          {isTyping ? "Develop|" : "Developper"}
-        </motion.div>
-      </div>
-    );
-  };
 
   return (
     <ColorModeContext.Provider value={colorMode}>
@@ -45,7 +19,7 @@ function App() {
           <ThemeToggleButton/>
           <header className="App-header">
           <Routes>
-            <Route path="/" element={<TextAnimation/>}></Route>
+            <Route path="/" element={<HeroPage/>}></Route>
           </Routes>
           </header>
         </div>

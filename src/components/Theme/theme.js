@@ -63,7 +63,7 @@ export const themeSettings = (mode) => {
           light: colors.grey[300],
         }, 
         background: {
-          default: "#000000", 
+          default: "#121212", 
         }, 
       } : {
         // light mode
@@ -100,8 +100,8 @@ export const themeSettings = (mode) => {
       }, 
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
-        fontSize : "19px",
-        fontWeight:300,
+        fontSize : "18px",
+        fontWeight:400,
       },
       body1: {
         fontFamily: ["lato", "sans-serif"].join(","),
