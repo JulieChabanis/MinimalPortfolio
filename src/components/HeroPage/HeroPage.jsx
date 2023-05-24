@@ -13,10 +13,6 @@ const HeroPage = () => {
     { word: 'Góðan dag', translation: 'Bonjour en islandais' },
   ];
 
-  const skills = [
-    { stack: 'front'},
-    { stack: 'back'}, 
-  ];
 
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
@@ -49,15 +45,15 @@ const HeroPage = () => {
         I'm Julie Chabanis,
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, x: -80 }} // Initial position (outside the screen)
+        animate={{ opacity: 1, x: 0 }} // Final position (slide in from left)
         style={theme.typography.h3}
       >
         DEVELOPPER
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, x: -1200 }} // Initial position (outside the screen)
+        animate={{ opacity: 1, x: 0 }}
         style={theme.typography.h4}
       >
         From Montpellier, FR
