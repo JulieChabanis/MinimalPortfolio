@@ -5,6 +5,7 @@ import { motion, useCycle } from "framer-motion"
 import './App.css';
 
 import NavBar from './components/global/Navbar/Navbar';
+import ThemeToggleButton from './components/global/ThemeToggle/ThemeToggle';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -41,6 +42,7 @@ function App() {
         <CssBaseline/>
         <div className="App">
           <NavBar/>
+          <ThemeToggleButton/>
           <header className="App-header">
           <Routes>
             <Route path="/" element={<TextAnimation/>}></Route>
