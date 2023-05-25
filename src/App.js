@@ -17,9 +17,11 @@ function App() {
         <div className="App">
           <NavBar/>
           <ThemeToggleButton/>
-          <Routes>
-            <Route path="/" element={<HeroPage/>}></Route>
-          </Routes>
+          <header className='App-header'>
+            <Routes>
+              <Route path="/" element={<HeroPage/>}></Route>
+            </Routes>
+          </header>
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>

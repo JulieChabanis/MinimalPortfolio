@@ -1,9 +1,9 @@
 
-.heroContent {
+.styles.heroContent {
   display: flex;
   align-items: start;
   justify-content:left;
   flex-direction: column;
   margin-left: 400px; 
-  margin-top: 300px;
+  margin-top: 500px;
 }
