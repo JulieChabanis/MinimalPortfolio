@@ -18,7 +18,7 @@ const ThemeToggleButton = () => {
       position="fixed"
       top={35}
       right={35}
-      p={1}>
+      >
        <IconButton onClick={colorMode.toggleColorMode}>
         {theme.palette.mode === 'dark' ? (
           <DarkModeOutlinedIcon className={styles.iconToggleTheme} />

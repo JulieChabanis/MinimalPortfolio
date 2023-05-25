@@ -15,8 +15,8 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <div className="App">
-          <NavBar/>
-          <ThemeToggleButton/>
+        <NavBar/>
+        <ThemeToggleButton/>  
           <header className='App-header'>
             <Routes>
               <Route path="/" element={<HeroPage/>}></Route>
