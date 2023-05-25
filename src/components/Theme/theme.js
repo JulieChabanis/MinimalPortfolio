@@ -108,7 +108,7 @@ export const themeSettings = (mode) => {
       },
       h4: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize : "25px",
+        fontSize : "20px",
         fontWeight:100,
         fontStyle: "italic",
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
@@ -130,8 +130,7 @@ export const themeSettings = (mode) => {
         fontSize: "10px",
         fontWeight:400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
-      }
-
+      },
       },
       body1: {
         fontFamily: ["lato", "sans-serif"].join(","), 

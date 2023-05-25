@@ -1,9 +1,6 @@
-
-.styles.heroContent {
-  display: flex;
-  align-items: start;
-  justify-content:left;
-  flex-direction: column;
-  margin-left: 400px; 
-  margin-top: 500px;
+.LocalisationSection {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
 }

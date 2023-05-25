@@ -26,39 +26,52 @@ const HeroPage = () => {
   }, [words.length]);
 
   return (
-    <Box className={styles.heroContent}>
-      <motion.div
-        key={currentLanguageIndex}
-        initial={{ y: "100%", opacity: 0}}
-        animate={{ y: 0, opacity: 1 }}
-        style={theme.typography.h1}
-      >
-        {words[currentLanguageIndex].word}
-      </motion.div>
-      <motion.div
-        initial={{ y: "100%", opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        style={theme.typography.h2}
-      >
-        I'm Julie Chabanis
-      </motion.div>
-      <motion.div
-        initial={{ y: "100%", opacity: 0 }}
-        animate={{ 
-          y: 0, 
-          opacity: 1
-         }}
-        style={theme.typography.h3}
-      >
-        DEVELOPPER
-      </motion.div>
-      <motion.div
-        initial={{ y: "100%", opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        style={theme.typography.h4}
-      >
-        From Montpellier, FR
-      </motion.div>
+    <Box>
+      <Box className={styles.LocalisationSection}>
+        <motion.div
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          style={theme.typography.h4}
+        >
+           ❋ Based in Montpellier ❋
+        </motion.div>
+
+        <motion.div
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          style={theme.typography.h4}
+        >
+           South of France, FR
+        </motion.div>
+
+      </Box>
+      <Box className={styles.heroContent}>
+        <motion.div
+          key={currentLanguageIndex}
+          initial={{ y: "100%", opacity: 0}}
+          animate={{ y: 0, opacity: 1 }}
+          style={theme.typography.h1}
+        >
+          {words[currentLanguageIndex].word}
+        </motion.div>
+        <motion.div
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          style={theme.typography.h2}
+        >
+          I'm Julie Chabanis
+        </motion.div>
+        <motion.div
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ 
+            y: 0, 
+            opacity: 1
+          }}
+          style={theme.typography.h3}
+        >
+          DEVELOPPER ❋ ✺
+        </motion.div>
+      </Box>
     </Box>
   );
 };

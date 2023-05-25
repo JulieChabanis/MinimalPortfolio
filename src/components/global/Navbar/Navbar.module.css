@@ -15,7 +15,7 @@
   justify-content: flex-start;
   padding: 0;
   position: fixed; 
-  left: 70px;
+  left: 55px;
 
 }
 
@@ -32,6 +32,7 @@
   flex-direction: row-reverse;
   position: relative;
   top:450px; 
+
 }
 
 .navLink {
