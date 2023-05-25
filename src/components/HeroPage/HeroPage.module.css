@@ -1,8 +1,9 @@
+
 .heroContent {
   display: flex;
   align-items: start;
   justify-content:left;
   flex-direction: column;
-  margin-left: 300px; 
-  margin-top: 280px;
+  margin-left: 400px; 
+  margin-top: 300px;
 }

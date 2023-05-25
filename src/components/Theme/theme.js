@@ -125,6 +125,12 @@ export const themeSettings = (mode) => {
         fontSize : "16px",
         fontWeight:600,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
+      h7: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        fontSize: "10px",
+        fontWeight:400, 
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+      }
 
       },
       body1: {

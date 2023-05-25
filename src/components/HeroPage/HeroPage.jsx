@@ -1,7 +1,7 @@
 import { Box, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import styles from "./HeroPage.module.css"
+import styles from "./HeroPage.module.css";
 
 const HeroPage = () => {
   const theme = useTheme();
@@ -12,7 +12,6 @@ const HeroPage = () => {
     { word: 'こんにちは', translation: 'Bonjour en japonais' },
     { word: 'Góðan dag,', translation: 'Bonjour en islandais' },
   ];
-
 
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
@@ -29,31 +28,33 @@ const HeroPage = () => {
   return (
     <Box className={styles.heroContent}>
       <motion.div
-        key={currentLanguageIndex} // Ajouter la clé pour déclencher une nouvelle animation
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        key={currentLanguageIndex}
+        initial={{ y: "100%", opacity: 0}}
+        animate={{ y: 0, opacity: 1 }}
         style={theme.typography.h1}
-        transition={{ duration: 0.4 }} // Ajouter une durée de transition
       >
         {words[currentLanguageIndex].word}
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ y: "100%", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         style={theme.typography.h2}
       >
-        I'm Julie Chabanis,
+        I'm Julie Chabanis
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ y: "100%", opacity: 0 }}
+        animate={{ 
+          y: 0, 
+          opacity: 1
+         }}
         style={theme.typography.h3}
       >
         DEVELOPPER
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ y: "100%", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         style={theme.typography.h4}
       >
         From Montpellier, FR
