@@ -1,12 +1,11 @@
 .logo {
-  display: flex;
-  position: relative;
-  padding: var(--spaceS) var(--spaceL);
-  z-index: var(--zIndex2);
-
-  @media (--mediaMobile) {
-    padding-bottom : var(--spaceS); 
-  }
+  display:flex;
+  position:fixed;
+  left: 50px;
+  top: 35px;
+  font-size: 35px;
+  font-family: "lato", "sans-serif";
+  font-weight: 700;
 }
 
 .navBar {
@@ -15,8 +14,6 @@
   justify-content: flex-start;
   padding: 0;
   position: fixed; 
-  left: 55px;
-
 }
 
 .nav {
