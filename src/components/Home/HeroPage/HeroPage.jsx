@@ -4,11 +4,11 @@ import styles from "./HeroPage.module.css";
 
 const HeroPage = () => {
   const theme = useTheme();
-  const animationDuration = 5000; // Durée de l'animation en millisecondes
+  const animationDuration = 10000; // Durée de l'animation en millisecondes
 
   
   return (
-    <Box>
+    <Box className={styles.mainHeroPageSection}>
       <Box className={styles.localisationSection}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
@@ -25,15 +25,15 @@ const HeroPage = () => {
         >
            South of France, FR
         </motion.div>
-
       </Box>
+
       <Box className={styles.heroContent}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          style={theme.typography.h2}
+          style={theme.typography.h5}
         >
-          I'm Julie Chabanis
+          Julie Chabanis
         </motion.div>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
@@ -43,9 +43,20 @@ const HeroPage = () => {
           }}
           style={theme.typography.h3}
         >
-          DEVELOPPER ❋ ✺
+          ✺ DESIGNER
+        </motion.div>
+        <motion.div
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ 
+            y: 0, 
+            opacity: 1
+          }}
+          style={theme.typography.h3}
+        >
+          DEVELOPPER ❋ 
         </motion.div>
       </Box>
+
       <Box className={styles.helloBox}>
         <motion.div
           style={{
@@ -63,7 +74,7 @@ const HeroPage = () => {
             repeatType: "loop", // Répète en boucle les valeurs de la propriété `x`
           }}
         >
-          Hello, Bonjour, こんにちは, Góðan dag,
+          Hello Bonjour こんにちは Góðan dag
         </motion.div>
       </Box>
     </Box>

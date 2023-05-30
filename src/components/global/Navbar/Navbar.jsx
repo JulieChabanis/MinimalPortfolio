@@ -1,45 +1,53 @@
-import styles from './Navbar.module.css'; 
-import { Box, List, ListItem, ListItemText, useTheme, IconButton } from '@mui/material';
-import { tokens } from '../../Theme/theme';
-// import { Link } from 'react-router-dom';
-import GitHubIcon from '@mui/icons-material/GitHub';
-
+import styles from "./Navbar.module.css";
+import { Box, List, ListItem, ListItemText, useTheme, IconButton } from "@mui/material";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const NavBar = () => {
   const theme = useTheme();
-  // const colors = tokens(theme.palette.mode); 
 
   return (
-    <Box>
+    <motion.nav
+      className={styles.navBar}
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Box className={styles.logo}>
-      JC
+      <Link to="/" smooth={true} duration={500} className={styles.navLink}>
+        JC
+      </Link>
       </Box>
-      <nav className={styles.navBar}>
-        <Box className={styles.nav}> 
-          <List className={styles.navList}>
-          <ListItem>
-              <ListItemText style={theme.typography.h6}>Experience</ListItemText>
-            </ListItem>
-            <ListItem>
-            <ListItemText style={theme.typography.h6}>skills</ListItemText>
-            </ListItem>
-            <ListItem>
+      <List className={styles.navList}>
+        <ListItem>
+          <Link to="/experience" smooth={true} duration={500} className={styles.navLink}>
+            <ListItemText style={theme.typography.h6}>Experience</ListItemText>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link to="skills" smooth={true} duration={500}>
+            <ListItemText style={theme.typography.h6}>Skills</ListItemText>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link to="portfolio" smooth={true} duration={500}>
             <ListItemText style={theme.typography.h6}>Portfolio</ListItemText>
-            </ListItem>
-            <ListItem>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link to="contact" smooth={true} duration={500}>
             <ListItemText style={theme.typography.h6}>Contact</ListItemText>
-            </ListItem>
-            <ListItem>
-            <IconButton className={styles.navIcons}>
-              <GitHubIcon/>
-            </IconButton>
-            </ListItem>
-          </List>
-        </Box>
-      </nav>
-    </Box>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <IconButton className={styles.navIcons}>
+            <GitHubIcon />
+          </IconButton>
+        </ListItem>
+      </List>
+    </motion.nav>
+  );
+};
 
-  )
-}
-
-export default NavBar; 
+export default NavBar;

@@ -5,9 +5,8 @@ body
 #root,
 .app, 
 .content {
-  height: 100%; 
-  width: 100%;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .app {
