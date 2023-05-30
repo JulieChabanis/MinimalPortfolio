@@ -18,10 +18,10 @@ const NavBar = () => {
         <Box className={styles.nav}> 
           <List className={styles.navList}>
           <ListItem>
-              <ListItemText style={theme.typography.h6}>Skills</ListItemText>
+              <ListItemText style={theme.typography.h6}>Experience</ListItemText>
             </ListItem>
             <ListItem>
-            <ListItemText style={theme.typography.h6}>Projects</ListItemText>
+            <ListItemText style={theme.typography.h6}>skills</ListItemText>
             </ListItem>
             <ListItem>
             <ListItemText style={theme.typography.h6}>Portfolio</ListItemText>
