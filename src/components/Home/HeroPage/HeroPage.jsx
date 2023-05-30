@@ -6,7 +6,7 @@ const HeroPage = () => {
   const theme = useTheme();
   
   return (
-    <Box className={styles.mainHeroPageSection}>
+    <Box id="heropage-section" className={styles.mainHeroPageSection}>
       <Box className={styles.localisationSection}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}

@@ -6,22 +6,21 @@ import React, { useEffect, useRef } from 'react'
 import { Box } from "@mui/system";
 
 const Home = () => {
-  const heropage = useRef(); 
-  const workExperience = useRef(); 
+  const heropageRef = useRef(); 
+  const workExperienceRef = useRef(); 
+  const skillsRef = useRef();
 
   useEffect(() => {
-    const sections = [heropage, workExperience];
+    const sections = [heropageRef, workExperienceRef, skillsRef];
 
   });
 
   return (
     <Box className={styles.mainHome}>
-      <HeroPage
-        sectionRef={heropage}
+      <HeroPage ref={heropageRef}
       />
-      <WorkExperience />
-      <Skills
-      />
+      <WorkExperience ref={workExperienceRef} />
+      <Skills ref={skillsRef} />
     </Box>
   )
 }

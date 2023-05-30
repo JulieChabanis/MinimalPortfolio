@@ -4,8 +4,10 @@ import styles from './Skills.module.css';
 
 const Skills = () => {
   return (
-    <Box className={styles.mainSkillsSection}>
-      Skils
+    <Box 
+    id="skills-section"
+    className={styles.mainSkillsSection}>
+      Skills
     </Box>
   )
 }
