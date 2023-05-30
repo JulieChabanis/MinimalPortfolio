@@ -55,12 +55,9 @@ const HeroPage = () => {
         </motion.div>
       </Box>
 
-      <Box className={styles.helloBox}>
-        <Typography
-          style={theme.typography.h1}
-        >
-          Hello Bonjour こんにちは Góðan dag
-        </Typography>
+      <Box className={styles.helloBox}
+          style={theme.typography.h1}>
+          <div>Hello Bonjour こんにちは Góðan dag</div>
       </Box>
     </Box>
   );
