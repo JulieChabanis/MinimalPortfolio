@@ -114,10 +114,9 @@ export const themeSettings = (mode) => {
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
       h5: {
-        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize: "1.5rem",
-        fontWeight: 100,
-        fontStyle: "italic",
+        fontFamily: ["Lato", "sans-serif"].join(","),
+        fontSize: "3.5rem",
+        fontWeight: 200,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
       h6: {

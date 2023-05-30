@@ -1,0 +1,26 @@
+.mainHeroPageSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.localisationSection {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+
+.heroContent {
+  text-align: left;
+  
+}
+
+.helloBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

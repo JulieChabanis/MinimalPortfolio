@@ -5,7 +5,7 @@ import './App.css';
 
 import NavBar from './components/global/Navbar/Navbar';
 import ThemeToggleButton from './components/global/ThemeToggle/ThemeToggle';
-import HeroPage from './components/HeroPage/HeroPage';
+import Home from './components/Home/Home';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -15,11 +15,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <div className="App">
+        <ThemeToggleButton/> 
         <NavBar/>
-        <ThemeToggleButton/>  
           <header className='App-header'>
             <Routes>
-              <Route path="/" element={<HeroPage/>}></Route>
+              <Route path="/" element={<Home/>}></Route>
             </Routes>
           </header>
         </div>
