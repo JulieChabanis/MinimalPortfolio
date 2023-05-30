@@ -3,9 +3,11 @@ import { Box, List, ListItem, ListItemText, useTheme, IconButton } from "@mui/ma
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import React from "react";
 
 const NavBar = () => {
   const theme = useTheme();
+  
 
   return (
     <motion.nav
@@ -20,11 +22,11 @@ const NavBar = () => {
       </Link>
       </Box>
       <List className={styles.navList}>
-        <ListItem>
-          <Link to="/experience" smooth={true} duration={500} className={styles.navLink}>
-            <ListItemText style={theme.typography.h6}>Experience</ListItemText>
-          </Link>
-        </ListItem>
+          <ListItem>
+              <Link to="/experience" className={styles.navLink}>
+                <ListItemText style={theme.typography.h6}>Experience</ListItemText>
+              </Link>
+            </ListItem>
         <ListItem>
           <Link to="skills" smooth={true} duration={500}>
             <ListItemText style={theme.typography.h6}>Skills</ListItemText>

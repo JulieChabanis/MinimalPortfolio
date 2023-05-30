@@ -19,9 +19,7 @@ const Home = () => {
       <HeroPage
         sectionRef={heropage}
       />
-      <WorkExperience
-        ref={workExperience}
-      />
+      <WorkExperience />
       <Skills
       />
     </Box>

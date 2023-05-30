@@ -6,7 +6,6 @@ import './App.css';
 import NavBar from './components/global/Navbar/Navbar';
 import ThemeToggleButton from './components/global/ThemeToggle/ThemeToggle';
 import Home from './components/Home/Home';
-import WorkExperience from './components/Home/WorkExperience/WorkExperience';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -16,8 +15,8 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <div className="App">
+        <ThemeToggleButton/> 
         <NavBar/>
-        <ThemeToggleButton/>  
           <header className='App-header'>
             <Routes>
               <Route path="/" element={<Home/>}></Route>

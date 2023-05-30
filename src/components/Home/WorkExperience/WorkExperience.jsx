@@ -5,7 +5,7 @@ import styles from './WorkExperience.module.css';
 const WorkExperience = () => {
   return (
     <Box className={styles.mainExperienceSection}>
-      test
+      workExperience
     </Box>
   );
 };
