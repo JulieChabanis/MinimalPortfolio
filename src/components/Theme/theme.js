@@ -8,17 +8,25 @@ export const tokens = (mode) => ({
   ? {
     primary: {
       100: "#B799FF",
-      200: "#B799FF", 
+      200: "#e1d1ff", 
       300: "#B799FF",
       400: "#B799FF",
-      500: "#B799FF",
+      500: "#a8d5d4",
     }, 
+    blue: {
+      100: "#8ec9c8",
+      200: "#9bcfce", 
+      300: "#a8d5d4",
+      400: "#b4dbda",
+      500: "#c1e1e0",
+      600: "#cde7e6",
+    },
     grey: {
       100: "#F5F0EC",
       200: "#71dbaf", 
-      300: "#71dbaf",
+      300: "#c4f0db",
       400: "#71dbaf",
-      500: "#71dbaf",
+      500: "#cde7e6",
     },
   }
   : {
@@ -27,10 +35,10 @@ export const tokens = (mode) => ({
       200: "#F266AB", 
       300: "#F266AB",
       400: "#F266AB",
-      500: "#F266AB",
+      500: "#e1d1ff",
     },
     grey: {
-      100: "#161616",
+      100: "#121212",
       200: "#C4DFDF", 
       300: "#C4DFDF",
       400: "#C4DFDF",
@@ -63,7 +71,7 @@ export const themeSettings = (mode) => {
           light: colors.grey[300],
         }, 
         background: {
-          default: "#161616", 
+          default: "#191919", 
         }, 
       } : {
         // light mode
@@ -92,13 +100,13 @@ export const themeSettings = (mode) => {
         fontSize: "7.3rem",
         fontWeight: 100,
         fontStyle: "italic",
-        color: mode === "dark" ? colors.primary[500] :  colors.grey[100],
+        color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
       },
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
         fontSize: "3rem",
         fontWeight: 400,
-        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+        color: mode === "light" ? colors.grey[100] : colors.blue[600],
       }, 
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
