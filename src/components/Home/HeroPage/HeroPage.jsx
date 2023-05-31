@@ -1,6 +1,8 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import styles from "./HeroPage.module.css";
+import { ParallaxText } from "../../assets/helloParallax";
+
 
 const HeroPage = () => {
   const theme = useTheme();
@@ -13,7 +15,7 @@ const HeroPage = () => {
           animate={{ y: 0, opacity: 1 }}
           style={theme.typography.h4}
         >
-           ❋ Based in Montpellier ❋
+          ❋ Based in Montpellier ❋
         </motion.div>
 
         <motion.div
@@ -21,7 +23,7 @@ const HeroPage = () => {
           animate={{ y: 0, opacity: 1 }}
           style={theme.typography.h4}
         >
-           South of France, FR
+          South of France, FR
         </motion.div>
       </Box>
 
@@ -55,9 +57,8 @@ const HeroPage = () => {
         </motion.div>
       </Box>
 
-      <Box className={styles.helloBox}
-          style={theme.typography.h1}>
-          <div>Hello Bonjour こんにちは Góðan dag</div>
+      <Box className={styles.helloBox} style={theme.typography.h1} >
+        <ParallaxText baseVelocity={-5}>Hello Bonjour こんにちは Góðan dag</ParallaxText>
       </Box>
     </Box>
   );
