@@ -6,8 +6,8 @@ export const ParallaxText = ({ children, baseVelocity = 500 }) => {
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
-    damping: 40, // Ajuster le damping à une valeur plus basse pour un effet plus fluide
-    stiffness: 300, // Ajuster le stiffness à une valeur plus basse pour un effet plus fluide
+    damping: 100,
+    stiffness: 600,
   });
   const velocityFactor = useTransform(smoothVelocity, [0, 100], [-10, -500], {
     clamp: false,
@@ -25,7 +25,7 @@ export const ParallaxText = ({ children, baseVelocity = 500 }) => {
     } else if (velocityFactor.get() > 0) {
       directionFactor.current = 1;
     } else {
-      directionFactor.current = -1; // Ne pas mettre à jour la position si le défilement est nul
+      directionFactor.current = -1 // Ne pas mettre à jour la position si le défilement est nul
     }
 
     moveBy += directionFactor.current * moveBy * velocityFactor.get();

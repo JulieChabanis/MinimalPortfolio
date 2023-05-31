@@ -1,9 +1,7 @@
 import { Box, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import styles from "./HeroPage.module.css";
-import { ParallaxText } from "../../assets/helloParallax";
-
-
+import { ParallaxText } from "../../Effects/ParallaxText/ParallaxText";
 const HeroPage = () => {
   const theme = useTheme();
   
