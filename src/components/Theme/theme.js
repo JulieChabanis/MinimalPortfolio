@@ -14,7 +14,7 @@ export const tokens = (mode) => ({
       500: "#B799FF",
     }, 
     grey: {
-      100: "#f2f2f2",
+      100: "#F5F0EC",
       200: "#71dbaf", 
       300: "#71dbaf",
       400: "#71dbaf",
@@ -30,7 +30,7 @@ export const tokens = (mode) => ({
       500: "#F266AB",
     },
     grey: {
-      100: "#121212",
+      100: "#161616",
       200: "#C4DFDF", 
       300: "#C4DFDF",
       400: "#C4DFDF",
@@ -63,7 +63,7 @@ export const themeSettings = (mode) => {
           light: colors.grey[300],
         }, 
         background: {
-          default: "#121212", 
+          default: "#161616", 
         }, 
       } : {
         // light mode
@@ -89,7 +89,7 @@ export const themeSettings = (mode) => {
       fontSize: "0.75rem",
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize: "8rem",
+        fontSize: "7.3rem",
         fontWeight: 100,
         fontStyle: "italic",
         color: mode === "dark" ? colors.primary[500] :  colors.grey[100],

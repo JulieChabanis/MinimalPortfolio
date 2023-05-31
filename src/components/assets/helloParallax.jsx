@@ -1,34 +1,36 @@
 import { useCallback, useRef } from "react";
-import { motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame, wrap } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame } from "framer-motion";
 
-export const ParallaxText = ({ children, baseVelocity = 2 }) => {
+export const ParallaxText = ({ children, baseVelocity = 500 }) => {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
-    damping: 50,
-    stiffness: 100,
+    damping: 40, // Ajuster le damping à une valeur plus basse pour un effet plus fluide
+    stiffness: 300, // Ajuster le stiffness à une valeur plus basse pour un effet plus fluide
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 100], [-10, -500], {
     clamp: false,
   });
 
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  const x = useTransform(scrollY, [0, 1000], [-20, -450]);
 
   const directionFactor = useRef(1);
 
-  const updateMotionValue = useCallback((t, delta) => {
-    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+  const updateMotionValue = useCallback(() => {
+    let moveBy = directionFactor.current * baseVelocity;
 
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
       directionFactor.current = 1;
+    } else {
+      directionFactor.current = -1; // Ne pas mettre à jour la position si le défilement est nul
     }
 
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
 
-    baseX.set(baseX.get() + moveBy);
+    baseX.set(moveBy);
   }, [baseVelocity, baseX, directionFactor, velocityFactor]);
 
   useAnimationFrame(updateMotionValue);

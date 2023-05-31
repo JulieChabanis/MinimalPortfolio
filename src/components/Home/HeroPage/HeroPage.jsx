@@ -43,7 +43,7 @@ const HeroPage = () => {
           }}
           style={theme.typography.h3}
         >
-          ✺ DESIGNER
+         ❋  DESIGNER
         </motion.div>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
@@ -58,7 +58,7 @@ const HeroPage = () => {
       </Box>
 
       <Box className={styles.helloBox} style={theme.typography.h1} >
-        <ParallaxText baseVelocity={-5}>Hello Bonjour こんにちは Góðan dag</ParallaxText>
+        <ParallaxText baseVelocity={-5}>Hello • Bonjour • こんにちは • Góðan dag • </ParallaxText>
       </Box>
     </Box>
   );
