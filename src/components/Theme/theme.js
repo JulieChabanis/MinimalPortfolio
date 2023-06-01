@@ -95,6 +95,7 @@ export const themeSettings = (mode) => {
     typography: {
       fontFamily: ["Lato", "sans-serif"].join(","),
       fontSize: "0.75rem",
+
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
@@ -103,13 +104,14 @@ export const themeSettings = (mode) => {
         "@media (min-width: 601px)": {
           fontSize: "5rem", // Taille pour le breakpoint md
         },
-        "@media (min-width: 1001px)": {
+        "@media (min-width: 1300px)": {
           fontSize: "7.3rem", // Taille pour le breakpoint md
         },
         fontWeight: 100,
         fontStyle: "italic",
         color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
       },
+
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
         fontSize: "3rem",
@@ -124,12 +126,14 @@ export const themeSettings = (mode) => {
       }, 
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
-        fontSize : "6rem",
         "@media (max-width: 600px)": {
-          fontSize: "2rem", // Taille pour le breakpoint sm
+          fontSize: "2.3rem", // Taille pour le breakpoint sm
         },
-        "@media (min-width: 960px)": {
-          fontSize: "4rem", // Taille pour le breakpoint md
+        "@media (min-width: 601px)": {
+          fontSize: "3.5rem", // Taille pour le breakpoint md
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "6rem", // Taille pour le breakpoint md
         },
         fontWeight:600,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
@@ -144,6 +148,9 @@ export const themeSettings = (mode) => {
       h5: {
         fontFamily: ["Lato", "sans-serif"].join(","),
         fontSize: "3.5rem",
+        "@media (max-width: 600px)": {
+          fontSize: "2rem", // Taille pour le breakpoint sm
+        },
         fontWeight: 200,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
