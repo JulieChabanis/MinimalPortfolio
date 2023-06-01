@@ -2,6 +2,7 @@ import styles from "./Navbar.module.css";
 import { Box, List, ListItem, ListItemText, useTheme, IconButton } from "@mui/material";
 import { Link } from "react-scroll"; 
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -68,6 +69,16 @@ const NavBar = () => {
           <ListItem>
             <IconButton className={styles.navIcons}>
               <GitHubIcon />
+            </IconButton>
+          </ListItem>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <ListItem>
+            <IconButton className={styles.navIcons}>
+              <LinkedInIcon  />
             </IconButton>
           </ListItem>
         </motion.div>
