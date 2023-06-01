@@ -97,7 +97,15 @@ export const themeSettings = (mode) => {
       fontSize: "0.75rem",
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize: "7.3rem",
+        "@media (max-width: 600px)": {
+          fontSize: "3rem", // Taille pour le breakpoint sm
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "5rem", // Taille pour le breakpoint md
+        },
+        "@media (min-width: 1001px)": {
+          fontSize: "7.3rem", // Taille pour le breakpoint md
+        },
         fontWeight: 100,
         fontStyle: "italic",
         color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
@@ -105,12 +113,24 @@ export const themeSettings = (mode) => {
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
         fontSize: "3rem",
+        "@media (max-width: 600px)": {
+          fontSize: "2rem", // Taille pour le breakpoint sm
+        },
+        "@media (min-width: 960px)": {
+          fontSize: "4rem", // Taille pour le breakpoint md
+        },
         fontWeight: 400,
         color: mode === "light" ? colors.grey[100] : colors.blue[600],
       }, 
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         fontSize : "6rem",
+        "@media (max-width: 600px)": {
+          fontSize: "2rem", // Taille pour le breakpoint sm
+        },
+        "@media (min-width: 960px)": {
+          fontSize: "4rem", // Taille pour le breakpoint md
+        },
         fontWeight:600,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
@@ -132,19 +152,24 @@ export const themeSettings = (mode) => {
         fontSize : "16px",
         fontWeight:600,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
+      },
       h7: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         fontSize: "10px",
         fontWeight:400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+    },
+
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 600,
+        md: 960,
+        lg: 1280,
+        xl: 1920,
       },
-      body1: {
-        fontFamily: ["lato", "sans-serif"].join(","), 
-        fontSize : "18px",
-        fontWeight:400,
-      }
-    }
+    },
   };
 };
 

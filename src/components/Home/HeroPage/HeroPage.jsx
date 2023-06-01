@@ -2,6 +2,7 @@ import { Box, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import styles from "./HeroPage.module.css";
 import { ParallaxText } from "../../Effects/ParallaxText/ParallaxText";
+
 const HeroPage = () => {
   const theme = useTheme();
   
@@ -11,7 +12,7 @@ const HeroPage = () => {
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          style={theme.typography.h4}
+          sx={theme.typography.h4}
         >
           ❋ Based in Montpellier ❋
         </motion.div>
@@ -55,7 +56,7 @@ const HeroPage = () => {
         </motion.div>
       </Box>
 
-      <Box className={styles.helloBox} style={theme.typography.h1} >
+      <Box className={styles.helloBox} sx={theme.typography.h1} >
         <ParallaxText baseVelocity={-5}>Hello • Bonjour • こんにちは • Góðan dag • </ParallaxText>
       </Box>
     </Box>
