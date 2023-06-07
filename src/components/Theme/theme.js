@@ -99,7 +99,7 @@ export const themeSettings = (mode) => {
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-          fontSize: "3rem", // Taille pour le breakpoint sm
+          fontSize: "5rem", // Taille pour le breakpoint sm
         },
         "@media (min-width: 601px)": {
           fontSize: "5rem", // Taille pour le breakpoint md
@@ -127,10 +127,10 @@ export const themeSettings = (mode) => {
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "2.3rem", // Taille pour le breakpoint sm
+          fontSize: "3.1rem", // Taille pour le breakpoint sm
         },
         "@media (min-width: 601px)": {
-          fontSize: "3.5rem", // Taille pour le breakpoint md
+          fontSize: "4.6rem", // Taille pour le breakpoint md
         },
         "@media (min-width: 1300px)": {
           fontSize: "6rem", // Taille pour le breakpoint md
@@ -149,7 +149,7 @@ export const themeSettings = (mode) => {
         fontFamily: ["Lato", "sans-serif"].join(","),
         fontSize: "3.5rem",
         "@media (max-width: 600px)": {
-          fontSize: "2rem", // Taille pour le breakpoint sm
+          fontSize: "2.5rem", // Taille pour le breakpoint sm
         },
         fontWeight: 200,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
