@@ -19,11 +19,11 @@ const ThemeToggleButton = () => {
       top={35}
       right={35}
       >
-       <IconButton onClick={colorMode.toggleColorMode} style={{ fontSize: 25 }}>
+       <IconButton onClick={colorMode.toggleColorMode} sx={{ fontSize: 25 }}>
         {theme.palette.mode === 'dark' ? (
-          <DarkModeOutlinedIcon className={styles.iconToggleTheme}/>
+          <DarkModeOutlinedIcon />
         ) : (
-          <LightModeRoundedIcon className={styles.iconToggleTheme}/>
+          <LightModeRoundedIcon />
         )}
       </IconButton>
     </Box>

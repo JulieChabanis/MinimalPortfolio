@@ -36,10 +36,7 @@ const NavBar = () => {
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))",
           boxShadow: "0px 0px 0px 0px"
         }}>
-        <Toolbar
-          style={{
-            backgroundColor: "transparent"
-          }}>
+        <Toolbar>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Box className={styles.logo}>
               <Link to="heropage-section" smooth={true} duration={200} className={styles.navLink}>
@@ -47,8 +44,14 @@ const NavBar = () => {
               </Link>
             </Box>
           </Box>
-          <Box sx={{ display: { xs: "block", sm: "none" } }}>
-            <IconButton onClick={handleMenuOpen} color="inherit">
+          <Box 
+            sx={{ 
+              display: { xs: "block", sm: "none" },
+              position: "fixed",
+              top: "25px",
+              left: "25px"
+            }}>
+            <IconButton onClick={handleMenuOpen} color="inherit" sx={{ fontSize: 25 }}>
               <MenuIcon />
             </IconButton>
             <Menu
