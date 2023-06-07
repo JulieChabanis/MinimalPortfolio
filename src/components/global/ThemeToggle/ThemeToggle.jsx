@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
 import { Box, IconButton, useTheme } from "@mui/material";
-import { ColorModeContext, tokens } from "../../Theme/theme";
-import styles from './ThemeToggle.module.css';
+import { ColorModeContext  } from "../../Theme/theme";
 
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeRoundedIcon from '@mui/icons-material/LightModeRounded';
 
 const ThemeToggleButton = () => {
   const theme = useTheme(); 
-  const colors = tokens(theme.palette.mode); 
+  // const colors = tokens(theme.palette.mode); 
   const colorMode = useContext(ColorModeContext)
 
   return (
