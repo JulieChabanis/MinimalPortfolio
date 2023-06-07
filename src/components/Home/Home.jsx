@@ -10,11 +10,6 @@ const Home = () => {
   const workExperienceRef = useRef(); 
   const skillsRef = useRef();
 
-  useEffect(() => {
-    const sections = [heropageRef, workExperienceRef, skillsRef];
-
-  });
-
   return (
     <Box className={styles.mainHome}>
       <HeroPage ref={heropageRef}
