@@ -33,6 +33,7 @@ const NavBar = () => {
         position="static"
         style={{
           backgroundColor: "transparent",
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))",
           boxShadow: "0px 0px 0px 0px"
         }}>
         <Toolbar
