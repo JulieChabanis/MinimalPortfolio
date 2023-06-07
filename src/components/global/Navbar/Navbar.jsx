@@ -1,8 +1,9 @@
 import styles from "./Navbar.module.css";
-import {Box, List, ListItem , ListItemText,useTheme ,IconButton ,AppBar ,Toolbar ,Menu ,MenuItem } from "@mui/material";
+import { Box, List, ListItem, ListItemText, useTheme, IconButton, AppBar, Toolbar, Menu, MenuItem } from "@mui/material";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import ThemeToggleButton from "../ThemeToggle/ThemeToggle";
 
 // import icones
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -28,20 +29,22 @@ const NavBar = () => {
         backgroundColor: "transparent"
       }}
     >
-      <AppBar 
-        position="static" 
-        style={{ 
+      <AppBar
+        position="static"
+        style={{
           backgroundColor: "transparent",
           boxShadow: "0px 0px 0px 0px"
         }}>
         <Toolbar
-        style={{
-          backgroundColor: "transparent"
-        }}>
-          <Box className={styles.logo}>
-            <Link to="heropage-section" smooth={true} duration={200} className={styles.navLink}>
-              JC
-            </Link>
+          style={{
+            backgroundColor: "transparent"
+          }}>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box className={styles.logo}>
+              <Link to="heropage-section" smooth={true} duration={200} className={styles.navLink}>
+                JC
+              </Link>
+            </Box>
           </Box>
           <Box sx={{ display: { xs: "block", sm: "none" } }}>
             <IconButton onClick={handleMenuOpen} color="inherit">
@@ -58,6 +61,7 @@ const NavBar = () => {
               open={menuOpen}
               onClose={handleMenuClose}
             >
+              <ThemeToggleButton />
               <MenuItem onClick={handleMenuClose}>
                 <Link to="work-section" smooth={true} duration={200} className={styles.navLink}>
                   <ListItemText style={theme.typography.h6}>Experience</ListItemText>
