@@ -37,7 +37,7 @@ const NavBar = () => {
           boxShadow: "0px 0px 0px 0px",
         }}>
         <Toolbar>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", sm: "none", md:"block" } }}>
             <Box className={styles.logo}>
               <Link to="heropage-section" smooth={true} duration={200} className={styles.navLink}>
                 JC
@@ -50,7 +50,7 @@ const NavBar = () => {
             left={25}
             alignItems="flex-start"
             sx={{ 
-              display: { xs: "block", sm: "none" },
+              display: { xs: "block", sm: "block", md:"none" },
             }}>
             <IconButton 
               onClick={handleMenuOpen} 
@@ -103,7 +103,7 @@ const NavBar = () => {
               </MenuItem>
             </Menu>
           </Box>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <List className={styles.navList}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
