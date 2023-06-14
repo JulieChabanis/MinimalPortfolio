@@ -156,7 +156,7 @@ export const themeSettings = (mode) => {
         fontFamily: ["Lato", "sans-serif"].join(","),
         fontWeight: 200,
         "@media (max-width: 600px)": {
-          fontSize: "2rem", 
+          fontSize: "1.8rem", 
         },
         "@media (min-width: 601px)": {
           fontSize: "2.4rem", 

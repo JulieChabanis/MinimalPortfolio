@@ -10,12 +10,12 @@ const ThemeToggleButton = () => {
   const colorMode = useContext(ColorModeContext)
 
   return (
-    <Box>
-      <Box     
-        position="fixed" 
-        top={25} 
-        right={25}
-        >
+    <Box
+    position="fixed"
+    right={25}
+    top={25}
+    zIndex={1}
+    >
         <IconButton onClick={colorMode.toggleColorMode} sx={{ fontSize: 25 }}>
           {theme.palette.mode === 'dark' ? (
             <DarkModeOutlinedIcon />
@@ -23,7 +23,6 @@ const ThemeToggleButton = () => {
             <LightModeRoundedIcon />
           )}
         </IconButton>
-      </Box>
     </Box>
   );
 };

@@ -14,10 +14,10 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
-        <div className="App">
+        <div>
+        <NavBar />
         <ThemeToggleButton/> 
-        <NavBar/>
-          <header className='App-header'>
+          <header>
             <Routes>
               <Route path="/" element={<Home/>}></Route>
             </Routes>

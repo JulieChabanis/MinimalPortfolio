@@ -1,8 +1,10 @@
 import styles from "./Navbar.module.css";
-import { Box, List, ListItem, ListItemText, useTheme, IconButton, AppBar, Toolbar, MenuItem, SwipeableDrawer } from "@mui/material";
+import { Box, List, ListItem, ListItemText, useTheme, IconButton, AppBar, Toolbar } from "@mui/material";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+
+import SwipeableDrawerMenu from "./SwipeableDrawerMenu";
 
 // import icones
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -22,14 +24,14 @@ const NavBar = () => {
   };
 
   return (
-    <motion.nav
+    <Box
+      zIndex={1}
       className={styles.navBar}
       style={{
         backgroundColor: "transparent"
       }}
     >
       <AppBar
-        position="static"
         style={{
           backgroundColor: "transparent",
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))",
@@ -45,9 +47,8 @@ const NavBar = () => {
           </Box>
           <Box 
             position="fixed" 
-            top={24} 
+            top={25} 
             left={25}
-            alignItems="flex-start"
             sx={{ 
               display: { xs: "block", sm: "block", md:"none" },
             }}>
@@ -59,51 +60,7 @@ const NavBar = () => {
               }}>
               <MenuIcon />
             </IconButton>
-            <SwipeableDrawer
-              anchor="right"
-              anchorEl={null}
-              keepMounted
-              open={menuOpen}
-              onClose={handleMenuClose}
-              PaperProps={{ style: { width: 150, height: 300 } }}
-              style={{}}
-            >
-              <MenuItem onClick={handleMenuClose}>
-                <Link to="heropage-section" smooth={true} duration={200} className={styles.navLink}>
-                  <ListItemText style={theme.typography.h6}>Home</ListItemText>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <Link to="work-section" smooth={true} duration={200} className={styles.navLink}>
-                  <ListItemText style={theme.typography.h6}>Experience</ListItemText>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <Link to="skills-section" smooth={true} duration={200} className={styles.navLink}>
-                  <ListItemText style={theme.typography.h6}>Skills</ListItemText>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <Link to="portfolio" smooth={true} duration={200} className={styles.navLink}>
-                  <ListItemText style={theme.typography.h6}>Portfolio</ListItemText>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <Link to="contact" smooth={true} duration={200} className={styles.navLink}>
-                  <ListItemText style={theme.typography.h6}>Contact</ListItemText>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <IconButton className={styles.navIcons}>
-                  <GitHubIcon />
-                </IconButton>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <IconButton className={styles.navIcons}>
-                  <LinkedInIcon />
-                </IconButton>
-              </MenuItem>
-            </SwipeableDrawer>
+            <SwipeableDrawerMenu menuOpen={menuOpen} handleMenuClose={handleMenuClose} />
           </Box>
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <List className={styles.navList}>
@@ -153,8 +110,9 @@ const NavBar = () => {
           </Box>
         </Toolbar>
       </AppBar>
-    </motion.nav>
+    </Box>
   );
 };
 
 export default NavBar;
+

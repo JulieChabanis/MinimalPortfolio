@@ -8,7 +8,6 @@ const HeroPage = () => {
   
   return (
     <Box id="heropage-section" className={styles.mainHeroPageSection}>
-
       <Box sx={theme.typography.h4} className={styles.localisationSection}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
