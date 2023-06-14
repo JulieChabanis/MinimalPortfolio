@@ -112,18 +112,22 @@ export const themeSettings = (mode) => {
         fontStyle: "italic",
         color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
       },
-
+      // subtitle 1
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
         fontSize: "3rem",
+        fontStyle: "italic",
         "@media (max-width: 600px)": {
-          fontSize: "2rem", 
+          fontSize: "2.4rem", 
         },
-        "@media (min-width: 960px)": {
+        "@media (min-width: 601px)": {
           fontSize: "4rem", 
         },
-        fontWeight: 400,
-        color: mode === "light" ? colors.grey[100] : colors.blue[600],
+        "@media (min-width: 1300px)": {
+          fontSize: "6rem",
+        },
+        fontWeight: 600,
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
       }, 
       // Subtitle 2
       h3: {
@@ -150,11 +154,16 @@ export const themeSettings = (mode) => {
       // "Julie Chabanis"
       h5: {
         fontFamily: ["Lato", "sans-serif"].join(","),
-        fontSize: "3.5rem",
-        "@media (max-width: 600px)": {
-          fontSize: "2.1rem", 
-        },
         fontWeight: 200,
+        "@media (max-width: 600px)": {
+          fontSize: "2rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "2.4rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "3rem",
+        },
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
       h6: {
