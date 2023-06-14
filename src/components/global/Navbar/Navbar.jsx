@@ -34,7 +34,7 @@ const NavBar = () => {
         style={{
           backgroundColor: "transparent",
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))",
-          boxShadow: "0px 0px 0px 0px"
+          boxShadow: "0px 0px 0px 0px",
         }}>
         <Toolbar>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
@@ -45,17 +45,22 @@ const NavBar = () => {
             </Box>
           </Box>
           <Box 
+            position="fixed" 
+            top={24} 
+            left={25}
+            alignItems="flex-start"
             sx={{ 
               display: { xs: "block", sm: "none" },
-              position: "fixed",
-              top: "25px",
-              left: "25px"
             }}>
-            <IconButton onClick={handleMenuOpen} color="inherit" sx={{ fontSize: 25 }}>
+            <IconButton 
+              onClick={handleMenuOpen} 
+              color="inherit" 
+              sx={{ 
+                fontSize: 25,
+              }}>
               <MenuIcon />
             </IconButton>
             <Menu
-              className={styles.navbarBurgerMenu}
               anchorEl={null}
               anchorOrigin={{
                 vertical: "top",
