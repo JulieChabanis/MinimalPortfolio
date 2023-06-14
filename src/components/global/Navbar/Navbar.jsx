@@ -1,9 +1,8 @@
 import styles from "./Navbar.module.css";
-import { Box, List, ListItem, ListItemText, useTheme, IconButton, AppBar, Toolbar, Menu, MenuItem } from "@mui/material";
+import { Box, List, ListItem, ListItemText, useTheme, IconButton, AppBar, Toolbar, MenuItem, SwipeableDrawer } from "@mui/material";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import ThemeToggleButton from "../ThemeToggle/ThemeToggle";
 
 // import icones
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -60,17 +59,20 @@ const NavBar = () => {
               }}>
               <MenuIcon />
             </IconButton>
-            <Menu
+            <SwipeableDrawer
+              anchor="right"
               anchorEl={null}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
               keepMounted
               open={menuOpen}
               onClose={handleMenuClose}
+              PaperProps={{ style: { width: 150, height: 300 } }}
+              style={{}}
             >
-              <ThemeToggleButton />
+              <MenuItem onClick={handleMenuClose}>
+                <Link to="heropage-section" smooth={true} duration={200} className={styles.navLink}>
+                  <ListItemText style={theme.typography.h6}>Home</ListItemText>
+                </Link>
+              </MenuItem>
               <MenuItem onClick={handleMenuClose}>
                 <Link to="work-section" smooth={true} duration={200} className={styles.navLink}>
                   <ListItemText style={theme.typography.h6}>Experience</ListItemText>
@@ -101,7 +103,7 @@ const NavBar = () => {
                   <LinkedInIcon />
                 </IconButton>
               </MenuItem>
-            </Menu>
+            </SwipeableDrawer>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <List className={styles.navList}>

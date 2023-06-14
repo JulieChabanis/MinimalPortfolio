@@ -96,16 +96,17 @@ export const themeSettings = (mode) => {
       fontFamily: ["Lato", "sans-serif"].join(","),
       fontSize: "0.75rem",
 
+      // Hello, Bonjour ...
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-          fontSize: "5rem", // Taille pour le breakpoint sm
+          fontSize: "3.5rem",
         },
         "@media (min-width: 601px)": {
-          fontSize: "5rem", // Taille pour le breakpoint md
+          fontSize: "5rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "7.3rem", // Taille pour le breakpoint md
+          fontSize: "7.3rem", 
         },
         fontWeight: 100,
         fontStyle: "italic",
@@ -116,24 +117,25 @@ export const themeSettings = (mode) => {
         fontFamily: ["lato", "sans-serif"].join(","),
         fontSize: "3rem",
         "@media (max-width: 600px)": {
-          fontSize: "2rem", // Taille pour le breakpoint sm
+          fontSize: "2rem", 
         },
         "@media (min-width: 960px)": {
-          fontSize: "4rem", // Taille pour le breakpoint md
+          fontSize: "4rem", 
         },
         fontWeight: 400,
         color: mode === "light" ? colors.grey[100] : colors.blue[600],
       }, 
+      // Subtitle 2
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "3.1rem", // Taille pour le breakpoint sm
+          fontSize: "2.4rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "4.6rem", // Taille pour le breakpoint md
+          fontSize: "4rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "6rem", // Taille pour le breakpoint md
+          fontSize: "6rem",
         },
         fontWeight:600,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
@@ -145,11 +147,12 @@ export const themeSettings = (mode) => {
         fontStyle: "italic",
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+      // "Julie Chabanis"
       h5: {
         fontFamily: ["Lato", "sans-serif"].join(","),
         fontSize: "3.5rem",
         "@media (max-width: 600px)": {
-          fontSize: "2.5rem", // Taille pour le breakpoint sm
+          fontSize: "2.1rem", 
         },
         fontWeight: 200,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
