@@ -1,8 +1,8 @@
 .logo {
   display:flex;
   position:fixed;
-  left: 50px;
-  top: 35px;
+  left:50px;
+  top: 30px;
   font-size: 35px;
   font-family: "lato", "sans-serif";
   font-weight: 700;
@@ -32,6 +32,7 @@
   flex-direction: row-reverse;
   position: relative;
   top:450px; 
+  left: -20px;
   background-color: transparent;
 
 }
