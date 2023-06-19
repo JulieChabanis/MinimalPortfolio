@@ -3,7 +3,7 @@ import { MenuItem, SwipeableDrawer, ListItemText, IconButton } from "@mui/materi
 import { Link } from "react-scroll";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import styles from "./Navbar.module.css";
+import styles from "./SwipeableDrawerMenu.module.css";
 import { useTheme } from "@mui/material/styles";
 
 const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
@@ -16,42 +16,46 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       keepMounted
       open={menuOpen}
       onClose={handleMenuClose}
-      PaperProps={{ style: { width: 150, height: 300 } }}
+      PaperProps={{ style: { width: 150, height: 350 } }}
     >
-      <MenuItem onClick={handleMenuClose}>
+      <MenuItem>
         <Link to="heropage-section" smooth={true} duration={200} className={styles.navLink}>
           <ListItemText style={theme.typography.h6}>Home</ListItemText>
         </Link>
       </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
+      <MenuItem>
         <Link to="work-section" smooth={true} duration={200} className={styles.navLink}>
           <ListItemText style={theme.typography.h6}>Experience</ListItemText>
         </Link>
       </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
+      <MenuItem>
         <Link to="skills-section" smooth={true} duration={200} className={styles.navLink}>
           <ListItemText style={theme.typography.h6}>Skills</ListItemText>
         </Link>
       </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
+      <MenuItem>
         <Link to="portfolio" smooth={true} duration={200} className={styles.navLink}>
           <ListItemText style={theme.typography.h6}>Portfolio</ListItemText>
         </Link>
       </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
+      <MenuItem>
         <Link to="contact" smooth={true} duration={200} className={styles.navLink}>
           <ListItemText style={theme.typography.h6}>Contact</ListItemText>
         </Link>
       </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <IconButton className={styles.navIcons}>
-          <GitHubIcon />
-        </IconButton>
+      <MenuItem>
+        <a href="https://github.com/JulieChabanis" target="_blank" rel="noopener noreferrer">
+          <IconButton className={styles.navSwipeableIcons}>
+            <GitHubIcon />
+          </IconButton>
+        </a>
       </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <IconButton className={styles.navIcons}>
-          <LinkedInIcon />
-        </IconButton>
+      <MenuItem>
+        <a href="https://www.linkedin.com/in/julie-chabanis-80695690/" target="_blank" rel="noopener noreferrer">
+          <IconButton className={styles.navSwipeableIcons}>
+            <LinkedInIcon />
+          </IconButton>
+        </a>
       </MenuItem>
     </SwipeableDrawer>
   );

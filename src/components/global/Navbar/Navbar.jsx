@@ -92,20 +92,27 @@ const NavBar = () => {
                   </Link>
                 </ListItem>
               </motion.div>
+          
+              {/*icons Links*/}
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <ListItem>
+              <ListItem>
+                <a href="https://github.com/JulieChabanis" target="_blank" rel="noopener noreferrer">
                   <IconButton className={styles.navIcons}>
                     <GitHubIcon />
                   </IconButton>
-                </ListItem>
+                </a>
+              </ListItem>
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
-                  <IconButton className={styles.navIcons}>
-                    <LinkedInIcon />
-                  </IconButton>
+                  <a href="https://www.linkedin.com/in/julie-chabanis-80695690/" target="_blank" rel="noopener noreferrer">
+                    <IconButton className={styles.navIcons}>
+                     <LinkedInIcon />
+                    </IconButton>
+                  </a>
                 </ListItem>
               </motion.div>
+
             </List>
           </Box>
         </Toolbar>
