@@ -1,3 +1,11 @@
 .navSwipeableIcons {
   font-size: 24px;
 }
+
+.closeButton {
+  position: absolute;
+  top: 8px;
+  left: 100px;
+  font-size: 24px;
+  color: #0000;
+}
