@@ -19,7 +19,7 @@ const About = () => {
         <SmoothScroll controls={controls} />
 
         <Grid container spacing={10}>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={controls}
@@ -51,12 +51,17 @@ const About = () => {
               </Box>
             </motion.div>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
           <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={controls}
               transition={{ duration: 0.5 }}
             >
+            <Box 
+                sx={theme.typography.h1}
+              >
+                {"New skills"}
+              </Box>
               <Box 
                 sx={theme.typography.h6}
               >

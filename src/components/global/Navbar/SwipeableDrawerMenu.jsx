@@ -38,31 +38,31 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       <List>
       <ListItem>
         <Link to="heropage-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText  className={styles.listItemText} style={theme.typography.h6}>Home</ListItemText>
+          <ListItemText  className={styles.listItemText} style={theme.typography.h7}>Home</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="about-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText className={styles.listItemText}  style={theme.typography.h6}>About</ListItemText>
+          <ListItemText className={styles.listItemText}  style={theme.typography.h7}>About</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="skills-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText  className={styles.listItemText} style={theme.typography.h6}>Skills</ListItemText>
+          <ListItemText  className={styles.listItemText} style={theme.typography.h7}>Skills</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="portfolio" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText className={styles.listItemText} style={theme.typography.h6}>Portfolio</ListItemText>
+          <ListItemText className={styles.listItemText} style={theme.typography.h7}>Portfolio</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="contact" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText  className={styles.listItemText}  style={theme.typography.h6}>Contact</ListItemText>
+          <ListItemText  className={styles.listItemText}  style={theme.typography.h7}>Contact</ListItemText>
         </Link>
       </ListItem>
       </List>

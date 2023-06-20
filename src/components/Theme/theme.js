@@ -175,7 +175,7 @@ export const themeSettings = (mode) => {
       // Others texts
       h6: {
         fontFamily: ["Martian Mono", "sans-serif"].join(","), 
-        fontSize : "16px",
+        fontSize : "12px",
         fontWeight:100,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
