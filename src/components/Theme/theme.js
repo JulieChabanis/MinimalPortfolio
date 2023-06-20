@@ -110,6 +110,7 @@ export const themeSettings = (mode) => {
         },
         fontWeight: 100,
         fontStyle: "italic",
+        lineHeight: 1.5, 
         color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
       },
 
@@ -175,8 +176,14 @@ export const themeSettings = (mode) => {
       // Others texts
       h6: {
         fontFamily: ["Martian Mono", "sans-serif"].join(","), 
-        fontSize : "12px",
-        fontWeight:100,
+        "@media (max-width: 600px)": {
+          fontSize: "0.8rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "0.9rem", 
+        },
+        fontWeight: 200,
+        lineHeight: 2, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
 
@@ -187,6 +194,39 @@ export const themeSettings = (mode) => {
         fontWeight: 400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+      // Titles Section 
+      h8: {
+        fontFamily: ["lato", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "4rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "5rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "6rem",
+        },
+        fontWeight:700,
+        lineHeight: 0, 
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+      },
+      // Other texts
+      h9: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "2rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "5rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "6rem",
+        },
+        fontStyle: "italic",
+        fontWeight:400,
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+
+      }
     },
 
     breakpoints: {
