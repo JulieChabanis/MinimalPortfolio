@@ -1,13 +1,11 @@
 .mainAboutSection {
     display: flex;
     flex-direction: column;
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 
 .imageProfil > img {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: auto;
     margin-bottom: 24px;
 

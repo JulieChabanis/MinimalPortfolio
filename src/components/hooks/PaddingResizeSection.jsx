@@ -4,7 +4,7 @@ const PaddingResizeSection = () => {
   const paddingSmall = "5% 7% 0% 7%";
   const paddingMedium = "9% 6% 0% 6%";
   const paddingLarge = "7% 15% 0% 15%";
-  const paddingXLarge = "6% 13% 0% 13%";
+  const paddingXLarge = "1% 10% 0% 15%";
 
   const isSmallScreen = useMediaQuery('(max-width: 600px)');
   const isMediumScreen = useMediaQuery('(min-width: 601px) and (max-width: 959px)');

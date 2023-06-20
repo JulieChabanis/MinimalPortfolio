@@ -207,7 +207,7 @@ export const themeSettings = (mode) => {
           fontSize: "6rem",
         },
         fontWeight:700,
-        lineHeight: 0, 
+        lineHeight: 1.3, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
       // Other texts

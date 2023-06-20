@@ -21,18 +21,18 @@ const About = () => {
         <SmoothScroll controls={controls} />
 
         <Grid container spacing={12}>
-          <Grid item xs={12} md={6} lg={5}>
+          <Grid item xs={12} md={6} lg={4}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={controls}
               transition={{ duration: 0.5 }}
             >
               <Box 
-                sx={{ ...theme.typography.h8, position: "relative" }}
+                sx={{ ...theme.typography.h8 }}
               >
-                {"About ❋"}
+                {"❋ About"}
               </Box>
-              <Box className={styles.imageProfil} sx={{  zIndex: -1 }}>
+              <Box className={styles.imageProfil}>
                 <img src={ProfilUser} alt="Julie Chabanis" />
               </Box>
               <Box 
@@ -46,7 +46,7 @@ const About = () => {
               <Divider sx={{ margin: "18px 0 0 0" }} />
             </motion.div>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} lg={7}>
           <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={controls}
