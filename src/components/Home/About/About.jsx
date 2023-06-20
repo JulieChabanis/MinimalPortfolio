@@ -43,7 +43,7 @@ const About = () => {
                  {" 29 years old from Montpellier, south of France. "}
                  <strong>{"Alongside me at work is my beloved pug, Léon."}</strong>
               </Box>
-              <Divider sx={{ margin: "18px 0 0 0" }} />
+              <Divider sx={{ margin: "4rem 0 0 0" }} />
             </motion.div>
           </Grid>
 
@@ -54,7 +54,7 @@ const About = () => {
               transition={{ duration: 0.5 }}
             >
               <Box 
-                sx={theme.typography.h1}
+                sx={{ ...theme.typography.h1, marginTop: "-65px" }}
               >
                 {"New Life"}
               </Box>
@@ -68,9 +68,9 @@ const About = () => {
                 {"(InDesign - Photoshop - Illustrator). I finally left my job in Communication "}
                 <strong>{"to pursue studies in computer programming."}</strong>
               </Box>
-              <Divider sx={{ margin: "2rem 0" }} />
+              <Divider sx={{ margin: "4rem 0" }} />
             <Box 
-                sx={theme.typography.h1}
+                sx={{ ...theme.typography.h1, marginTop: "-25px" }}
               >
                 {"New skills"}
               </Box>
