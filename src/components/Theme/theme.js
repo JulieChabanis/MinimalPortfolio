@@ -163,7 +163,7 @@ export const themeSettings = (mode) => {
         fontFamily: ["Martian Mono", "sans-serif"].join(","),
         fontWeight: 100,
         "@media (max-width: 600px)": {
-          fontSize: "1rem", 
+          fontSize: "0.8rem", 
         },
         "@media (min-width: 601px)": {
           fontSize: "1.1rem", 

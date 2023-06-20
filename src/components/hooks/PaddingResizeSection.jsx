@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 
 const PaddingResizeSection = () => {
-  const paddingSmall = "1% 7% 0% 7%";
+  const paddingSmall = "4% 7% 0% 7%";
   const paddingMedium = "1% 6% 0% 6%";
   const paddingLarge = "1% 6% 0% 14%";
   const paddingXLarge = "3% 0% 0% 15%";

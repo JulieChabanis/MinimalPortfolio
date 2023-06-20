@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { Box, Divider, Grid } from "@mui/material";
 import styles from "./About.module.css";
 import { useTheme } from "@emotion/react";
-
+import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
 import PaddingResizeSection from "../../hooks/PaddingResizeSection";
 import SmoothScroll from "../../hooks/SmoothScroll";
 
@@ -27,10 +27,8 @@ const About = () => {
               animate={controls}
               transition={{ duration: 0.5 }}
             >
-              <Box 
-                sx={{ ...theme.typography.h8 }}
-              >
-                {"❋ About"}
+              <Box sx={{ ...theme.typography.h8 }}>
+                 <ParallaxSectionSubtitle baseVelocity={-5}> • About</ParallaxSectionSubtitle>
               </Box>
               <Box className={styles.imageProfil}>
                 <img src={ProfilUser} alt="Julie Chabanis" />
@@ -54,7 +52,7 @@ const About = () => {
               transition={{ duration: 0.5 }}
             >
               <Box 
-                sx={{ ...theme.typography.h1, marginTop: "-65px" }}
+                sx={{ ...theme.typography.h8, }}
               >
                 {"New Life"}
               </Box>
@@ -70,7 +68,7 @@ const About = () => {
               </Box>
               <Divider sx={{ margin: "4rem 0" }} />
             <Box 
-                sx={{ ...theme.typography.h1, marginTop: "-25px" }}
+                sx={{ ...theme.typography.h8, marginTop: "-25px" }}
               >
                 {"New skills"}
               </Box>
@@ -86,7 +84,7 @@ const About = () => {
                 sx={theme.typography.h6}
               >
                 {"I remain a design enthusiast with a preference for front-end developpement."}
-                {"Last but not least, I'm looking for a job in the field so feel free to contact me!"}
+                <strong>{"Last but not least, I'm looking for a job in the field so feel free to contact me!"}</strong>
               </Box>
 
             </motion.div>
