@@ -17,9 +17,9 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       keepMounted
       open={menuOpen}
       onClose={handleMenuClose}
-      PaperProps={{ style: { width: 180, height: 410 } }}
+      PaperProps={{ style: { width: 185, height: 395 } }}
     >
-      
+
       {/* Close Button */}
       <Box        
         sx={{ 
@@ -38,31 +38,31 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       <List>
       <ListItem>
         <Link to="heropage-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText style={theme.typography.h6}>Home</ListItemText>
+          <ListItemText  className={styles.listItemText} style={theme.typography.h6}>Home</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="work-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText style={theme.typography.h6}>Experience</ListItemText>
+          <ListItemText className={styles.listItemText}  style={theme.typography.h6}>Experience</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="skills-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText style={theme.typography.h6}>Skills</ListItemText>
+          <ListItemText  className={styles.listItemText} style={theme.typography.h6}>Skills</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="portfolio" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText style={theme.typography.h6}>Portfolio</ListItemText>
+          <ListItemText className={styles.listItemText} style={theme.typography.h6}>Portfolio</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="contact" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText style={theme.typography.h6}>Contact</ListItemText>
+          <ListItemText  className={styles.listItemText}  style={theme.typography.h6}>Contact</ListItemText>
         </Link>
       </ListItem>
       </List>
