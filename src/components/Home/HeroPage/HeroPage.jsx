@@ -29,11 +29,11 @@ const HeroPage = () => {
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
-          {"I'm Julie Chabanis,"}
+          {"I'm Julie Chabanis"}
         </motion.div>
         </Box>
 
-        <Box  sx={theme.typography.h2}>
+        <Box sx={theme.typography.h3}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ 
@@ -41,7 +41,7 @@ const HeroPage = () => {
             opacity: 1
           }}
         >
-        {'{* LOOKING FOR'}
+        {'Looking for a job'}
         </motion.div>
         </Box>
         <Box sx={theme.typography.h3}>
@@ -52,16 +52,7 @@ const HeroPage = () => {
             opacity: 1
           }}
         >
-         {'❋ A JOB AS A'}
-        </motion.div>
-        <motion.div
-          initial={{ y: "100%", opacity: 0 }}
-          animate={{ 
-            y: 0, 
-            opacity: 1
-          }}
-        >
-         {'DEVELOPPER *}'}
+         {'{* as a Developper *}'}
         </motion.div>
         </Box>
       </Box>

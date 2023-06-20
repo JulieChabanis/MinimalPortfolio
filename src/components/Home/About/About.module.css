@@ -1,0 +1,25 @@
+.mainAboutSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.imageProfil > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 24px;
+
+    @media (max-width: 600px) {
+        width: 27rem;
+    }
+    
+    @media (min-width: 601px) and (max-width: 1299px) {
+        width: 20rem;
+    }
+    
+    @media (min-width: 1300px) {
+        width: 26rem;
+    }
+}

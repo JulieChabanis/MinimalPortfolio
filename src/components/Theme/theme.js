@@ -110,8 +110,10 @@ export const themeSettings = (mode) => {
         },
         fontWeight: 100,
         fontStyle: "italic",
+        lineHeight: 1.5, 
         color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
       },
+
       // subtitle 1
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
@@ -129,6 +131,7 @@ export const themeSettings = (mode) => {
         fontWeight: 600,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       }, 
+
       // Subtitle 2
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
@@ -141,9 +144,11 @@ export const themeSettings = (mode) => {
         "@media (min-width: 1300px)": {
           fontSize: "5.7rem",
         },
-        fontWeight:600,
+        fontWeight:700,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+
+      // Based in Montpellier
       h4: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         fontSize : "20px",
@@ -151,33 +156,77 @@ export const themeSettings = (mode) => {
         fontStyle: "italic",
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+
       // "Julie Chabanis"
       h5: {
-        fontFamily: ["Lato", "sans-serif"].join(","),
-        fontWeight: 200,
+        fontFamily: ["Martian Mono", "sans-serif"].join(","),
+        fontWeight: 100,
         "@media (max-width: 600px)": {
-          fontSize: "1.8rem", 
+          fontSize: "0.8rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "2.4rem", 
+          fontSize: "1.1rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "3rem",
+          fontSize: "1.3rem",
         },
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+
+      // Others texts
       h6: {
-        fontFamily: ["lato", "sans-serif"].join(","), 
-        fontSize : "16px",
-        fontWeight:600,
+        fontFamily: ["Martian Mono", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "0.8rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "0.9rem", 
+        },
+        fontWeight: 200,
+        lineHeight: 2, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+
+      // NavBar
       h7: {
-        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize: "10px",
-        fontWeight:400, 
+        fontFamily: ["Lato", "sans-serif"].join(","),
+        fontSize: "16px",
+        fontWeight: 400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+      // Titles Section 
+      h8: {
+        fontFamily: ["lato", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "4rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "5rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "6rem",
+        },
+        fontWeight:700,
+        lineHeight: 0, 
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+      },
+      // Other texts
+      h9: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "2rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "5rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "6rem",
+        },
+        fontStyle: "italic",
+        fontWeight:400,
+        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+
+      }
     },
 
     breakpoints: {
