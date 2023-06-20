@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { Box } from "@mui/material";
 import styles from "./About.module.css";
@@ -9,7 +9,7 @@ const About = () => {
   const theme = useTheme();
   const controls = useAnimation();
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const scrollY = window.scrollY;
     const windowHeight = window.innerHeight;
     const scrollPosition = scrollY + windowHeight;
@@ -18,14 +18,14 @@ const About = () => {
     if (scrollPosition > elementPosition) {
       controls.start({ opacity: 1, y: 0 });
     }
-  };
+  }, [controls]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return (
     <Box id="about-section" sx={{ padding: PaddingResizeSection()}}>
@@ -43,7 +43,7 @@ const About = () => {
           <Box 
             sx={theme.typography.h6}
           >
-            {"Hello, my name is Julie ! I'm Looking for a job as a developper "}
+            {"Hello, my name is Julie ! I'm Looking for a job as a developer "}
           </Box>
         </motion.div>
       </Box>
