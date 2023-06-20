@@ -3,7 +3,6 @@ import { motion, useAnimation } from "framer-motion";
 import { Box, Divider, Grid } from "@mui/material";
 import styles from "./About.module.css";
 import { useTheme } from "@emotion/react";
-import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
 import PaddingResizeSection from "../../hooks/PaddingResizeSection";
 import SmoothScroll from "../../hooks/SmoothScroll";
 
@@ -28,7 +27,7 @@ const About = () => {
               transition={{ duration: 0.5 }}
             >
               <Box sx={{ ...theme.typography.h8 }}>
-                 <ParallaxSectionSubtitle baseVelocity={-5}> • About</ParallaxSectionSubtitle>
+                {"• About"}
               </Box>
               <Box className={styles.imageProfil}>
                 <img src={ProfilUser} alt="Julie Chabanis" />

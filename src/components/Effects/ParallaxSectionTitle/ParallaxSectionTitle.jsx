@@ -1,7 +1,7 @@
 import { useCallback, useRef } from "react";
 import { motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame } from "framer-motion";
 
-export const ParallaxSectionSubtitle = ({ children, baseVelocity = 100 }) => {
+export const ParallaxSectionSubtitle = ({ children, baseVelocity = 500 }) => {
   const baseX = useMotionValue(-450); // Démarre la position initiale à -450 pour le décalage de gauche
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -9,7 +9,7 @@ export const ParallaxSectionSubtitle = ({ children, baseVelocity = 100 }) => {
     damping: 100,
     stiffness: 600,
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 150], [0, 1], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 600], [0, 5], {
     clamp: false,
   });
 
