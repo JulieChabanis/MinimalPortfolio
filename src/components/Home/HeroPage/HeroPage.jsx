@@ -41,7 +41,9 @@ const HeroPage = () => {
             opacity: 1
           }}
         >
-        {'Looking for a job'}
+        {'Looking for '}
+        <div></div>
+        {'{* a job as a'} 
         </motion.div>
         </Box>
         <Box sx={theme.typography.h3}>
@@ -52,7 +54,8 @@ const HeroPage = () => {
             opacity: 1
           }}
         >
-         {'{* as a Developper *}'}
+         <div></div>
+         {'Developper *}'}
         </motion.div>
         </Box>
       </Box>

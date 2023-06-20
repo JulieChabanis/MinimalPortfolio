@@ -136,15 +136,16 @@ export const themeSettings = (mode) => {
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "2.4rem", 
+          fontSize: "3.4rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "4rem", 
+          fontSize: "5.5rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "5.7rem",
+          fontSize: "7rem",
         },
         fontWeight:700,
+        lineHeight: 1,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
 
@@ -162,7 +163,7 @@ export const themeSettings = (mode) => {
         fontFamily: ["Martian Mono", "sans-serif"].join(","),
         fontWeight: 100,
         "@media (max-width: 600px)": {
-          fontSize: "0.8rem", 
+          fontSize: "1rem", 
         },
         "@media (min-width: 601px)": {
           fontSize: "1.1rem", 
