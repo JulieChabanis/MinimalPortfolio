@@ -21,7 +21,7 @@ const About = () => {
         <SmoothScroll controls={controls} />
 
         <Grid container spacing={12}>
-          <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={12} sm={5} md={5} lg={4}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={controls}
@@ -46,7 +46,8 @@ const About = () => {
               <Divider sx={{ margin: "18px 0 0 0" }} />
             </motion.div>
           </Grid>
-          <Grid item xs={12} md={6} lg={7}>
+
+          <Grid item xs={12} sm={7} md={7} lg={7}>
           <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={controls}

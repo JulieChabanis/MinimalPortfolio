@@ -1,10 +1,10 @@
 import { useMediaQuery } from "@mui/material";
 
 const PaddingResizeSection = () => {
-  const paddingSmall = "5% 7% 0% 7%";
-  const paddingMedium = "9% 6% 0% 6%";
-  const paddingLarge = "7% 15% 0% 15%";
-  const paddingXLarge = "1% 10% 0% 15%";
+  const paddingSmall = "1% 7% 0% 7%";
+  const paddingMedium = "1% 6% 0% 6%";
+  const paddingLarge = "1% 6% 0% 14%";
+  const paddingXLarge = "3% 0% 0% 15%";
 
   const isSmallScreen = useMediaQuery('(max-width: 600px)');
   const isMediumScreen = useMediaQuery('(min-width: 601px) and (max-width: 959px)');

@@ -17,7 +17,7 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       keepMounted
       open={menuOpen}
       onClose={handleMenuClose}
-      PaperProps={{ style: { width: 185, height: 395 } }}
+      PaperProps={{ style: { width: 160, height: 395 } }}
     >
 
       {/* Close Button */}
