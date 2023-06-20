@@ -43,8 +43,8 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       </ListItem>
 
       <ListItem>
-        <Link to="work-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText className={styles.listItemText}  style={theme.typography.h6}>Experience</ListItemText>
+        <Link to="about-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
+          <ListItemText className={styles.listItemText}  style={theme.typography.h6}>About</ListItemText>
         </Link>
       </ListItem>
 
