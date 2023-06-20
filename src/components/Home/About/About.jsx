@@ -1,35 +1,22 @@
-import React, { useEffect, useCallback } from "react";
+import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { Box } from "@mui/material";
 import styles from "./About.module.css";
 import { useTheme } from "@emotion/react";
+
 import PaddingResizeSection from "../../hooks/PaddingResizeSection";
+import SmoothScroll from "../../hooks/SmoothScroll";
 
 const About = () => {
   const theme = useTheme();
   const controls = useAnimation();
 
-  const handleScroll = useCallback(() => {
-    const scrollY = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const scrollPosition = scrollY + windowHeight;
-    const elementPosition = 1;
-
-    if (scrollPosition > elementPosition) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls]);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [handleScroll]);
-
   return (
     <Box id="about-section" sx={{ padding: PaddingResizeSection()}}>
       <Box className={styles.mainAboutSection}>
+
+        {/* Import Smooth Scroll Logic */}
+        <SmoothScroll controls={controls} />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
