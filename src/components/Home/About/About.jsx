@@ -30,7 +30,7 @@ const About = () => {
               <Box 
                 sx={{ ...theme.typography.h8, position: "relative" }}
               >
-                ❋{"About"}
+                {"About ❋"}
               </Box>
               <Box className={styles.imageProfil} sx={{  zIndex: -1 }}>
                 <img src={ProfilUser} alt="Julie Chabanis" />

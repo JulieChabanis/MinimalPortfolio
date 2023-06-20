@@ -198,7 +198,7 @@ export const themeSettings = (mode) => {
       h8: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "4rem", 
+          fontSize: "4.2rem", 
         },
         "@media (min-width: 601px)": {
           fontSize: "5rem", 
