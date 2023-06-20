@@ -38,10 +38,10 @@ const About = () => {
               <Box 
                 sx={theme.typography.h6}
               >
-                {"Hello there! My name is "}
+                {"Hey there! I'm "}
                 <strong>{"Julie Chabanis,"}</strong>
-                 {" and I'm 29 years old. I live in the city of Montpellier, south of France."}
-                 <strong>{" As I work, I am accompanied by my beloved pug, Léon."}</strong>
+                 {" 29 years old from Montpellier, south of France. "}
+                 <strong>{"Alongside me at work is my beloved pug, Léon."}</strong>
               </Box>
               <Divider sx={{ margin: "18px 0 0 0" }} />
             </motion.div>
@@ -60,14 +60,11 @@ const About = () => {
               <Box 
                 sx={theme.typography.h6}
               >
-                {"I'm new to the beautiful world of coding. Before that, "}
-                <strong>{"I worked in the field of Communication and Marketing."}</strong>
-                {" For over "}
-                <strong>{"10 years now,"}</strong>
-                {"I have also been "}
-                <strong>{"a selt-taught DPT PRINT graphic designer "}</strong>
-                {"(InDesign - Photoshop - Illustrator). "}
-                {"So, I left my job in communication"}
+                {"I'm new to the wonderful world of coding. I previously "}
+                <strong>{"worked in Marketing & Communication "}</strong>
+                {"and have been a "}
+                <strong>{"self-taught DPT Graphic Designer for over 10 years. "}</strong>
+                {"(InDesign - Photoshop - Illustrator). I finally left my job in Communication "}
                 <strong>{"to pursue studies in computer programming."}</strong>
               </Box>
               <Divider sx={{ margin: "2rem 0" }} />
@@ -79,15 +76,16 @@ const About = () => {
               <Box 
                 sx={theme.typography.h6}
               >
-                {"Today, I use different technologies to implement solutions:"}
-                <strong>{"front-end (REACT JS, Axios) and back-end (databases like PostgreSQL, MySQL, JAVA, SpringBoot...) "}</strong> 
-                {"I'm open to discovering new frameworks and languages!"}
+                {"I now use a variety of technologies to implement solutions:"}
+                <strong>{"front-end and back-end (React JS, Axios, databases, JAVA, SpringBoot...) "}</strong> 
+                {"and I'm up for discovering new frameworks and languages to keep learning and improving!"}
               </Box>
+              <Divider sx={{ margin: "2rem 0" }} />
               <Box 
                 sx={theme.typography.h6}
               >
-                {"I have kept my passion for design and have a preference for front-end development! I want to keep learning and improving! "}
-                {" And of course, the most important thing is that I'm looking for a job in this field. Don't hesitate to reach out to me! It would be a pleasure to connect with you."}
+                {"I remain a design enthusiast with a preference for front-end developpement."}
+                {"Last but not least, I'm looking for a job in the field so feel free to contact me!"}
               </Box>
 
             </motion.div>
