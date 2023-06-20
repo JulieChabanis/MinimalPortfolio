@@ -67,28 +67,28 @@ const NavBar = () => {
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
                   <Link to="about-section" smooth={true} duration={200} className={styles.navLink}>
-                    <ListItemText style={theme.typography.h6}>About</ListItemText>
+                    <ListItemText style={theme.typography.h7}>About</ListItemText>
                   </Link>
                 </ListItem>
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
                   <Link to="skills-section" smooth={true} duration={200} className={styles.navLink}>
-                    <ListItemText style={theme.typography.h6}>Skills</ListItemText>
+                    <ListItemText style={theme.typography.h7}>Skills</ListItemText>
                   </Link>
                 </ListItem>
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
                   <Link to="portfolio" smooth={true} duration={200} className={styles.navLink}>
-                    <ListItemText style={theme.typography.h6}>Portfolio</ListItemText>
+                    <ListItemText style={theme.typography.h7}>Portfolio</ListItemText>
                   </Link>
                 </ListItem>
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
                   <Link to="contact" smooth={true} duration={200} className={styles.navLink}>
-                    <ListItemText style={theme.typography.h6}>Contact</ListItemText>
+                    <ListItemText style={theme.typography.h7}>Contact</ListItemText>
                   </Link>
                 </ListItem>
               </motion.div>

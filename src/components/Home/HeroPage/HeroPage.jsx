@@ -41,7 +41,7 @@ const HeroPage = () => {
             opacity: 1
           }}
         >
-        {'Looking for a job ❋'}
+        {'Looking for a job'}
         </motion.div>
         </Box>
         <Box sx={theme.typography.h3}>

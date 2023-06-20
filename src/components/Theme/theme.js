@@ -179,10 +179,12 @@ export const themeSettings = (mode) => {
         fontWeight:100,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
+
+      // NavBar
       h7: {
-        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize: "10px",
-        fontWeight:400, 
+        fontFamily: ["Lato", "sans-serif"].join(","),
+        fontSize: "16px",
+        fontWeight: 400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
     },
