@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import React from 'react';
 import { useTheme } from "@emotion/react";
 import styles from './Skills.module.css';
-import { Box, Divider, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
 
