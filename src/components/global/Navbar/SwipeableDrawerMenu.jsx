@@ -13,7 +13,6 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
   return (
     <SwipeableDrawer
       anchor="right"
-      anchorEl={null}
       keepMounted
       open={menuOpen}
       onClose={handleMenuClose}

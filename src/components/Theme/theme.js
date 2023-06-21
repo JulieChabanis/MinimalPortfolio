@@ -35,7 +35,7 @@ export const tokens = (mode) => ({
       200: "#F266AB", 
       300: "#F266AB",
       400: "#F266AB",
-      500: "#e1d1ff",
+      500: "#b799ff",
     },
     grey: {
       100: "#121212",
@@ -144,7 +144,7 @@ export const themeSettings = (mode) => {
         "@media (min-width: 1300px)": {
           fontSize: "7rem",
         },
-        fontWeight:700,
+        fontWeight:800,
         lineHeight: 1,
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
@@ -199,13 +199,13 @@ export const themeSettings = (mode) => {
       h8: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "4.2rem", 
+          fontSize: "4.6rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "5rem", 
+          fontSize: "6rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "6rem",
+          fontSize: "7rem",
         },
         fontWeight:700,
         lineHeight: 1.3, 
@@ -215,7 +215,7 @@ export const themeSettings = (mode) => {
       h9: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "2rem", 
+          fontSize: "4rem", 
         },
         "@media (min-width: 601px)": {
           fontSize: "5rem", 
@@ -225,7 +225,7 @@ export const themeSettings = (mode) => {
         },
         fontStyle: "italic",
         fontWeight:400,
-        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+        color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
 
       }
     },

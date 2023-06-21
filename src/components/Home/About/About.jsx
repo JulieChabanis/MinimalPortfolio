@@ -51,7 +51,7 @@ const About = () => {
               transition={{ duration: 0.5 }}
             >
               <Box 
-                sx={{ ...theme.typography.h8, }}
+                sx={{ ...theme.typography.h9, }}
               >
                 {"New Life"}
               </Box>
@@ -67,7 +67,7 @@ const About = () => {
               </Box>
               <Divider sx={{ margin: "4rem 0" }} />
             <Box 
-                sx={{ ...theme.typography.h8, marginTop: "-25px" }}
+                sx={{ ...theme.typography.h9, marginTop: "-25px" }}
               >
                 {"New skills"}
               </Box>
