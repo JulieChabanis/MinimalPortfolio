@@ -73,8 +73,8 @@ const NavBar = () => {
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
-                  <Link to="skills-section" smooth={true} duration={200} className={styles.navLink}>
-                    <ListItemText sx={{ fontSize: theme.typography.h7}}>Skills</ListItemText>
+                  <Link to="resume-section" smooth={true} duration={200} className={styles.navLink}>
+                    <ListItemText sx={{ fontSize: theme.typography.h7}}>Resume</ListItemText>
                   </Link>
                 </ListItem>
               </motion.div>

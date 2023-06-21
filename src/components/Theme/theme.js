@@ -115,19 +115,18 @@ export const themeSettings = (mode) => {
 
       // subtitle 1
       h2: {
-        fontFamily: ["lato", "sans-serif"].join(","),
-        fontStyle: "italic",
+        fontFamily: ["Martian Mono", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-          fontSize: "2.4rem", 
+          fontSize: "1rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "4rem", 
+          fontSize: "1rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "5.7rem",
+          fontSize: "1.6rem",
         },
-        fontWeight: 600,
-        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+        fontWeight: 200,
+        color: mode === "light" ? colors.grey[100] : colors.grey[500],
       }, 
 
       // Subtitle 2

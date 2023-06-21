@@ -25,7 +25,7 @@ const About = forwardRef(() => {
               animate={controls}
               transition={{ duration: 0.5 }}
             >
-              <Box sx={{ fontSize: theme.typography.h8 }}>
+              <Box sx={{ fontSize: theme.typography.h8, marginBottom: "2.2rem" }}>
                 {"• About"}
               </Box>
               <Box className={styles.imageProfil}>
