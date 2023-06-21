@@ -1,15 +1,14 @@
 import { motion, useAnimation } from "framer-motion";
-import React from 'react';
-import { useTheme } from "@emotion/react";
+import React  from 'react';
 import styles from './Skills.module.css';
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, useTheme } from "@mui/material";
 
 import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
 
 import PaddingResizeSection from "../../hooks/PaddingResizeSection";
 import SmoothScroll from "../../hooks/SmoothScroll";
 
-const Skills = () => {
+const Skills = React.forwardRef(() => {
   const theme = useTheme();
   const controls = useAnimation();
 
@@ -25,7 +24,7 @@ const Skills = () => {
               transition={{ duration: 0.5 }}
             >
             </motion.div>
-            <Box sx={{ ...theme.typography.h8 }}>
+            <Box sx={{ fontSize: theme.typography.h8 }}>
                  <ParallaxSectionSubtitle baseVelocity={-2}> • Skills</ParallaxSectionSubtitle>
               </Box>
           </Grid>
@@ -34,6 +33,6 @@ const Skills = () => {
       </Box>
     </Box>
   )
-}
+}); 
 
 export default Skills

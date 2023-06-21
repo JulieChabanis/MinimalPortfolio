@@ -1,14 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { Box, Divider, Grid } from "@mui/material";
+import { Box, Divider, Grid, useTheme } from "@mui/material";
 import styles from "./About.module.css";
-import { useTheme } from "@emotion/react";
 import PaddingResizeSection from "../../hooks/PaddingResizeSection";
 import SmoothScroll from "../../hooks/SmoothScroll";
 
 import ProfilUser from '../../../assets/images/profilUser.png'
 
-const About = () => {
+const About = forwardRef(() => {
   const theme = useTheme();
   const controls = useAnimation();
 
@@ -26,14 +25,14 @@ const About = () => {
               animate={controls}
               transition={{ duration: 0.5 }}
             >
-              <Box sx={{ ...theme.typography.h8 }}>
+              <Box sx={{ fontSize: theme.typography.h8 }}>
                 {"• About"}
               </Box>
               <Box className={styles.imageProfil}>
                 <img src={ProfilUser} alt="Julie Chabanis" />
               </Box>
               <Box 
-                sx={theme.typography.h6}
+                sx={{ fontSize: theme.typography.h6}}
               >
                 {"Hey there! I'm "}
                 <strong>{"Julie Chabanis,"}</strong>
@@ -51,12 +50,12 @@ const About = () => {
               transition={{ duration: 0.5 }}
             >
               <Box 
-                sx={{ ...theme.typography.h9, }}
+                sx={{ fontSize: theme.typography.h9 }}
               >
                 {"New Life"}
               </Box>
               <Box 
-                sx={theme.typography.h6}
+                sx={{fontSize: theme.typography.h6}}
               >
                 {"I'm new to the wonderful world of coding. I previously "}
                 <strong>{"worked in Marketing & Communication "}</strong>
@@ -67,12 +66,12 @@ const About = () => {
               </Box>
               <Divider sx={{ margin: "4rem 0" }} />
             <Box 
-                sx={{ ...theme.typography.h9, marginTop: "-25px" }}
+                sx={{ fontSize: theme.typography.h9, marginTop: "-25px" }}
               >
                 {"New skills"}
               </Box>
               <Box 
-                sx={theme.typography.h6}
+                sx={{ fontSize: theme.typography.h6}}
               >
                 {"I now use a variety of technologies to implement solutions:"}
                 <strong>{"front-end and back-end (React JS, Axios, databases, JAVA, SpringBoot...) "}</strong> 
@@ -80,7 +79,7 @@ const About = () => {
               </Box>
               <Divider sx={{ margin: "2rem 0" }} />
               <Box 
-                sx={theme.typography.h6}
+                sx={{ fontSize: theme.typography.h6}}
               >
                 {"I remain a design enthusiast with a preference for front-end developpement."}
                 <strong>{"Last but not least, I'm looking for a job in the field so feel free to contact me!"}</strong>
@@ -92,6 +91,6 @@ const About = () => {
       </Box>
     </Box>
   );
-};
+});
 
 export default About;

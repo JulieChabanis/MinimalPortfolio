@@ -2,13 +2,14 @@ import { Box, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import styles from "./HeroPage.module.css";
 import { ParallaxText } from "../../Effects/ParallaxText/ParallaxText";
+import { forwardRef } from "react";
 
-const HeroPage = () => {
+const HeroPage = forwardRef(() => {
   const theme = useTheme();
   
   return (
     <Box id="heropage-section" className={styles.mainHeroPageSection}>
-      <Box sx={theme.typography.h4} className={styles.localisationSection}>
+      <Box sx={{ fontSize: theme.typography.h4}} className={styles.localisationSection}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -24,7 +25,7 @@ const HeroPage = () => {
       </Box>
 
       <Box className={styles.heroContent}>
-        <Box sx={theme.typography.h5}>
+        <Box sx={{ fontSize: theme.typography.h5}}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -33,7 +34,7 @@ const HeroPage = () => {
         </motion.div>
         </Box>
 
-        <Box sx={theme.typography.h3}>
+        <Box sx={{ fontSize: theme.typography.h3}}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ 
@@ -46,7 +47,7 @@ const HeroPage = () => {
         {'{* a job as a'} 
         </motion.div>
         </Box>
-        <Box sx={theme.typography.h3}>
+        <Box sx={{ fontSize: theme.typography.h3}}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ 
@@ -60,11 +61,11 @@ const HeroPage = () => {
         </Box>
       </Box>
 
-      <Box className={styles.helloBox} sx={theme.typography.h1} >
+      <Box className={styles.helloBox} sx={{ fontSize: theme.typography.h1}}>
         <ParallaxText baseVelocity={-5}>Hello • Bonjour • こんにちは • Góðan dag • </ParallaxText>
       </Box>
     </Box>
   );
-};
+});
 
 export default HeroPage;

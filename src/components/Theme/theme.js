@@ -94,8 +94,7 @@ export const themeSettings = (mode) => {
 
     typography: {
       fontFamily: ["Lato", "sans-serif"].join(","),
-      fontSize: "0.75rem",
-
+      
       // Hello, Bonjour ...
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
@@ -117,7 +116,6 @@ export const themeSettings = (mode) => {
       // subtitle 1
       h2: {
         fontFamily: ["lato", "sans-serif"].join(","),
-        fontSize: "3rem",
         fontStyle: "italic",
         "@media (max-width: 600px)": {
           fontSize: "2.4rem", 
@@ -152,8 +150,8 @@ export const themeSettings = (mode) => {
       // Based in Montpellier
       h4: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize : "20px",
-        fontWeight:100,
+        fontSize : 20,
+        fontWeight: 100,
         fontStyle: "italic",
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
@@ -191,7 +189,7 @@ export const themeSettings = (mode) => {
       // NavBar
       h7: {
         fontFamily: ["Lato", "sans-serif"].join(","),
-        fontSize: "16px",
+        fontSize: 16,
         fontWeight: 400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
@@ -207,7 +205,7 @@ export const themeSettings = (mode) => {
         "@media (min-width: 1300px)": {
           fontSize: "7rem",
         },
-        fontWeight:700,
+        fontWeight: 700,
         lineHeight: 1.3, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },

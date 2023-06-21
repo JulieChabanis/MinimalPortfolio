@@ -1,10 +1,9 @@
 import React from "react";
-import { ListItem, SwipeableDrawer, ListItemText, Box, IconButton, List } from "@mui/material";
+import { ListItem, SwipeableDrawer, ListItemText, Box, IconButton, List, useTheme } from "@mui/material";
 import { Link } from "react-scroll";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import styles from "./SwipeableDrawerMenu.module.css";
-import { useTheme } from "@mui/material/styles";
 import CloseIcon from "@mui/icons-material/Close";
 
 const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
@@ -14,6 +13,7 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
     <SwipeableDrawer
       anchor="right"
       keepMounted
+      onOpen={() => {}}
       open={menuOpen}
       onClose={handleMenuClose}
       PaperProps={{ style: { width: 160, height: 395 } }}
@@ -37,31 +37,31 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       <List>
       <ListItem>
         <Link to="heropage-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText  className={styles.listItemText} style={theme.typography.h7}>Home</ListItemText>
+          <ListItemText  className={styles.listItemText} sx={{ fontSize: theme.typography.h7 }}>Home</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="about-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText className={styles.listItemText}  style={theme.typography.h7}>About</ListItemText>
+          <ListItemText className={styles.listItemText}  sx={{ fontSize: theme.typography.h7}}>About</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="skills-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText  className={styles.listItemText} style={theme.typography.h7}>Skills</ListItemText>
+          <ListItemText  className={styles.listItemText} sx={{ fontSize: theme.typography.h7}}>Skills</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="portfolio" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText className={styles.listItemText} style={theme.typography.h7}>Portfolio</ListItemText>
+          <ListItemText className={styles.listItemText} sx={{ fontSize: theme.typography.h7}}>Portfolio</ListItemText>
         </Link>
       </ListItem>
 
       <ListItem>
         <Link to="contact" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText  className={styles.listItemText}  style={theme.typography.h7}>Contact</ListItemText>
+          <ListItemText  className={styles.listItemText}  sx={{fontSize: theme.typography.h7}}>Contact</ListItemText>
         </Link>
       </ListItem>
       </List>
