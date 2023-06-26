@@ -227,7 +227,7 @@ export const themeSettings = (mode) => {
       h10: {
         fontFamily: ["Lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "1rem", 
+          fontSize: "0.9rem", 
         },
         "@media (min-width: 601px)": {
           fontSize: "1rem", 

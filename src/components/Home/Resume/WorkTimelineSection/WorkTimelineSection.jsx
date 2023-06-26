@@ -44,11 +44,12 @@ const WorkTimelineSection = () => {
               marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
               marginBottom={{ xs: -1 }}
             >
-              <Typography variant="h10"> Co-founder • Graphic Design </Typography>
+              <Typography variant="h10"> Co-founder • Graphic Design (DTP)</Typography>
             </Grid>
             <Grid 
               item xs={8} sm={5} md={4} lg={4}
               paddingBottom={2}
+              paddingTop={1.5}
             >
               <Typography 
                 marginLeft={{ xs: 10, sm: 0, md: 0, lg: 0}} 
@@ -60,6 +61,7 @@ const WorkTimelineSection = () => {
             <Grid 
               item xs={4} sm={1} md={1} lg={2}
               paddingBottom={2}
+              paddingTop={1.5}
             >
               <Typography 
                 marginLeft={{ xs: 3.4, sm: 0, md: 0, lg: 0}}  
@@ -75,9 +77,11 @@ const WorkTimelineSection = () => {
                 <Typography variant="h6">
                   {"Electronic Music Collective / Events since 2017"}
                 </Typography>
+                <Divider />
                 <Typography variant="h6">
                   {"Electronic Music Collective / Events • Development Strategy"}
                 </Typography>
+                <Divider />
                 <Typography variant="h6">
                   {"Electronic Music Collective / Events • Development Strategy"}
                 </Typography>
@@ -117,7 +121,7 @@ const WorkTimelineSection = () => {
               marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
               marginBottom={{ xs: -1 }}
             >
-              <Typography variant="h10"> Co-founder • Graphic Design </Typography>
+              <Typography variant="h10"> React JS Developer </Typography>
             </Grid>
             <Grid 
               item xs={8} sm={5} md={4} lg={4}
@@ -127,7 +131,7 @@ const WorkTimelineSection = () => {
                 marginLeft={{ xs: 10, sm: 0, md: 0, lg: 0}} 
                 variant="h4"
               >
-                  La Kollective, FR
+                  Ternoa, Capsule Corp. Labs
               </Typography>
             </Grid>
             <Grid 
@@ -135,10 +139,10 @@ const WorkTimelineSection = () => {
               paddingBottom={2}
             >
               <Typography 
-                marginLeft={{ xs: 3.4, sm: 0, md: 0, lg: 0}}  
+                marginLeft={{ xs: 1.7, sm: 0, md: 0, lg: 0}}  
                 variant="h10"
               > 
-                {"Since 2017"}
+                {"Oct-Nov 2022"}
               </Typography>
             </Grid>
           </Grid>
@@ -146,13 +150,19 @@ const WorkTimelineSection = () => {
         <Collapse in={expanded === 1} timeout="auto" unmountOnExit>
              <Box className={styles.collapsedText} marginTop={2}>
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events since 2017"}
+                  {"Intership - 2 months • Full Remote + Flex Time."}
                 </Typography>
+                <Divider />
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events • Development Strategy"}
+                  {"Addition and testing of new front-end features."}
                 </Typography>
+                <Divider />
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events • Development Strategy"}
+                  {"Implementation of a documentation solution (using Docusaurus)."}
+                </Typography>
+                <Divider />
+                <Typography variant="h6">
+                  {"Asynchronous project management (AGILE JIRA Method)."}
                 </Typography>
                 <Box marginTop={2}>
                 <InstagramIcon />
@@ -189,28 +199,34 @@ const WorkTimelineSection = () => {
               marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
               marginBottom={{ xs: -1 }}
             >
-              <Typography variant="h10"> Co-founder • Graphic Design </Typography>
+              <Typography 
+                variant="h10"
+              >
+                {"Graphic Design (DTP)  • Communication "}
+              </Typography>
             </Grid>
             <Grid 
               item xs={8} sm={5} md={4} lg={4}
               paddingBottom={2}
+              paddingTop={1.5}
             >
               <Typography 
                 marginLeft={{ xs: 10, sm: 0, md: 0, lg: 0}} 
                 variant="h4"
               >
-                  La Kollective, FR
+                  Tourism Office, FR
               </Typography>
             </Grid>
             <Grid 
               item xs={4} sm={1} md={1} lg={2}
               paddingBottom={2}
+              paddingTop={1.5}
             >
               <Typography 
                 marginLeft={{ xs: 3.4, sm: 0, md: 0, lg: 0}}  
                 variant="h10"
               > 
-                {"Since 2017"}
+                {"2019-2021"}
               </Typography>
             </Grid>
           </Grid>
