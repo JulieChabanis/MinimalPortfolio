@@ -29,10 +29,10 @@ const EducationSection = () => {
             <Grid item xs={11} sm={5} md={5} lg={5}>
               <Typography variant="h10"> Bachelor Digital Solutions Developer</Typography>
             </Grid>
-            <Grid item xs={8} sm={5} md={4} lg={4}>
+            <Grid item xs={11} sm={5} md={4} lg={4}>
               <Typography marginLeft={{ xs: 4, sm: 0, md: 0, lg: 0}} variant="h4">HETIC, Montpellier, FR</Typography>
             </Grid>
-            <Grid item xs={4} sm={1} md={1} lg={1}>
+            <Grid item xs={1} sm={1} md={1} lg={1}>
               <Typography variant="h10"> 
                 {"2023"}
               </Typography>
@@ -63,10 +63,10 @@ const EducationSection = () => {
             <Grid item xs={11} sm={5} md={5} lg={5}>
               <Typography variant="h10">Master Communication & Marketing</Typography>
             </Grid>
-            <Grid item xs={8} sm={5} md={4} lg={4}>
+            <Grid item xs={11} sm={5} md={4} lg={4}>
               <Typography  marginLeft={{ xs: 4, sm: 0, md: 0, lg: 0}} variant="h4">EJCAM, Aix-en-Provence, FR</Typography>
             </Grid>
-            <Grid item xs={4} sm={1} md={1} lg={1}>
+            <Grid item xs={1} sm={1} md={1} lg={1}>
               <Typography variant="h10">2018</Typography>
             </Grid>
           </Grid>
@@ -91,10 +91,10 @@ const EducationSection = () => {
             <Grid item xs={11} sm={5} md={5} lg={5}>
               <Typography variant="h10">Licence Communication & Media</Typography>
             </Grid>
-            <Grid item xs={8} sm={5} md={4} lg={4}>
+            <Grid item xs={11} sm={5} md={4} lg={4}>
               <Typography  marginLeft={{ xs: 4, sm: 0, md: 0, lg: 0}} variant="h4">EJCAM, Aix-en-Provence, FR</Typography>
             </Grid>
-            <Grid item xs={4} sm={1} md={1} lg={1}>
+            <Grid item xs={1} sm={1} md={1} lg={1}>
               <Typography variant="h10">2016</Typography>
             </Grid>
           </Grid>
