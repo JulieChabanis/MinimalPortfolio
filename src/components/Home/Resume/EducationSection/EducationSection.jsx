@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Divider, Typography, List, ListItem, Grid, IconButton, Collapse } from '@mui/material';
+import { Box, Divider, Typography, Grid, IconButton, Collapse } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
 import styles from './EducationSection.module.css'
 

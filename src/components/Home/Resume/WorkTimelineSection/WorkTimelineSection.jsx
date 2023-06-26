@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Divider, Typography, List, ListItem, Grid, IconButton, Collapse } from '@mui/material';
+import { Box, Divider, Typography, Grid, IconButton, Collapse } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
 import styles from './WorkTimelineSection.module.css';
 import ProfilUser from "../../../../assets/images/profilUser.png";
@@ -95,6 +95,7 @@ const WorkTimelineSection = () => {
             container 
             spacing={{ xs: 0, sm: 2, md: 2, lg: 2 }} 
             alignItems="center"
+            marginTop={3}
         
           >
             <Grid 
@@ -166,6 +167,7 @@ const WorkTimelineSection = () => {
             container 
             spacing={{ xs: 0, sm: 2, md: 2, lg: 2 }} 
             alignItems="center"
+            marginTop={3}
         
           >
             <Grid 
