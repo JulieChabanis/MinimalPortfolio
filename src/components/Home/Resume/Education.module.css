@@ -1,0 +1,11 @@
+.degradedText {
+  background: linear-gradient(to right, #B799FF, #8ec9c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.collapsedText {
+  padding-left: 10%;
+  padding-bottom:2%;
+}

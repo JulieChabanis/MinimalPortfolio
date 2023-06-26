@@ -1,4 +1,4 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import styles from "./HeroPage.module.css";
 import { ParallaxText } from "../../Effects/ParallaxText/ParallaxText";
@@ -34,7 +34,7 @@ const HeroPage = forwardRef(() => {
         </motion.div>
         </Box>
 
-        <Box sx={{ fontSize: theme.typography.h3}}>
+        <Typography variant="h3" className={styles.degradedText}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ 
@@ -46,7 +46,7 @@ const HeroPage = forwardRef(() => {
         <div></div>
         {'{* a job as a'} 
         </motion.div>
-        </Box>
+        </Typography>
         <Box sx={{ fontSize: theme.typography.h3}}>
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
