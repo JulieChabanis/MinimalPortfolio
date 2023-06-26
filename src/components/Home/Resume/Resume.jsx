@@ -3,8 +3,9 @@ import React  from 'react';
 import styles from './Resume.module.css';
 import { Box, Grid, useTheme } from "@mui/material";
 
-import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
+import EducationSection from "./Education";
 
+import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
 import PaddingResizeSection from "../../hooks/PaddingResizeSection";
 import SmoothScroll from "../../hooks/SmoothScroll";
 
@@ -20,15 +21,15 @@ const Resume = React.forwardRef(() => {
             <ParallaxSectionSubtitle baseVelocity={-2}>• Resume</ParallaxSectionSubtitle>
           </Box>
         <Grid container spacing={12}>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={12} lg={10}>
               <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem"}}>
                 Education
               </Box>
-              <Box sx={{ fontSize: theme.typography.h6}}>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
+              <Box>
+               <EducationSection/>
               </Box>
               <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem", marginTop: "5rem"}}>
-                Education
+                Skills
               </Box>
               <Box sx={{ fontSize: theme.typography.h6}}>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
@@ -36,7 +37,7 @@ const Resume = React.forwardRef(() => {
           </Grid>
           <Grid item xs={12} md={6} ld={6}>
             <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem"}}>
-                Experience
+                Work Timeline
             </Box>
             <Box sx={{ fontSize: theme.typography.h6}}>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto

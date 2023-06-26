@@ -125,7 +125,7 @@ export const themeSettings = (mode) => {
         "@media (min-width: 1300px)": {
           fontSize: "1.6rem",
         },
-        fontWeight: 200,
+        fontWeight: 500,
         color: mode === "light" ? colors.grey[100] : colors.grey[500],
       }, 
 
@@ -223,7 +223,20 @@ export const themeSettings = (mode) => {
         fontStyle: "italic",
         fontWeight:400,
         color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
-
+      },
+      h10: {
+        fontFamily: ["Lato", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "1rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "1rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "1.2rem",
+        },
+        fontWeight:800,
+        color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       }
     },
 
