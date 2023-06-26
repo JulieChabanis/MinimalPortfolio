@@ -19,7 +19,11 @@ const EducationSection = () => {
             spacing={{ xs: 0, sm: 2, md: 2, lg: 2 }} 
             alignItems="center"
           >
-              <Grid item xs={12} sm={1} md={1} lg={1} marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}} marginBottom={{ xs: -1 }}>
+              <Grid 
+                item xs={12} sm={1} md={1} lg={1} 
+                marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}} 
+                marginBottom={{ xs: -1 }}
+              >
                 <IconButton onClick={() => handleToggle(0)}>
                   {expanded === 0 ? <ExpandLess /> : <ExpandMore />}
                 </IconButton>
@@ -28,8 +32,15 @@ const EducationSection = () => {
               <Grid item xs={10} sm={5} md={4} lg={5} paddingBottom={2}>
                 <Typography marginLeft={{ xs: 4, sm: 0, md: 0, lg: 0}} variant="h4">HETIC, Montpellier, FR</Typography>
               </Grid>
-              <Grid item xs={2} sm={1} md={1} lg={1} paddingBottom={2}>
-                <Typography marginLeft={{ xs: 2, sm: 0, md: 0, lg: 0}} variant="h10">2023</Typography>
+              <Grid 
+                item xs={2} sm={1} md={1} lg={1} 
+                paddingBottom={2}>
+                <Typography 
+                  marginLeft={{ xs: 2, sm: 0, md: 0, lg: 0}} 
+                  variant="h10"
+                >
+                  2023
+                </Typography>
               </Grid>
           </Grid>
 
