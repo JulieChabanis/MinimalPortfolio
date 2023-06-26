@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Divider, Typography, List, ListItem, Grid, IconButton, Collapse } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
-import styles from './Education.module.css'
+import styles from './EducationSection.module.css'
 
 const EducationSection = () => {
   const [expanded, setExpanded] = useState(null);
@@ -29,7 +29,7 @@ const EducationSection = () => {
             <Grid item xs={11} sm={5} md={5} lg={5}>
               <Typography variant="h10"> Bachelor Digital Solutions Developer</Typography>
             </Grid>
-            <Grid item xs={11} sm={5} md={4} lg={4}>
+            <Grid item xs={11} sm={5} md={4} lg={5}>
               <Typography marginLeft={{ xs: 4, sm: 0, md: 0, lg: 0}} variant="h4">HETIC, Montpellier, FR</Typography>
             </Grid>
             <Grid item xs={1} sm={1} md={1} lg={1}>
@@ -63,7 +63,7 @@ const EducationSection = () => {
             <Grid item xs={11} sm={5} md={5} lg={5}>
               <Typography variant="h10">Master Communication & Marketing</Typography>
             </Grid>
-            <Grid item xs={11} sm={5} md={4} lg={4}>
+            <Grid item xs={11} sm={5} md={4} lg={5}>
               <Typography  marginLeft={{ xs: 4, sm: 0, md: 0, lg: 0}} variant="h4">EJCAM, Aix-en-Provence, FR</Typography>
             </Grid>
             <Grid item xs={1} sm={1} md={1} lg={1}>
@@ -82,7 +82,7 @@ const EducationSection = () => {
 
         {/* Education 2 */}
         <ListItem>
-          <Grid container spacing={{ xs: 0, sm: 2, md: 1, lg: 0 }} alignItems="center">
+          <Grid container spacing={{ xs: 0, sm: 2, md: 1, lg: 2 }} alignItems="center">
             <Grid item xs={1} sm={1} md={1} lg={1}>
               <IconButton onClick={() => handleToggle(2)}>
                 {expanded === 2 ? <ExpandLess /> : <ExpandMore />}
@@ -91,7 +91,7 @@ const EducationSection = () => {
             <Grid item xs={11} sm={5} md={5} lg={5}>
               <Typography variant="h10">Licence Communication & Media</Typography>
             </Grid>
-            <Grid item xs={11} sm={5} md={4} lg={4}>
+            <Grid item xs={11} sm={5} md={4} lg={5}>
               <Typography  marginLeft={{ xs: 4, sm: 0, md: 0, lg: 0}} variant="h4">EJCAM, Aix-en-Provence, FR</Typography>
             </Grid>
             <Grid item xs={1} sm={1} md={1} lg={1}>

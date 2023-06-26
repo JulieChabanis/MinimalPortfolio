@@ -233,7 +233,7 @@ export const themeSettings = (mode) => {
           fontSize: "1rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "1.2rem",
+          fontSize: "1.1rem",
         },
         fontWeight:800,
         color: mode === "dark" ? colors.grey[100] : colors.grey[100],
