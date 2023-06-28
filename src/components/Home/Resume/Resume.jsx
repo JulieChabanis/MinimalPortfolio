@@ -37,7 +37,7 @@ const Resume = React.forwardRef(() => {
                 <SkillsSection />
               </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={7}>
+          <Grid item xs={12} sm={12} md={12} lg={5}>
             <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem"}}>
                 Work Timeline
             </Box>

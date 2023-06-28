@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Divider, Typography, Grid, IconButton, Collapse } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
-import styles from './EducationSection.module.css'
+// import styles from './EducationSection.module.css'
 
 const EducationSection = () => {
   const [expanded, setExpanded] = useState(null);

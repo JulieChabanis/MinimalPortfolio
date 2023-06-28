@@ -21,66 +21,66 @@ const WorkTimelineSection = () => {
         {/* WorkTimeline 0 */}
           <Grid 
             container 
-            spacing={{ xs: 0, sm: 1, md: 2, lg: 2 }} 
+            spacing={{ xs: 0, sm: 0, md: 1, lg: 0 }} 
             alignItems="center"
         
           >
             <Grid 
-              item xs={1} sm={1} md={1} lg={1}
-              marginLeft={{ xs: -1.5, sm: -1.5, md: 0, lg: 0}} 
+              item xs={12} sm={12} md={5} lg={12} 
+              marginLeft={{ xs: -1.5, sm: -1.5, md: -1.5, lg: -1.5}} 
+              marginBottom={{ xs: -1, sm: -1, md: 0, lg: -0.3 }}
+              marginTop={1.5}
             >
               <IconButton onClick={() => handleToggle(0)}>
                 {expanded === 0 ? <ExpandLess /> : <ExpandMore />}
               </IconButton>
-            </Grid>
-            <Grid 
-              item xs={10} sm={10} md={5} lg={5}
-              marginLeft={{ xs: 1.9, sm: 0, md: 0, lg: 0}}
-              marginTop={{ xs: 0, sm: 0, md: 0, lg: 0}}
-            >
               <Typography variant="h10"> 
-               {"Co-founder & Graphic Design (DTP)"}
+                {"Co-founder & Graphic Design (DPT)"}
               </Typography>
             </Grid>
             <Grid 
-              item xs={1} sm={1} md={5} lg={5}
-              marginLeft={{ xs: 3.9, sm: 3.9}}
-              marginBottom={2}
+              item xs={1.7} sm={1.7} md={1} lg={1.2} 
+              paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
+              paddingTop={0.5}
             >
-            <Box className={styles.logoWorkExperience}>
-              <img src={ProfilUser} alt="Julie Chabanis" />
-            </Box>
+              <Box 
+                className={styles.logoWorkExperience}
+                marginLeft={{ xs: 3.5, sm: 3.5, md: 0, lg: 3.5}} 
+              >
+                <img src={ProfilUser} alt="Julie Chabanis" />
+              </Box>
             </Grid> 
             <Grid 
-              item xs={7} sm={8} md={4} lg={4}
-              paddingBottom={2}
-              marginTop={0}
-            >
-              <Typography 
-                marginLeft={{ xs: 2.5, sm: 2.5, md: 0, lg: 0}} 
-                variant="h4"
+                item xs={7} sm={7} md={4} lg={7.8} 
+                paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
               >
-                  {"La Kollective, FR"}
-              </Typography>
-            </Grid>
-            <Grid 
-              item md={1} lg={2}
-              paddingBottom={2}
-              marginTop={0}
-            >
-              <Typography 
-                marginLeft={{ xs: 0, sm: 0, md: 0, lg: 0}}  
-                variant="h10"
-              > 
-                {"Since 2017"}
-              </Typography>
-            </Grid>
+                <Typography 
+                  marginLeft={{ xs: 3.5, sm: 2, md: 0, lg: 4.8}} 
+                  variant="h4"
+                > 
+                {"La Kollective, FR"}
+                </Typography>
+              </Grid>
+              <Grid 
+                item lg={3} 
+                paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
+              >
+                <Typography 
+                  marginLeft={{ xs: 2, sm: 4, md: 6, lg: 0}} 
+                  variant="h10"
+                >
+                  Since 2017
+                </Typography>
+              </Grid>
           </Grid>
 
         <Collapse in={expanded === 0} timeout="auto" unmountOnExit>
              <Box 
-              className={styles.collapsedText} 
-              marginTop={0.5}>
+              marginTop={{xs: 0.6, sm: 0.6, md: 0.6, lg: 1.5}}
+              paddingLeft={{ xs: 3.5, sm: 3.5, md: 3.5, lg: 3.5}}
+              paddingBottom={{ xs: 2.3, sm: 2.7, md: 3.5, lg: 2}}
+
+              >
                 <Typography variant="h6">
                   {"❋ Electronic Music Collective"}
                 </Typography>
@@ -105,74 +105,80 @@ const WorkTimelineSection = () => {
         {/* WorkTimeline 1 */}
         <Grid 
             container 
-            spacing={{ xs: 0, sm: 2, md: 2, lg: 2 }} 
+            spacing={{ xs: 0, sm: 0, md: 1, lg: 0 }} 
             alignItems="center"
-            marginTop={3}
         
           >
             <Grid 
-              item xs={1.6} sm={1} md={1} lg={1}
-              marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}} 
-              marginBottom={{ xs: -1 }}
+              item xs={12} sm={12} md={5} lg={12} 
+              marginLeft={{ xs: -1.5, sm: -1.5, md: -1.5, lg: -1.5}} 
+              marginBottom={{ xs: -1, sm: -1, md: 0, lg: -0.3 }}
+              marginTop={1.5}
             >
               <IconButton onClick={() => handleToggle(1)}>
                 {expanded === 1 ? <ExpandLess /> : <ExpandMore />}
               </IconButton>
+              <Typography variant="h10"> 
+                {"Co-founder & Graphic Design (DPT)"}
+              </Typography>
             </Grid>
-           <Grid item xs={2.4} sm={5} md={5} lg={5}>
-            <Box className={styles.logoWorkExperience}>
-              <img src={ProfilUser} alt="Julie Chabanis" />
-            </Box>
+            <Grid 
+              item xs={1.7} sm={1.7} md={1} lg={1.2} 
+              paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
+              paddingTop={0.5}
+            >
+              <Box 
+                className={styles.logoWorkExperience}
+                marginLeft={{ xs: 3.5, sm: 3.5, md: 0, lg: 3.5}} 
+              >
+                <img src={ProfilUser} alt="Julie Chabanis" />
+              </Box>
             </Grid> 
             <Grid 
-              item xs={8} sm={5} md={5} lg={5}
-              marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
-            >
-              <Typography variant="h10"> React JS Developer </Typography>
-            </Grid>
-            <Grid 
-              item xs={8} sm={5} md={4} lg={4}
-              paddingBottom={2}
-            >
-              <Typography 
-                marginLeft={{ xs: 10, sm: 0, md: 0, lg: 0}} 
-                variant="h4"
+                item xs={7} sm={7} md={4} lg={7.8} 
+                paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
               >
-                  Ternoa, Capsule Corp. Labs
-              </Typography>
-            </Grid>
-            <Grid 
-              item xs={4} sm={1} md={1} lg={2}
-              paddingBottom={2}
-            >
-              <Typography 
-                marginLeft={{ xs: 1.7, sm: 0, md: 0, lg: 0}}  
-                variant="h10"
-              > 
-                {"Oct-Nov 2022"}
-              </Typography>
-            </Grid>
+                <Typography 
+                  marginLeft={{ xs: 3.5, sm: 2, md: 0, lg: 4.8}} 
+                  variant="h4"
+                > 
+                {"La Kollective, FR"}
+                </Typography>
+              </Grid>
+              <Grid 
+                item lg={3} 
+                paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
+              >
+                <Typography 
+                  marginLeft={{ xs: 2, sm: 4, md: 6, lg: 0}} 
+                  variant="h10"
+                >
+                  Since 2017
+                </Typography>
+              </Grid>
           </Grid>
 
         <Collapse in={expanded === 1} timeout="auto" unmountOnExit>
-             <Box className={styles.collapsedText} marginTop={2}>
+             <Box 
+              marginTop={{xs: 0.6, sm: 0.6, md: 0.6, lg: 1.5}}
+              paddingLeft={{ xs: 3.5, sm: 3.5, md: 3.5, lg: 3.5}}
+              paddingBottom={{ xs: 2.3, sm: 2.7, md: 3.5, lg: 2}}
+
+              >
                 <Typography variant="h6">
-                  {"Intership - 2 months • Full Remote + Flex Time."}
+                  {"❋ Electronic Music Collective"}
                 </Typography>
-                <Divider />
                 <Typography variant="h6">
-                  {"Addition and testing of new front-end features."}
+                  {"❋ House music, disco and more"}
                 </Typography>
-                <Divider />
                 <Typography variant="h6">
-                  {"Implementation of a documentation solution (using Docusaurus)."}
+                  {"❋ Artists Booking."}
                 </Typography>
-                <Divider />
                 <Typography variant="h6">
-                  {"Asynchronous project management (AGILE JIRA Method)."}
+                  {"❋ Illustrations (DPT) for events"}
                 </Typography>
                 <Box marginTop={2}>
-                <InstagramIcon />
+                <InstagramIcon/>
                 <FacebookIcon className={styles.icones} />
                 </Box>
               </Box> 
@@ -182,72 +188,80 @@ const WorkTimelineSection = () => {
         {/* WorkTimeline 2 */}
         <Grid 
             container 
-            spacing={{ xs: 0, sm: 2, md: 2, lg: 2 }} 
+            spacing={{ xs: 0, sm: 0, md: 1, lg: 0 }} 
             alignItems="center"
-            marginTop={3}
         
           >
             <Grid 
-              item xs={1.6} sm={1} md={1} lg={1}
-              marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}} 
-              marginBottom={{ xs: -1 }}
+              item xs={12} sm={12} md={5} lg={12} 
+              marginLeft={{ xs: -1.5, sm: -1.5, md: -1.5, lg: -1.5}} 
+              marginBottom={{ xs: -1, sm: -1, md: 0, lg: -0.3 }}
+              marginTop={1.5}
             >
               <IconButton onClick={() => handleToggle(2)}>
                 {expanded === 2 ? <ExpandLess /> : <ExpandMore />}
               </IconButton>
+              <Typography variant="h10"> 
+                {"Co-founder & Graphic Design (DPT)"}
+              </Typography>
             </Grid>
-           <Grid item xs={2.4} sm={5} md={5} lg={5}>
-            <Box className={styles.logoWorkExperience}>
-              <img src={ProfilUser} alt="Julie Chabanis" />
-            </Box>
+            <Grid 
+              item xs={1.7} sm={1.7} md={1} lg={1.2} 
+              paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
+              paddingTop={0.5}
+            >
+              <Box 
+                className={styles.logoWorkExperience}
+                marginLeft={{ xs: 3.5, sm: 3.5, md: 0, lg: 3.5}} 
+              >
+                <img src={ProfilUser} alt="Julie Chabanis" />
+              </Box>
             </Grid> 
             <Grid 
-              item xs={8} sm={5} md={5} lg={5}
-              marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
-            >
-              <Typography 
-                variant="h10"
+                item xs={7} sm={7} md={4} lg={7.8} 
+                paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
               >
-                {" Communication & Graphic Design (DTP) "}
-              </Typography>
-            </Grid>
-            <Grid 
-              item xs={8} sm={5} md={4} lg={4}
-              paddingBottom={2}
-            >
-              <Typography 
-                marginLeft={{ xs: 10, sm: 0, md: 0, lg: 0}} 
-                variant="h4"
+                <Typography 
+                  marginLeft={{ xs: 3.5, sm: 2, md: 0, lg: 4.8}} 
+                  variant="h4"
+                > 
+                {"La Kollective, FR"}
+                </Typography>
+              </Grid>
+              <Grid 
+                item lg={3} 
+                paddingBottom={{ xs: 2, sm: 2, md:0, lg: 2}}
               >
-                  Tourism Office, FR
-              </Typography>
-            </Grid>
-            <Grid 
-              item xs={4} sm={1} md={1} lg={2}
-              paddingBottom={2}
-            >
-              <Typography 
-                marginLeft={{ xs: 3.4, sm: 0, md: 0, lg: 0}}  
-                variant="h10"
-              > 
-                {"2019-2021"}
-              </Typography>
-            </Grid>
+                <Typography 
+                  marginLeft={{ xs: 2, sm: 4, md: 6, lg: 0}} 
+                  variant="h10"
+                >
+                  Since 2017
+                </Typography>
+              </Grid>
           </Grid>
 
         <Collapse in={expanded === 2} timeout="auto" unmountOnExit>
-             <Box className={styles.collapsedText} marginTop={2}>
+             <Box 
+              marginTop={{xs: 0.6, sm: 0.6, md: 0.6, lg: 1.5}}
+              paddingLeft={{ xs: 3.5, sm: 3.5, md: 3.5, lg: 3.5}}
+              paddingBottom={{ xs: 2.3, sm: 2.7, md: 3.5, lg: 2}}
+
+              >
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events since 2017"}
+                  {"❋ Electronic Music Collective"}
                 </Typography>
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events • Development Strategy"}
+                  {"❋ House music, disco and more"}
                 </Typography>
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events • Development Strategy"}
+                  {"❋ Artists Booking."}
+                </Typography>
+                <Typography variant="h6">
+                  {"❋ Illustrations (DPT) for events"}
                 </Typography>
                 <Box marginTop={2}>
-                <InstagramIcon />
+                <InstagramIcon/>
                 <FacebookIcon className={styles.icones} />
                 </Box>
               </Box> 
