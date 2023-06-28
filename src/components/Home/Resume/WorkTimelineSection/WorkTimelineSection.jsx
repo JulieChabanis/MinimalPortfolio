@@ -35,7 +35,7 @@ const WorkTimelineSection = () => {
                 {expanded === 0 ? <ExpandLess /> : <ExpandMore />}
               </IconButton>
               <Typography variant="h10"> 
-                {"Co-founder & Graphic Design (DPT)"}
+                {"Co-founder & Graphic Designer (DPT)"}
               </Typography>
             </Grid>
             <Grid 
@@ -119,7 +119,7 @@ const WorkTimelineSection = () => {
                 {expanded === 1 ? <ExpandLess /> : <ExpandMore />}
               </IconButton>
               <Typography variant="h10"> 
-                {"Co-founder & Graphic Design (DPT)"}
+                {"React JS Developper - Ternoa"}
               </Typography>
             </Grid>
             <Grid 
@@ -142,7 +142,7 @@ const WorkTimelineSection = () => {
                   marginLeft={{ xs: 3.5, sm: 2, md: 0, lg: 4.8}} 
                   variant="h4"
                 > 
-                {"La Kollective, FR"}
+                {"Capsule Corp.Labs"}
                 </Typography>
               </Grid>
               <Grid 
@@ -153,7 +153,7 @@ const WorkTimelineSection = () => {
                   marginLeft={{ xs: 2, sm: 4, md: 6, lg: 0}} 
                   variant="h10"
                 >
-                  Since 2017
+                  0/N 2022
                 </Typography>
               </Grid>
           </Grid>
@@ -166,16 +166,22 @@ const WorkTimelineSection = () => {
 
               >
                 <Typography variant="h6">
-                  {"❋ Electronic Music Collective"}
+                  {"❋ 2 months intership"}
                 </Typography>
                 <Typography variant="h6">
-                  {"❋ House music, disco and more"}
+                  {"❋ Full remote & flex time"}
                 </Typography>
                 <Typography variant="h6">
-                  {"❋ Artists Booking."}
+                  {"❋ Addition of new front-end features"}
                 </Typography>
                 <Typography variant="h6">
-                  {"❋ Illustrations (DPT) for events"}
+                  {"❋ Testing API Axios routh path"}
+                </Typography>
+                <Typography variant="h6">
+                  {"❋ Implementation of a new solution : documentation (using Docusaurus)"}
+                </Typography>
+                <Typography variant="h6">
+                  {"❋ Asynchronous project management AGILE - JIRA"}
                 </Typography>
                 <Box marginTop={2}>
                 <InstagramIcon/>
@@ -202,7 +208,7 @@ const WorkTimelineSection = () => {
                 {expanded === 2 ? <ExpandLess /> : <ExpandMore />}
               </IconButton>
               <Typography variant="h10"> 
-                {"Co-founder & Graphic Design (DPT)"}
+                {"Communication Officer & Graphic Design"}
               </Typography>
             </Grid>
             <Grid 
@@ -225,7 +231,7 @@ const WorkTimelineSection = () => {
                   marginLeft={{ xs: 3.5, sm: 2, md: 0, lg: 4.8}} 
                   variant="h4"
                 > 
-                {"La Kollective, FR"}
+                {"Tourism Office, FR"}
                 </Typography>
               </Grid>
               <Grid 
@@ -236,7 +242,7 @@ const WorkTimelineSection = () => {
                   marginLeft={{ xs: 2, sm: 4, md: 6, lg: 0}} 
                   variant="h10"
                 >
-                  Since 2017
+                  2019-2021
                 </Typography>
               </Grid>
           </Grid>
@@ -249,16 +255,28 @@ const WorkTimelineSection = () => {
 
               >
                 <Typography variant="h6">
-                  {"❋ Electronic Music Collective"}
+                  {"❋ Permanent Contract (CDI in French)"}
                 </Typography>
                 <Typography variant="h6">
-                  {"❋ House music, disco and more"}
+                  {"❋ Position held for two years and seven months"}
                 </Typography>
                 <Typography variant="h6">
-                  {"❋ Artists Booking."}
+                  {"❋ Desktop Publishing creation for promotion"}
                 </Typography>
                 <Typography variant="h6">
-                  {"❋ Illustrations (DPT) for events"}
+                  {"❋ Logo redesign and creation"}
+                </Typography>
+                <Typography variant="h6">
+                  {"❋ Magazine print redesign and creation"}
+                </Typography>
+                <Typography variant="h6">
+                  {"❋ Project manager for website redesign"}
+                </Typography>
+                <Typography variant="h6">
+                  {"❋ Communication campaigns"}
+                </Typography>
+                <Typography variant="h6">
+                  {"❋ Marketing Strategy"}
                 </Typography>
                 <Box marginTop={2}>
                 <InstagramIcon/>
