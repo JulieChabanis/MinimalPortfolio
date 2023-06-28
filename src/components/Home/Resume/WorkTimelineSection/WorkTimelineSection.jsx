@@ -42,14 +42,12 @@ const WorkTimelineSection = () => {
             <Grid 
               item xs={8} sm={5} md={5} lg={5}
               marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
-              marginBottom={{ xs: -1 }}
             >
-              <Typography variant="h10"> Co-founder • Graphic Design (DTP)</Typography>
+              <Typography variant="h10"> Co-founder & Graphic Design (DTP)</Typography>
             </Grid>
             <Grid 
               item xs={8} sm={5} md={4} lg={4}
               paddingBottom={2}
-              paddingTop={1.5}
             >
               <Typography 
                 marginLeft={{ xs: 10, sm: 0, md: 0, lg: 0}} 
@@ -61,7 +59,6 @@ const WorkTimelineSection = () => {
             <Grid 
               item xs={4} sm={1} md={1} lg={2}
               paddingBottom={2}
-              paddingTop={1.5}
             >
               <Typography 
                 marginLeft={{ xs: 3.4, sm: 0, md: 0, lg: 0}}  
@@ -119,7 +116,6 @@ const WorkTimelineSection = () => {
             <Grid 
               item xs={8} sm={5} md={5} lg={5}
               marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
-              marginBottom={{ xs: -1 }}
             >
               <Typography variant="h10"> React JS Developer </Typography>
             </Grid>
@@ -197,18 +193,16 @@ const WorkTimelineSection = () => {
             <Grid 
               item xs={8} sm={5} md={5} lg={5}
               marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
-              marginBottom={{ xs: -1 }}
             >
               <Typography 
                 variant="h10"
               >
-                {"Graphic Design (DTP)  • Communication "}
+                {" Communication & Graphic Design (DTP) "}
               </Typography>
             </Grid>
             <Grid 
               item xs={8} sm={5} md={4} lg={4}
               paddingBottom={2}
-              paddingTop={1.5}
             >
               <Typography 
                 marginLeft={{ xs: 10, sm: 0, md: 0, lg: 0}} 
@@ -220,7 +214,6 @@ const WorkTimelineSection = () => {
             <Grid 
               item xs={4} sm={1} md={1} lg={2}
               paddingBottom={2}
-              paddingTop={1.5}
             >
               <Typography 
                 marginLeft={{ xs: 3.4, sm: 0, md: 0, lg: 0}}  

@@ -178,7 +178,7 @@ export const themeSettings = (mode) => {
           fontSize: "0.8rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "0.9rem", 
+          fontSize: "0.8rem", 
         },
         fontWeight: 200,
         lineHeight: 2, 

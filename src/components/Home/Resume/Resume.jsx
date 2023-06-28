@@ -5,6 +5,7 @@ import { Box, Grid, useTheme } from "@mui/material";
 
 import EducationSection from "./EducationSection/EducationSection";
 import WorkTimelineSection from "./WorkTimelineSection/WorkTimelineSection";
+import SkillsSection from "./Skills/SkillsSection";
 
 import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
 import PaddingResizeSection from "../../hooks/PaddingResizeSection";
@@ -22,7 +23,7 @@ const Resume = React.forwardRef(() => {
             <ParallaxSectionSubtitle baseVelocity={-2}>• Resume</ParallaxSectionSubtitle>
           </Box>
         <Grid container spacing={12}>
-          <Grid item xs={12} md={12} lg={6}>
+          <Grid item xs={12} sm={12} md={12} lg={5}>
               <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem"}}>
                 Education
               </Box>
@@ -32,11 +33,11 @@ const Resume = React.forwardRef(() => {
               <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem", marginTop: "5rem"}}>
                 Skills
               </Box>
-              <Box sx={{ fontSize: theme.typography.h6}}>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
+              <Box>
+                <SkillsSection />
               </Box>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} sm={12} md={12} lg={7}>
             <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem"}}>
                 Work Timeline
             </Box>
