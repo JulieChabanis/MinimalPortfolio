@@ -21,47 +21,55 @@ const WorkTimelineSection = () => {
         {/* WorkTimeline 0 */}
           <Grid 
             container 
-            spacing={{ xs: 0, sm: 2, md: 2, lg: 2 }} 
+            spacing={{ xs: 0, sm: 1, md: 2, lg: 2 }} 
             alignItems="center"
         
           >
             <Grid 
-              item xs={1.6} sm={1} md={1} lg={1}
-              marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}} 
-              marginBottom={{ xs: -1 }}
+              item xs={1} sm={1} md={1} lg={1}
+              marginLeft={{ xs: -1.5, sm: -1.5, md: 0, lg: 0}} 
             >
               <IconButton onClick={() => handleToggle(0)}>
                 {expanded === 0 ? <ExpandLess /> : <ExpandMore />}
               </IconButton>
             </Grid>
-           <Grid item xs={2.4} sm={5} md={5} lg={5}>
+            <Grid 
+              item xs={10} sm={10} md={5} lg={5}
+              marginLeft={{ xs: 1.9, sm: 0, md: 0, lg: 0}}
+              marginTop={{ xs: 0, sm: 0, md: 0, lg: 0}}
+            >
+              <Typography variant="h10"> 
+               {"Co-founder & Graphic Design (DTP)"}
+              </Typography>
+            </Grid>
+            <Grid 
+              item xs={1} sm={1} md={5} lg={5}
+              marginLeft={{ xs: 3.9, sm: 3.9}}
+              marginBottom={2}
+            >
             <Box className={styles.logoWorkExperience}>
               <img src={ProfilUser} alt="Julie Chabanis" />
             </Box>
             </Grid> 
             <Grid 
-              item xs={8} sm={5} md={5} lg={5}
-              marginLeft={{ xs: -1.5, sm: 0, md: 0, lg: 0}}
-            >
-              <Typography variant="h10"> Co-founder & Graphic Design (DTP)</Typography>
-            </Grid>
-            <Grid 
-              item xs={8} sm={5} md={4} lg={4}
+              item xs={7} sm={8} md={4} lg={4}
               paddingBottom={2}
+              marginTop={0}
             >
               <Typography 
-                marginLeft={{ xs: 10, sm: 0, md: 0, lg: 0}} 
+                marginLeft={{ xs: 2.5, sm: 2.5, md: 0, lg: 0}} 
                 variant="h4"
               >
-                  La Kollective, FR
+                  {"La Kollective, FR"}
               </Typography>
             </Grid>
             <Grid 
-              item xs={4} sm={1} md={1} lg={2}
+              item md={1} lg={2}
               paddingBottom={2}
+              marginTop={0}
             >
               <Typography 
-                marginLeft={{ xs: 3.4, sm: 0, md: 0, lg: 0}}  
+                marginLeft={{ xs: 0, sm: 0, md: 0, lg: 0}}  
                 variant="h10"
               > 
                 {"Since 2017"}
@@ -70,20 +78,23 @@ const WorkTimelineSection = () => {
           </Grid>
 
         <Collapse in={expanded === 0} timeout="auto" unmountOnExit>
-             <Box className={styles.collapsedText} marginTop={2}>
+             <Box 
+              className={styles.collapsedText} 
+              marginTop={0.5}>
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events since 2017"}
+                  {"❋ Electronic Music Collective"}
                 </Typography>
-                <Divider />
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events • Development Strategy"}
+                  {"❋ House music, disco and more"}
                 </Typography>
-                <Divider />
                 <Typography variant="h6">
-                  {"Electronic Music Collective / Events • Development Strategy"}
+                  {"❋ Artists Booking."}
+                </Typography>
+                <Typography variant="h6">
+                  {"❋ Illustrations (DPT) for events"}
                 </Typography>
                 <Box marginTop={2}>
-                <InstagramIcon />
+                <InstagramIcon/>
                 <FacebookIcon className={styles.icones} />
                 </Box>
               </Box> 
