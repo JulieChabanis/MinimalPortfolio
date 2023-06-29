@@ -1,5 +1,5 @@
 import { useAnimation } from "framer-motion";
-import React  from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './Resume.module.css';
 import { Box, Grid, useTheme } from "@mui/material";
 
@@ -14,14 +14,34 @@ import SmoothScroll from "../../hooks/SmoothScroll";
 const Resume = React.forwardRef(() => {
   const theme = useTheme();
   const controls = useAnimation();
+  const parallaxRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const elementTop = parallaxRef.current.offsetTop;
+      const distance = scrollY - elementTop;
+      const baseVelocity = 2; //  help : 2=leftToRight, -2=Right to left
+      const moveBy = baseVelocity * distance;
+      parallaxRef.current.style.transform = `translateX(${moveBy}px)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <Box id="resume-section" sx={{ padding: PaddingResizeSection()}}>
+      <Box sx={{ fontSize: theme.typography.h8, marginBottom: "2.2rem" }}>
+        <Box className={styles.titleSection} ref={parallaxRef}>
+         {'• Resume'}
+        </Box>
+      </Box>
       <Box className={styles.mainSkillsSection}>
         <SmoothScroll controls={controls} />
-        <Box sx={{ fontSize: theme.typography.h8, marginBottom: "2.2rem" }}>
-            <ParallaxSectionSubtitle baseVelocity={-2}>• Resume</ParallaxSectionSubtitle>
-          </Box>
         <Grid container spacing={12}>
           <Grid item xs={12} sm={12} md={12} lg={5}>
               <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem"}}>
@@ -45,11 +65,10 @@ const Resume = React.forwardRef(() => {
             <WorkTimelineSection />
             </Box>
           </Grid>  
-
         </Grid>
       </Box>
     </Box>
-  )
-}); 
+  );
+});
 
-export default Resume
+export default Resume;

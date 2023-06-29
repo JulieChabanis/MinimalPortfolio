@@ -16,6 +16,8 @@ const Home = () => {
       />
       <About ref={aboutRef} />
       <Resume ref={ResumeRef} />
+      <HeroPage ref={heropageRef}
+      />
     </Box>
   )
 }

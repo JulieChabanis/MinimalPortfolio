@@ -1,5 +1,8 @@
+.titleSection {
+  padding-top: 6rem;
+}
+
 .mainSkillsSection {
   display: flex;
   flex-direction: column;
-  margin-top: 7rem;
 }
