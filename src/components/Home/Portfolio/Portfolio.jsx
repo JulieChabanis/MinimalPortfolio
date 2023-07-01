@@ -1,7 +1,7 @@
 import { Box, useTheme } from '@mui/material';
 import React, { forwardRef, useEffect, useRef } from 'react';
 import styles from './Portfolio.module.css';
-import { tokens } from '../../Theme/theme';
+// import { tokens } from '../../Theme/theme';
 
 import PaddingResizeSection from '../../hooks/PaddingResizeSection';
 import SmoothScroll from '../../hooks/SmoothScroll';
@@ -12,7 +12,7 @@ const Portfolio = forwardRef (() => {
   const theme = useTheme();
   const controls = useAnimation();
   const parallaxRef = useRef(null);
-  const colors = tokens(theme.palette.mode)
+  // const colors = tokens(theme.palette.mode)
 
   useEffect(() => {
     const handleScroll = () => {
