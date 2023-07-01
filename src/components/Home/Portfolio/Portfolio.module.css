@@ -1,0 +1,9 @@
+.titleSection {
+  padding-top: 6rem;
+}
+
+.mainPortfolioSection {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

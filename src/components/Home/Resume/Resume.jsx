@@ -7,7 +7,7 @@ import EducationSection from "./EducationSection/EducationSection";
 import WorkTimelineSection from "./WorkTimelineSection/WorkTimelineSection";
 import SkillsSection from "./Skills/SkillsSection";
 
-import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
+// import { ParallaxSectionSubtitle } from "../../Effects/ParallaxSectionTitle/ParallaxSectionTitle";
 import PaddingResizeSection from "../../hooks/PaddingResizeSection";
 import SmoothScroll from "../../hooks/SmoothScroll";
 
