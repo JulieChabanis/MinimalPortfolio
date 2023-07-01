@@ -126,7 +126,7 @@ export const themeSettings = (mode) => {
           fontSize: "1.6rem",
         },
         fontWeight: 500,
-        color: mode === "light" ? colors.grey[100] : colors.grey[500],
+        color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
       }, 
 
       // Subtitle 2
@@ -236,6 +236,20 @@ export const themeSettings = (mode) => {
           fontSize: "1.1rem",
         },
         fontWeight:800,
+        color: mode === "dark" ? colors.grey[100] : colors.grey[100],
+      },
+      h11: {
+        fontFamily: ["Lato", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "0.9rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "1rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "1.1rem",
+        },
+        fontWeight:700,
         color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       }
     },

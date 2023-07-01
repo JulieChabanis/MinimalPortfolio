@@ -44,27 +44,29 @@ const Resume = React.forwardRef(() => {
         <SmoothScroll controls={controls} />
         <Grid container spacing={12}>
           <Grid item xs={12} sm={12} md={12} lg={5}>
-              <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem"}}>
+              <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1rem"}}>
                 Education
               </Box>
               <Box>
                <EducationSection />
               </Box>
-              <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem", marginTop: "5rem"}}>
-                Skills
-              </Box>
-              <Box>
-                <SkillsSection />
-              </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={5}>
-            <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1.4rem"}}>
+            <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1rem"}}>
                 Work Timeline
             </Box>
             <Box>
             <WorkTimelineSection />
             </Box>
           </Grid>  
+          <Grid item xs={12} sm={12} md={12} lg={10}>
+            <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1rem"}}>
+              Skills
+            </Box>
+            <Box>
+            <SkillsSection />
+              </Box>
+            </Grid>
         </Grid>
       </Box>
     </Box>
