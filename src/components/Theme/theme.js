@@ -105,7 +105,7 @@ export const themeSettings = (mode) => {
           fontSize: "4.5rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "7rem", 
+          fontSize: "6.5rem", 
         },
         fontWeight: 100,
         fontStyle: "italic",
@@ -136,10 +136,10 @@ export const themeSettings = (mode) => {
           fontSize: "3.1rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "5.2rem", 
+          fontSize: "5.1rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "6.7rem",
+          fontSize: "6.1rem",
         },
         fontWeight:800,
         lineHeight: 1,
