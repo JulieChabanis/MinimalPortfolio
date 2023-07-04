@@ -136,10 +136,10 @@ export const themeSettings = (mode) => {
           fontSize: "3.1rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "4.9rem", 
+          fontSize: "4.5rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "5.9rem",
+          fontSize: "5.7rem",
         },
         fontWeight:800,
         lineHeight: 1,
@@ -163,10 +163,10 @@ export const themeSettings = (mode) => {
           fontSize: "0.8rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "1.1rem", 
+          fontSize: "1rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "1.3rem",
+          fontSize: "1.1rem",
         },
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
@@ -188,7 +188,7 @@ export const themeSettings = (mode) => {
       // NavBar
       h7: {
         fontFamily: ["Lato", "sans-serif"].join(","),
-        fontSize: 18,
+        fontSize: 14,
         fontWeight: 400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },

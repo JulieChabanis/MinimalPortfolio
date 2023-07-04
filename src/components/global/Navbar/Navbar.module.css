@@ -27,7 +27,7 @@
 }
 
 .navList {
-  transform: rotate(-90deg) translate3d(17%,-260%, 0);
+  transform: rotate(-90deg) translate3d(17%,-270%, 0);
   display: flex;
   flex-direction: row-reverse;
   position: relative;
