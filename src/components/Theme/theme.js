@@ -105,7 +105,7 @@ export const themeSettings = (mode) => {
           fontSize: "4.5rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "6.5rem", 
+          fontSize: "6.1rem", 
         },
         fontWeight: 100,
         fontStyle: "italic",
@@ -188,7 +188,7 @@ export const themeSettings = (mode) => {
       // NavBar
       h7: {
         fontFamily: ["Lato", "sans-serif"].join(","),
-        fontSize: 16,
+        fontSize: 14,
         fontWeight: 400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
