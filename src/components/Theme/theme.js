@@ -301,10 +301,11 @@ export const themeSettings = (mode) => {
           fontSize: "1.rem"
         }
       },
+      // item Section Portfolio
       h16 : {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-          fontSize: "2.5rem", 
+          fontSize: "2.2rem", 
         },
         "@media (min-width: 601px)": {
           fontSize: "1.8rem", 

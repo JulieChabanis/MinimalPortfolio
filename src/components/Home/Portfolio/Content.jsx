@@ -1,4 +1,3 @@
-import ProfilUser from "../../../assets/images/profilUser.png"
 import Work1 from "../../../assets/images/Portfolio/Work1/Work1.png"
 import Work22 from "../../../assets/images/Portfolio/Work2/Work22.png"
 import Work3 from "../../../assets/images/Portfolio/Work3/Work3.png"

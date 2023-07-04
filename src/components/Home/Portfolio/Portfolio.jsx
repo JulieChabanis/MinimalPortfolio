@@ -23,7 +23,7 @@ const Portfolio = forwardRef(() => {
     <Box id="portfolio-section" sx={{ padding: PaddingResizeSection() }}>
       <Box sx={{ fontSize: theme.typography.h8, marginBottom: "3rem" }}>
         <Box className={styles.titleSection}>
-          {'• Portfolio'}
+          {'Portfolio'}
         </Box>
         <Box 
           className={styles.itemsFilter}
