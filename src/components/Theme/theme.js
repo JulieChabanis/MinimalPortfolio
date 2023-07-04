@@ -99,13 +99,13 @@ export const themeSettings = (mode) => {
       h1: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-          fontSize: "3.5rem",
+          fontSize: "3.2rem",
         },
         "@media (min-width: 601px)": {
-          fontSize: "5rem", 
+          fontSize: "4.5rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "7.3rem", 
+          fontSize: "7rem", 
         },
         fontWeight: 100,
         fontStyle: "italic",
