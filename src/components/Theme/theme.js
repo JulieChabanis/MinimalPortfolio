@@ -25,14 +25,14 @@ export const tokens = (mode) => ({
       100: "#F5F0EC",
       200: "#71dbaf", 
       300: "#c4f0db",
-      400: "#71dbaf",
+      400: "#191919",
       500: "#cde7e6",
     },
   }
   : {
     primary: {
       100: "#F266AB",
-      200: "#F266AB", 
+      200: "#e1d1ff", 
       300: "#F266AB",
       400: "#F266AB",
       500: "#b799ff",
@@ -41,7 +41,7 @@ export const tokens = (mode) => ({
       100: "#121212",
       200: "#C4DFDF", 
       300: "#C4DFDF",
-      400: "#C4DFDF",
+      400: "#F5F0EC",
       500: "#C4DFDF",
     }, 
 
@@ -251,7 +251,21 @@ export const themeSettings = (mode) => {
         },
         fontWeight:700,
         color: mode === "dark" ? colors.grey[100] : colors.grey[100],
-      }
+      },
+      h12: {
+        fontFamily: ["Lato", "sans-serif"].join(","),
+        color: "black",
+        fontSize: 38,
+        fontWeight: 800,
+        lineHeight: 1,
+      },
+      h13: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        fontSize : 25,
+        fontWeight: 100,
+        fontStyle: "italic",
+        color: mode === "dark" ? colors.blue[500] :  colors.primary[200],
+      }, 
     },
 
     breakpoints: {

@@ -24,36 +24,42 @@ const Portfolio = forwardRef(() => {
         <Box className={styles.titleSection}>
           {'• Portfolio'}
         </Box>
-        <Box className={styles.itemsFilter}>
-          <Typography component="span" className={styles.itemSection} onClick={() => setItems(Content)}>Everything</Typography>
-          <Typography component="span" className={styles.itemSection} onClick={() => filterItem("Creative")}>Creative</Typography>
-          <Typography component="span" className={styles.itemSection} onClick={() => filterItem("Illustrations")}>Illustrations</Typography>
-          <Typography component="span" className={styles.itemSection} onClick={() => filterItem("Programming")}>Programming</Typography>
+        <Box 
+          className={styles.itemsFilter}
+        >
+          <Typography variant="h10" component="span" className={styles.itemSection} onClick={() => setItems(Content)}>Everything</Typography>
+          <Typography variant="h10" component="span" className={styles.itemSection} onClick={() => filterItem("Creative")}>Creative</Typography>
+          <Typography variant="h10" component="span" className={styles.itemSection} onClick={() => filterItem("Illustration")}>Illustration</Typography>
+          <Typography variant="h10" component="span" className={styles.itemSection} onClick={() => filterItem("Programming")}>Programming</Typography>
         </Box>
 
-        <Grid container spacing={3} className={styles.itemContainer}>
-          {items.map((element) => {
-            const { id, image, title, category } = element;
-            return (
-              <Grid item  xs={12} sm={6} md={4} className={styles.itemCard} key={id}>
-                  <img src={image} alt="" className={styles.ItemImg} />
-                  <Box className={styles.itemMask}></Box>
+          <Grid container className={styles.itemContainer}>
+            {items.map((element) => {
+              const { id, image, title, category } = element;
+              return (
+                <Grid 
+                  item  xs={12} sm={5} md={3} lg={3} 
+                  className={styles.itemCard} 
+                  key={id}
+                >
+                  <Box className={styles.itemImgContainer}>
+                    <img src={image} alt="" className={styles.itemImg} />
+                  </Box>
+                    <Box className={styles.itemMask}></Box>
 
-                <Typography className={styles.itemCategory}>{category}</Typography>
-                <Typography className={styles.itemTitle}>{title}</Typography>
-                <Link href="#" className={styles.itemButton}>
-                    <IconButton className={styles.iconLink}>
-                     <GitHubIcon />
-                    </IconButton>
-                </Link>
+                  <Typography variant="h13" className={styles.itemCategory}>{category}</Typography>
+                  <Typography variant="h12" className={styles.itemTitle}>{title}</Typography>
+                  <Link href="#" className={styles.itemButton}>
+                      <IconButton className={styles.iconLink}>
+                      <GitHubIcon />
+                      </IconButton>
+                  </Link>
 
-              </Grid>
-            )
+                </Grid>
+              )
 
-          })}
-
-        </Grid>
-
+            })}
+          </Grid>
 
       </Box>
     </Box>
