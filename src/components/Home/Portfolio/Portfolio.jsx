@@ -8,6 +8,7 @@ import { tokens } from '../../Theme/theme';
 const Portfolio = forwardRef(() => {
   const theme = useTheme();
   const [ items, setItems ] = useState(Content);
+  const [selectedItem, setSelectedItem] = useState(null);
   const colors = tokens(theme.palette.mode)
 
   const filterItem = (categoryItem) => {
@@ -27,10 +28,69 @@ const Portfolio = forwardRef(() => {
         <Box 
           className={styles.itemsFilter}
         >
-          <Typography variant="h10" component="span" className={styles.itemSection} onClick={() => setItems(Content)}>Everything</Typography>
-          <Typography variant="h10" component="span" className={styles.itemSection} onClick={() => filterItem("Creative")}>Creative</Typography>
-          <Typography variant="h10" component="span" className={styles.itemSection} onClick={() => filterItem("Illustration")}>Illustration</Typography>
-          <Typography variant="h10" component="span" className={styles.itemSection} onClick={() => filterItem("Programming")}>Programming</Typography>
+          <Typography 
+            variant="h16"
+            sx={{
+              "&:hover": {
+                color: selectedItem === null ? colors.primary[500] : colors.primary[500]
+              },
+              color: selectedItem === null ? colors.primary[500] : 'inherit'
+            }}
+            component="span"
+            className={`${styles.itemSection} ${selectedItem === null ? styles.selectedItem : ''}`}
+            onClick={() => {
+              setSelectedItem(null);
+              setItems(Content);
+            }}
+          > {"Everything"}
+          </Typography>
+          <Typography 
+            variant="h16" 
+            sx={{
+              "&:hover": {
+                color: colors.primary[500]
+              },
+              color: selectedItem === 'Creative' ? colors.primary[500] : 'inherit'
+            }}
+            component="span"
+            className={`${styles.itemSection} ${selectedItem === 'Creative' ? styles.selectedItem : ''}`}
+            onClick={() => {
+              setSelectedItem('Creative');
+              filterItem('Creative');
+            }}
+          > {"Creative"}
+          </Typography>
+          <Typography 
+            variant="h16" 
+            sx={{
+              "&:hover": {
+                color: colors.primary[500]
+              },
+              color: selectedItem === 'illustration' ? colors.primary[500] : 'inherit'
+            }}
+            component="span"
+            className={`${styles.itemSection} ${selectedItem === 'Illustration' ? styles.selectedItem : ''}`}
+            onClick={() => {
+              setSelectedItem('Illustration');
+              filterItem('Illustration');
+            }}
+          > {"Illustration"}
+          </Typography>
+          <Typography 
+            variant="h16" 
+            sx={{
+              "&:hover": {
+                color: colors.primary[500]
+              },
+              color: selectedItem === 'Programming' ? colors.primary[500] : 'inherit'
+            }}
+            component="span"
+            className={`${styles.itemSection} ${selectedItem === 'Programming' ? styles.selectedItem : ''}`}
+            onClick={() => {
+              setSelectedItem('Programming');
+              filterItem('Programming');
+            }}
+          > {"Programming"}</Typography>
         </Box>
 
           <Grid container className={styles.itemContainer}>
@@ -45,7 +105,7 @@ const Portfolio = forwardRef(() => {
                   <Box className={styles.itemImgContainer}>
                     <img src={image} alt="" className={styles.itemImg} />
                   </Box>
-                    <Box style={{ background: colors.primary[500] }} className={styles.itemMask}></Box>
+                    <Box style={{ background: colors.primary[400] }} className={styles.itemMask}></Box>
 
                   <Typography variant="h13" className={styles.itemCategory}>{category}</Typography>
                   <Typography variant="h12" className={styles.itemTitle}>{title}</Typography>

@@ -10,7 +10,7 @@ export const tokens = (mode) => ({
       100: "#B799FF",
       200: "#e1d1ff", 
       300: "#B799FF",
-      400: "#B799FF",
+      400: "#b4dbda",
       500: "#a8d5d4",
     }, 
     blue: {
@@ -33,8 +33,8 @@ export const tokens = (mode) => ({
     primary: {
       100: "#F266AB",
       200: "#e1d1ff", 
-      300: "#F266AB",
-      400: "#F266AB",
+      300: "#B799FF",
+      400: "#e1d1ff",
       500: "#b799ff",
     },
     grey: {
@@ -298,8 +298,23 @@ export const themeSettings = (mode) => {
         color: "#191919",
      
         "@media (max-width: 1410px)" : {
-          fontSize: "1.3rem"
+          fontSize: "1.rem"
         }
+      },
+      h16 : {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        "@media (max-width: 600px)": {
+          fontSize: "2.5rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "1.8rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "2rem",
+        },
+        fontStyle: "italic",
+        fontWeight: 200,
+        color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       }
     },
 
