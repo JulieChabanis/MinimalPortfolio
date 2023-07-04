@@ -175,10 +175,10 @@ export const themeSettings = (mode) => {
       h6: {
         fontFamily: ["Martian Mono", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "0.8rem", 
+          fontSize: "0.7rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "0.8rem", 
+          fontSize: "0.7rem", 
         },
         fontWeight: 200,
         lineHeight: 2, 
