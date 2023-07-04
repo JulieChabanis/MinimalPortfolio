@@ -28,21 +28,20 @@
 
  .itemContainer {
   margin-top: 4rem;
-  gap: 3rem; 
+  gap: 4rem; 
 } 
 
 .itemCard {
   position: relative;
   overflow: hidden;
-  border-radius: 2%;
-  box-shadow: 2%;
-  min-width: 300px;
-  max-width: 300px ! important;
-  min-height: 300px;
+  border-radius: 1%;
+  min-width: 450px;
+  max-width: 450px ! important;
+  min-height: 450px;
 }
 
 .itemMask {
-  background: #F5F0EC;
+  background: #c1e1e0;
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +52,7 @@
 }
 
 .itemCard:hover .itemMask {
-  opacity: 0.5;
+  opacity: 0.95;
 }
 
 
@@ -79,14 +78,36 @@
   opacity: 0;
 }
 
+.itemDescribe {
+  margin: 0 0 0.98rem; 
+  padding: 0 1.25rem;
+  position: absolute;
+  top: 14rem; 
+  transform: translateY(30px);
+  transition: .3s;
+  opacity: 0;
+
+}
+
+.itemKeywords {
+  margin: 0 0 0.98rem; 
+  padding: 0 1.25rem;
+  position: absolute;
+  top: 22rem; 
+  transform: translateY(30px);
+  transition: .3s;
+  opacity: 0;
+
+}
+
 .itemImgContainer {
-  width: 200px;
-  height: 200px ;
+  width: 450px;
+  height: 450px ;
 
 }
 
 .itemImg > img {
-  object-fit:fill;
+  object-fit: cover; 
 }
 
 
@@ -113,7 +134,9 @@
 }
 
 .itemCard:hover .itemTitle,
-.itemCard:hover .itemCategory {
+.itemCard:hover .itemCategory,
+.itemCard:hover .itemDescribe,
+.itemCard:hover .itemKeywords {
   opacity: 1;
   transform: translateY(0);
 }

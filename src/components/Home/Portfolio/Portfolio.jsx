@@ -35,10 +35,10 @@ const Portfolio = forwardRef(() => {
 
           <Grid container className={styles.itemContainer}>
             {items.map((element) => {
-              const { id, image, title, category } = element;
+              const { id, image, title, describe, keywords, category } = element;
               return (
                 <Grid 
-                  item  xs={12} sm={5} md={3} lg={3} 
+                  item  xs={10} sm={5} md={3} lg={5} xl={12} 
                   className={styles.itemCard} 
                   key={id}
                 >
@@ -49,6 +49,8 @@ const Portfolio = forwardRef(() => {
 
                   <Typography variant="h13" className={styles.itemCategory}>{category}</Typography>
                   <Typography variant="h12" className={styles.itemTitle}>{title}</Typography>
+                  <Typography variant="h14" className={styles.itemDescribe}>{describe}</Typography>
+                  <Typography variant="h13" className={styles.itemKeywords}>{keywords}</Typography>
                   <Link href="#" className={styles.itemButton}>
                       <IconButton className={styles.iconLink}>
                       <GitHubIcon />

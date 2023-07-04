@@ -255,7 +255,7 @@ export const themeSettings = (mode) => {
       h12: {
         fontFamily: ["Lato", "sans-serif"].join(","),
         color: "black",
-        fontSize: 38,
+        fontSize: 45,
         fontWeight: 800,
         lineHeight: 1,
       },
@@ -266,6 +266,14 @@ export const themeSettings = (mode) => {
         fontStyle: "italic",
         color: mode === "dark" ? colors.blue[500] :  colors.primary[200],
       }, 
+      h14: {
+        fontFamily: ["Lato", "sans-serif"].join(","),
+        color: "black",
+        fontSize: 19,
+        fontWeight: 800,
+        lineHeight: 1.3,
+
+      }
     },
 
     breakpoints: {
