@@ -1,89 +1,61 @@
-import { Box, useTheme } from '@mui/material';
-import React, { forwardRef, useEffect, useRef } from 'react';
+import { Box, IconButton, Link, Typography, useTheme, Grid } from '@mui/material';
+import React, { forwardRef, useState } from 'react';
 import styles from './Portfolio.module.css';
+import Content from './Content';
+import GitHubIcon from "@mui/icons-material/GitHub";
 // import { tokens } from '../../Theme/theme';
 
 import PaddingResizeSection from '../../hooks/PaddingResizeSection';
-import SmoothScroll from '../../hooks/SmoothScroll';
-import { useAnimation } from 'framer-motion';
 
-
-const Portfolio = forwardRef (() => {
+const Portfolio = forwardRef(() => {
   const theme = useTheme();
-  const controls = useAnimation();
-  const parallaxRef = useRef(null);
-  // const colors = tokens(theme.palette.mode)
+  const [ items, setItems ] = useState(Content);
+  const filterItem = (categoryItem) => {
+    const updatedItems = Content.filter((curElem) => {
+      return curElem.category === categoryItem;
+    });
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const elementTop = parallaxRef.current.offsetTop;
-      const distance = scrollY - elementTop;
-      const baseVelocity = 2; //  help : 2=leftToRight, -2=Right to left
-      const moveBy = baseVelocity * distance;
-      parallaxRef.current.style.transform = `translateX(${moveBy}px)`;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    setItems(updatedItems);
+  }
 
   return (
-    <Box id="portfolio-section" sx={{ padding: PaddingResizeSection()}}>
-    <Box sx={{ fontSize: theme.typography.h8, marginBottom: "2.2rem" }}>
-      <Box className={styles.titleSection} ref={parallaxRef}>
-         {'• Portfolio'}
-      </Box>
-      <Box className={styles.mainPortfolioSection} >
+    <Box id="portfolio-section" sx={{ padding: PaddingResizeSection() }}>
+      <Box sx={{ fontSize: theme.typography.h8, marginBottom: "3rem" }}>
+        <Box className={styles.titleSection}>
+          {'• Portfolio'}
+        </Box>
+        <Box className={styles.itemsFilter}>
+          <Typography component="span" className={styles.itemSection} onClick={() => setItems(Content)}>Everything</Typography>
+          <Typography component="span" className={styles.itemSection} onClick={() => filterItem("Creative")}>Creative</Typography>
+          <Typography component="span" className={styles.itemSection} onClick={() => filterItem("Illustrations")}>Illustrations</Typography>
+          <Typography component="span" className={styles.itemSection} onClick={() => filterItem("Programming")}>Programming</Typography>
+        </Box>
 
-      {/* Import Smooth Scroll Logic */}
-      <SmoothScroll controls={controls} />
-        <Box
+        <Grid container spacing={3} className={styles.itemContainer}>
+          {items.map((element) => {
+            const { id, image, title, category } = element;
+            return (
+              <Grid item  xs={12} sm={6} md={4} className={styles.itemCard} key={id}>
+                  <img src={image} alt="" className={styles.ItemImg} />
+                  <Box className={styles.itemMask}></Box>
 
-        sx = {{
-          display: 'flex',
-          justifyContent: 'start',
-          gap: '2rem',
-          marginTop: '2rem'
-        }}
-      >
-          {/* Items Category Section */}
-          <Box 
-            sx={{ 
-              fontSize: theme.typography.h11,
-              backgroundColor: theme.palette.mode === 'light' ? 'white' : 'black',
-              padding: "12px",
-              borderRadius: "10px"
-            }}
-          >
-            Graphic Design
-          </Box>
-          <Box 
-            sx={{ 
-              fontSize: theme.typography.h11,
-              backgroundColor: theme.palette.mode === 'light' ? 'white' : 'black',
-              padding: "12px",
-              borderRadius: "10px"
-            }}
-          >
-            Illustration
-          </Box>
-          <Box 
-            sx={{ 
-              fontSize: theme.typography.h11,
-              backgroundColor: theme.palette.mode === 'light' ? 'white' : 'black',
-              padding: "12px",
-              borderRadius: "10px"
-            }}
-          >
-            Programming
-          </Box>
+                <Typography className={styles.itemCategory}>{category}</Typography>
+                <Typography className={styles.itemTitle}>{title}</Typography>
+                <Link href="#" className={styles.itemButton}>
+                    <IconButton className={styles.iconLink}>
+                     <GitHubIcon />
+                    </IconButton>
+                </Link>
+
+              </Grid>
+            )
+
+          })}
+
+        </Grid>
+
+
       </Box>
-     </Box> 
-    </Box>
     </Box>
   )
 })
