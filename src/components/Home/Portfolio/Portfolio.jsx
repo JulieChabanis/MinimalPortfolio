@@ -50,15 +50,15 @@ const Portfolio = forwardRef(() => {
               "&:hover": {
                 color: colors.primary[500]
               },
-              color: selectedItem === 'Creative' ? colors.primary[500] : 'inherit'
+              color: selectedItem === 'Logotype' ? colors.primary[500] : 'inherit'
             }}
             component="span"
-            className={`${styles.itemSection} ${selectedItem === 'Creative' ? styles.selectedItem : ''}`}
+            className={`${styles.itemSection} ${selectedItem === 'Logotype' ? styles.selectedItem : ''}`}
             onClick={() => {
-              setSelectedItem('Creative');
-              filterItem('Creative');
+              setSelectedItem('Logotype');
+              filterItem('Logotype');
             }}
-          > {"Creative"}
+          > {"Logotype"}
           </Typography>
           <Typography 
             variant="h16" 
