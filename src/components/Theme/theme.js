@@ -133,13 +133,13 @@ export const themeSettings = (mode) => {
       h3: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "3.4rem", 
+          fontSize: "3.1rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "5.5rem", 
+          fontSize: "5.2rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "7rem",
+          fontSize: "6.7rem",
         },
         fontWeight:800,
         lineHeight: 1,
