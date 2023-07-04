@@ -315,6 +315,7 @@ export const themeSettings = (mode) => {
         },
         fontStyle: "italic",
         fontWeight: 200,
+        lineHeight: 1.1,
         color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       }
     },
