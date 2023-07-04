@@ -102,10 +102,10 @@ export const themeSettings = (mode) => {
           fontSize: "3.2rem",
         },
         "@media (min-width: 601px)": {
-          fontSize: "4.5rem", 
+          fontSize: "4.4rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "6.1rem", 
+          fontSize: "5.9rem", 
         },
         fontWeight: 100,
         fontStyle: "italic",
@@ -136,10 +136,10 @@ export const themeSettings = (mode) => {
           fontSize: "3.1rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "5.1rem", 
+          fontSize: "4.9rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "6.1rem",
+          fontSize: "5.9rem",
         },
         fontWeight:800,
         lineHeight: 1,
@@ -149,7 +149,7 @@ export const themeSettings = (mode) => {
       // Based in Montpellier
       h4: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize : 18,
+        fontSize : 17,
         fontWeight: 100,
         fontStyle: "italic",
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
@@ -188,7 +188,7 @@ export const themeSettings = (mode) => {
       // NavBar
       h7: {
         fontFamily: ["Lato", "sans-serif"].join(","),
-        fontSize: 14,
+        fontSize: 18,
         fontWeight: 400, 
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
       },
