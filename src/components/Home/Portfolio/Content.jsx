@@ -8,7 +8,7 @@ const Content = [
     image: Work1, 
     title : "Real Estate Software (Full Stack project)",
     describe : "A prototype of a Real Estate Rental Management software. It allows performing CRUD operations from a SpringBoot API that processes and stores the data.",
-    keywords: "#Java, #SpringBoot, #API, #ReactJS, #Axios",
+    keywords: "Java • SpringBoot • API • ReactJS • Axios • PostgreSQL",
     category: "Programming"
   },
   {

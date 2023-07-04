@@ -292,7 +292,7 @@ export const themeSettings = (mode) => {
       // Card Portfolio keywords
       h15 : {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize : 25,
+        fontSize : 22,
         fontWeight: 200,
         fontStyle: "italic",
         color: "#191919",

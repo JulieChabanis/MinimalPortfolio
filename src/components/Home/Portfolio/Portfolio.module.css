@@ -22,7 +22,7 @@
     align-items: flex-start;
     margin-left: 2.5rem;
     row-gap: 0rem;
-    margin-bottom: -2rem;
+    margin-bottom: -0.8rem;
 
 }
 }
@@ -130,7 +130,7 @@
   margin: 0 0 0.98rem; 
   padding: 0 1.25rem;
   position: absolute;
-  top: 22rem; 
+  top: 21rem; 
   transform: translateY(30px);
   transition: .3s;
   opacity: 0;
@@ -144,14 +144,21 @@
 .itemImgContainer {
   width: 450px;
   height: 450px ;
+  max-width: 100%;
 
   @media (max-width: 1411px) {
     height: 150px;
   }
 }
 
-.itemImg > img {
-  object-fit: cover; 
+.itemImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  @media (max-width: 1411px) {
+    height: 380px;
+  }
 }
 
 .itemCard:hover .itemTitle,
