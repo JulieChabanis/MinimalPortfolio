@@ -149,7 +149,7 @@ export const themeSettings = (mode) => {
       // Based in Montpellier
       h4: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
-        fontSize : 20,
+        fontSize : 18,
         fontWeight: 100,
         fontStyle: "italic",
         color: mode === "light" ? colors.grey[100] : colors.grey[100],
