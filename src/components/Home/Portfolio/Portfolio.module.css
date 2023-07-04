@@ -28,7 +28,22 @@
 
  .itemContainer {
   margin-top: 4rem;
-  gap: 4rem; 
+  gap: 2.3rem; 
+
+  @media (max-width: 600px) {
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 601px) and (max-width: 1411px) {
+  gap: 1.5rem;
+  }
+
+  @media (min-width: 1412px) {
+    width: 28em;
+    padding-right: 20px;
+  }
 } 
 
 .itemCard {
@@ -38,10 +53,16 @@
   min-width: 450px;
   max-width: 450px ! important;
   min-height: 450px;
+
+  @media (max-width: 1411px) {
+    min-width: 330px;
+    max-width: 330px ! important;
+    min-height: 360px;
+  }
+
 }
 
 .itemMask {
-  background: #c1e1e0;
   position: absolute;
   top: 0;
   left: 0;
@@ -52,7 +73,7 @@
 }
 
 .itemCard:hover .itemMask {
-  opacity: 0.95;
+  opacity: 0.97;
 }
 
 
@@ -76,6 +97,10 @@
   transform: translateY(30px);
   transition: .3s;
   opacity: 0;
+
+  @media (max-width: 1411px) {
+    top: 3rem;
+  }
 }
 
 .itemDescribe {
@@ -86,6 +111,10 @@
   transform: translateY(30px);
   transition: .3s;
   opacity: 0;
+
+  @media (max-width: 1411px) {
+    top: 8rem;
+  }
 
 }
 
@@ -98,39 +127,23 @@
   transition: .3s;
   opacity: 0;
 
+  @media (max-width: 1411px) {
+    top: 15.5rem; 
+  }
+
 }
 
 .itemImgContainer {
   width: 450px;
   height: 450px ;
 
+  @media (max-width: 1411px) {
+    height: 150px;
+  }
 }
 
 .itemImg > img {
   object-fit: cover; 
-}
-
-
-.itemButton {
-  color: blue;
-  position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
-  font-size: 25px;
-  display: block;
-  background-color: antiquewhite;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  transition: .3s;
-  opacity: 0;
-}
-
-.itemCard:hover .itemButton {
-  opacity: 1;
 }
 
 .itemCard:hover .itemTitle,

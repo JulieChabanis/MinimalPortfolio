@@ -1,15 +1,15 @@
-import { Box, IconButton, Link, Typography, useTheme, Grid } from '@mui/material';
+import { Box, Typography, useTheme, Grid } from '@mui/material';
 import React, { forwardRef, useState } from 'react';
 import styles from './Portfolio.module.css';
 import Content from './Content';
-import GitHubIcon from "@mui/icons-material/GitHub";
-// import { tokens } from '../../Theme/theme';
-
 import PaddingResizeSection from '../../hooks/PaddingResizeSection';
+import { tokens } from '../../Theme/theme';
 
 const Portfolio = forwardRef(() => {
   const theme = useTheme();
   const [ items, setItems ] = useState(Content);
+  const colors = tokens(theme.palette.mode)
+
   const filterItem = (categoryItem) => {
     const updatedItems = Content.filter((curElem) => {
       return curElem.category === categoryItem;
@@ -38,24 +38,19 @@ const Portfolio = forwardRef(() => {
               const { id, image, title, describe, keywords, category } = element;
               return (
                 <Grid 
-                  item  xs={10} sm={5} md={3} lg={5} xl={12} 
+                  item  xs={10} sm={5} md={3} lg={5} xl={10} 
                   className={styles.itemCard} 
                   key={id}
                 >
                   <Box className={styles.itemImgContainer}>
                     <img src={image} alt="" className={styles.itemImg} />
                   </Box>
-                    <Box className={styles.itemMask}></Box>
+                    <Box style={{ background: colors.primary[500] }} className={styles.itemMask}></Box>
 
                   <Typography variant="h13" className={styles.itemCategory}>{category}</Typography>
                   <Typography variant="h12" className={styles.itemTitle}>{title}</Typography>
                   <Typography variant="h14" className={styles.itemDescribe}>{describe}</Typography>
-                  <Typography variant="h13" className={styles.itemKeywords}>{keywords}</Typography>
-                  <Link href="#" className={styles.itemButton}>
-                      <IconButton className={styles.iconLink}>
-                      <GitHubIcon />
-                      </IconButton>
-                  </Link>
+                  <Typography variant="h15" className={styles.itemKeywords}>{keywords}</Typography>
 
                 </Grid>
               )

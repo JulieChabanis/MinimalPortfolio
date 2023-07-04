@@ -6,7 +6,7 @@ const Content = [
   {
     id: 1, 
     image: Work1, 
-    title : "Real Estate Software (Full Stack)",
+    title : "Real Estate Software (Full Stack project)",
     describe : "A prototype of a Real Estate Rental Management software. It allows performing CRUD operations from a SpringBoot API that processes and stores the data.",
     keywords: "#Java, #SpringBoot, #API, #ReactJS, #Axios",
     category: "Programming"
@@ -14,7 +14,7 @@ const Content = [
   {
     id: 2, 
     image: Work2, 
-    title : "Creating for electronic music event",
+    title : "Graphic design for electronic music event",
     describe: "Illustration and promotion socials for electronic music events with La Kollective",
     keywords: "Adobe #Illustrator, #Photoshop",
     category: "Illustration"

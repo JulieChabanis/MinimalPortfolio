@@ -252,20 +252,32 @@ export const themeSettings = (mode) => {
         fontWeight:700,
         color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       },
+      // Card Portfolio Title
       h12: {
         fontFamily: ["Lato", "sans-serif"].join(","),
         color: "black",
         fontSize: 45,
         fontWeight: 800,
         lineHeight: 1,
+
+        "@media (max-width: 1410px)" : {
+          fontSize: "1.7rem"
+        }
       },
+      // Card Portfolio Category
       h13: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         fontSize : 25,
         fontWeight: 100,
         fontStyle: "italic",
         color: mode === "dark" ? colors.blue[500] :  colors.primary[200],
+     
+        "@media (max-width: 1410px)" : {
+          fontSize: "1.3rem"
+        }
+     
       }, 
+      // Card Portfolio Describe
       h14: {
         fontFamily: ["Lato", "sans-serif"].join(","),
         color: "black",
@@ -273,6 +285,21 @@ export const themeSettings = (mode) => {
         fontWeight: 800,
         lineHeight: 1.3,
 
+        "@media (max-width: 1410px)" : {
+          fontSize: "1rem"
+        }
+      },
+      // Card Portfolio keywords
+      h15 : {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        fontSize : 25,
+        fontWeight: 200,
+        fontStyle: "italic",
+        color: "#191919",
+     
+        "@media (max-width: 1410px)" : {
+          fontSize: "1.3rem"
+        }
       }
     },
 
