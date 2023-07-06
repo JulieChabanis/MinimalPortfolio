@@ -42,8 +42,8 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       </ListItem>
 
       <ListItem>
-        <Link to="about-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText className={styles.listItemText}  sx={{ fontSize: theme.typography.h7}}>About</ListItemText>
+        <Link to="portfolio-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
+          <ListItemText className={styles.listItemText} sx={{ fontSize: theme.typography.h7}}>Portfolio</ListItemText>
         </Link>
       </ListItem>
 
@@ -54,8 +54,8 @@ const SwipeableDrawerMenu = ({ menuOpen, handleMenuClose }) => {
       </ListItem>
 
       <ListItem>
-        <Link to="portfolio-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
-          <ListItemText className={styles.listItemText} sx={{ fontSize: theme.typography.h7}}>Portfolio</ListItemText>
+        <Link to="about-section" smooth={true} duration={200} className={styles.navSwipeableLink}>
+          <ListItemText className={styles.listItemText}  sx={{ fontSize: theme.typography.h7}}>About</ListItemText>
         </Link>
       </ListItem>
 

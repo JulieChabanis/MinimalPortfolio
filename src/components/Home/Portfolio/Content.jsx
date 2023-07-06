@@ -28,14 +28,14 @@ const Content = [
     category: "Creative"
   },
   {
-    id: 3, 
-    image: Work3, 
-    title : "My first Portfolio and Resume",
-    describe: "Welcome to my first portfolio! This project is also a playground for me where I can test various functionalities.",
-    keywords: "Front-end • ReactJS • MUI • FramerMotion",
+    id: 6, 
+    image: Work6, 
+    title : "Implementation of a new doc solution for Ternoa",
+    describe: "[Internship] Implementing foundations of a new Documentation Solution using Docusaurus for Ternoa, Evolutionary NFT Blockchain.",
+    keywords: "TypeScript • React JS • Markdown • Docusaurus",
     category: "Programming",
-    github: "https://github.com/JulieChabanis/MinimalPortfolio",
-    website: "https://juliechabanis-portfolio.netlify.app/",
+    github: "https://github.com/capsule-corp-ternoa/ternoa-doc",
+    website: "https://docs.ternoa.network/",
   },
   {
     id: 4, 
@@ -46,22 +46,22 @@ const Content = [
     category: "Creative"
   },
   {
+    id: 3, 
+    image: Work3, 
+    title : "My first Portfolio and Resume",
+    describe: "Welcome to my first portfolio! This project is also a playground for me where I can test various functionalities.",
+    keywords: "Front-end • ReactJS • MUI • FramerMotion",
+    category: "Programming",
+    github: "https://github.com/JulieChabanis/MinimalPortfolio",
+    website: "https://juliechabanis-portfolio.netlify.app/",
+  },
+  {
     id: 5, 
     image: Work5, 
     title : "Graphic design for Funky Soul Events",
     describe: "Illustration and promotion socials for electronic music events with La Kollective",
     keywords: "Adobe • Illustrator • Photoshop",
     category: "Creative"
-  },
-  {
-    id: 6, 
-    image: Work6, 
-    title : "Implementation of a new doc solution for Ternoa",
-    describe: "[Internship] Implementing foundations of a new Documentation Solution using Docusaurus for Ternoa, Evolutionary NFT Blockchain.",
-    keywords: "TypeScript • React JS • Markdown • Docusaurus",
-    category: "Programming",
-    github: "https://github.com/capsule-corp-ternoa/ternoa-doc",
-    website: "https://docs.ternoa.network/",
   },
   {
     id: 7, 

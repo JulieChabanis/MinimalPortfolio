@@ -18,9 +18,9 @@ const Home = () => {
   return (
     <Box className={styles.mainHome}>
       <HeroPage ref={heropageRef}/>
-      <About ref={aboutRef} />
-      <Resume ref={ResumeRef} />
       <Portfolio ref={PortfolioRef}/>
+      <Resume ref={ResumeRef} />
+      <About ref={aboutRef} />
       <Contact ref={ContactRef}/>
     </Box>
   )

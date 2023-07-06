@@ -64,10 +64,10 @@ const NavBar = () => {
           </Box>
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <List className={styles.navList}>
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
-                  <Link to="about-section" smooth={true} duration={200} className={styles.navLink}>
-                    <ListItemText sx={{ fontSize: theme.typography.h7}}>About</ListItemText>
+                  <Link to="portfolio-section" smooth={true} duration={200} className={styles.navLink}>
+                    <ListItemText sx={{ fontSize: theme.typography.h7}}>Portfolio</ListItemText>
                   </Link>
                 </ListItem>
               </motion.div>
@@ -80,8 +80,8 @@ const NavBar = () => {
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <ListItem>
-                  <Link to="portfolio-section" smooth={true} duration={200} className={styles.navLink}>
-                    <ListItemText sx={{ fontSize: theme.typography.h7}}>Portfolio</ListItemText>
+                  <Link to="about-section" smooth={true} duration={200} className={styles.navLink}>
+                    <ListItemText sx={{ fontSize: theme.typography.h7}}>About</ListItemText>
                   </Link>
                 </ListItem>
               </motion.div>

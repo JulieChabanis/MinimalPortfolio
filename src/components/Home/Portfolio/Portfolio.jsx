@@ -51,22 +51,6 @@ const Portfolio = forwardRef(() => {
               "&:hover": {
                 color: colors.primary[500]
               },
-              color: selectedItem === 'Ui/Ux Design' ? colors.primary[500] : 'inherit'
-            }}
-            component="span"
-            className={`${styles.itemSection} ${selectedItem === 'Ui/Ux Design' ? styles.selectedItem : ''}`}
-            onClick={() => {
-              setSelectedItem('Ui/Ux Design');
-              filterItem('Ui/Ux Design');
-            }}
-          > {"Ui/Ux Design"}
-          </Typography>
-          <Typography 
-            variant="h16" 
-            sx={{
-              "&:hover": {
-                color: colors.primary[500]
-              },
               color: selectedItem === 'Creative' ? colors.primary[500] : 'inherit'
             }}
             component="span"
@@ -76,6 +60,22 @@ const Portfolio = forwardRef(() => {
               filterItem('Creative');
             }}
           > {"Creative"}
+          </Typography>
+          <Typography 
+            variant="h16" 
+            sx={{
+              "&:hover": {
+                color: colors.primary[500]
+              },
+              color: selectedItem === 'Ui/Ux Design' ? colors.primary[500] : 'inherit'
+            }}
+            component="span"
+            className={`${styles.itemSection} ${selectedItem === 'Ui/Ux Design' ? styles.selectedItem : ''}`}
+            onClick={() => {
+              setSelectedItem('Ui/Ux Design');
+              filterItem('Ui/Ux Design');
+            }}
+          > {"Ui/Ux Design"}
           </Typography>
           <Typography 
             variant="h16" 
