@@ -3,6 +3,7 @@ import Work22 from "../../../assets/images/Portfolio/Work2/Work22.png"
 import Work3 from "../../../assets/images/Portfolio/Work3/Work3.png"
 import Work4 from "../../../assets/images/Portfolio/Work4/Work4.png"
 import Work5 from "../../../assets/images/Portfolio/Work5/Work5.png"
+import Work6 from "../../../assets/images/Portfolio/Work6/Work6.png"
 
 const Content = [
   {
@@ -19,7 +20,7 @@ const Content = [
     title : "Graphic design for electronic music event",
     describe: "Illustration and promotion socials for electronic music events with La Kollective",
     keywords: "Adobe #Illustrator, #Photoshop",
-    category: "Illustration"
+    category: "Creative"
   },
   {
     id: 3, 
@@ -35,7 +36,7 @@ const Content = [
     title : "Graphic design for WCS Boat Party",
     describe: "Illustration and promotion socials for electronic music events with La Kollective",
     keywords: "Adobe • Illustrator • Photoshop",
-    category: "Illustration"
+    category: "Creative"
   },
   {
     id: 5, 
@@ -43,7 +44,15 @@ const Content = [
     title : "Graphic design for Funky Soul Events",
     describe: "Illustration and promotion socials for electronic music events with La Kollective",
     keywords: "Adobe • Illustrator • Photoshop",
-    category: "Illustration"
+    category: "Creative"
+  },
+  {
+    id: 6, 
+    image: Work6, 
+    title : "Implementation of a new doc solution for Ternoa",
+    describe: "[Internship at Capsule Corp Labs] Implementing foundations of a new Documentation Solution using Docusaurus for Ternoa, Evolutionary NFT Blockchain.",
+    keywords: "TypeScript • React JS • Markdown",
+    category: "Programming"
   },
 ];
 

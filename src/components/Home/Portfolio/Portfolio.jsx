@@ -50,15 +50,15 @@ const Portfolio = forwardRef(() => {
               "&:hover": {
                 color: colors.primary[500]
               },
-              color: selectedItem === 'Logotype' ? colors.primary[500] : 'inherit'
+              color: selectedItem === 'UI•UX Design' ? colors.primary[500] : 'inherit'
             }}
             component="span"
-            className={`${styles.itemSection} ${selectedItem === 'Logotype' ? styles.selectedItem : ''}`}
+            className={`${styles.itemSection} ${selectedItem === 'UI•UX Design' ? styles.selectedItem : ''}`}
             onClick={() => {
-              setSelectedItem('Logotype');
-              filterItem('Logotype');
+              setSelectedItem('UI•UX Design');
+              filterItem('UI•UX Design');
             }}
-          > {"Logotype"}
+          > {"UI•UX Design"}
           </Typography>
           <Typography 
             variant="h16" 
@@ -66,15 +66,15 @@ const Portfolio = forwardRef(() => {
               "&:hover": {
                 color: colors.primary[500]
               },
-              color: selectedItem === 'illustration' ? colors.primary[500] : 'inherit'
+              color: selectedItem === 'Creative' ? colors.primary[500] : 'inherit'
             }}
             component="span"
-            className={`${styles.itemSection} ${selectedItem === 'Illustration' ? styles.selectedItem : ''}`}
+            className={`${styles.itemSection} ${selectedItem === 'Creative' ? styles.selectedItem : ''}`}
             onClick={() => {
-              setSelectedItem('Illustration');
-              filterItem('Illustration');
+              setSelectedItem('Creative');
+              filterItem('Creative');
             }}
-          > {"Illustration"}
+          > {"Creative"}
           </Typography>
           <Typography 
             variant="h16" 
