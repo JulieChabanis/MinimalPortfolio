@@ -1,10 +1,12 @@
-import { Box, Typography, useTheme, Grid, Link } from '@mui/material';
 import React, { forwardRef, useState } from 'react';
 import styles from './Portfolio.module.css';
-import Content from './Content';
-import PaddingResizeSection from '../../hooks/PaddingResizeSection';
+import { Box, Typography, useTheme, Grid, Link } from '@mui/material';
 import { tokens } from '../../Theme/theme';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
+import PaddingResizeSection from '../../hooks/PaddingResizeSection';
+import Content from './Content';
+
 
 const Portfolio = forwardRef(() => {
   const theme = useTheme();
@@ -21,7 +23,8 @@ const Portfolio = forwardRef(() => {
   }
 
   return (
-    <Box id="portfolio-section" sx={{ padding: PaddingResizeSection() }}>
+    <Box id="portfolio-section">
+     <Box sx={{ padding: PaddingResizeSection() }}>
       <Box sx={{ fontSize: theme.typography.h8, marginBottom: "3rem" }}>
         <Box className={styles.titleSection}>
           {'Portfolio'}
@@ -143,6 +146,7 @@ const Portfolio = forwardRef(() => {
             })}
           </Grid>
       </Box>
+    </Box>  
     </Box>
   )
   })

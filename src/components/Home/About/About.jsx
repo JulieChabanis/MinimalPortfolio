@@ -26,7 +26,7 @@ const About = forwardRef(() => {
               transition={{ duration: 0.5 }}
             >
               <Box sx={{ fontSize: theme.typography.h8, marginBottom: "2.2rem" }}>
-                {"• About"}
+                {"About"}
               </Box>
               <Box className={styles.imageProfil}>
                 <img src={ProfilUser} alt="Julie Chabanis" />
