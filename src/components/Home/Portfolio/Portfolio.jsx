@@ -50,15 +50,15 @@ const Portfolio = forwardRef(() => {
               "&:hover": {
                 color: colors.primary[500]
               },
-              color: selectedItem === 'UI•UX Design' ? colors.primary[500] : 'inherit'
+              color: selectedItem === 'Ui/Ux Design' ? colors.primary[500] : 'inherit'
             }}
             component="span"
-            className={`${styles.itemSection} ${selectedItem === 'UI•UX Design' ? styles.selectedItem : ''}`}
+            className={`${styles.itemSection} ${selectedItem === 'Ui/Ux Design' ? styles.selectedItem : ''}`}
             onClick={() => {
-              setSelectedItem('UI•UX Design');
-              filterItem('UI•UX Design');
+              setSelectedItem('Ui/Ux Design');
+              filterItem('Ui/Ux Design');
             }}
-          > {"UI•UX Design"}
+          > {"Ui/Ux Design"}
           </Typography>
           <Typography 
             variant="h16" 

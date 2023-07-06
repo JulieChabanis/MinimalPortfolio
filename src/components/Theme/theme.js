@@ -305,7 +305,7 @@ export const themeSettings = (mode) => {
       h16 : {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-          fontSize: "2.2rem", 
+          fontSize: "1.7rem", 
         },
         "@media (min-width: 601px)": {
           fontSize: "1.8rem", 
@@ -315,7 +315,7 @@ export const themeSettings = (mode) => {
         },
         fontStyle: "italic",
         fontWeight: 200,
-        lineHeight: 1.1,
+        lineHeight: 1.4,
         color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       }
     },
