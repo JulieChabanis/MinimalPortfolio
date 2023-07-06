@@ -4,6 +4,7 @@ import Work3 from "../../../assets/images/Portfolio/Work3/Work3.png"
 import Work4 from "../../../assets/images/Portfolio/Work4/Work4.png"
 import Work5 from "../../../assets/images/Portfolio/Work5/Work5.png"
 import Work6 from "../../../assets/images/Portfolio/Work6/Work6.png"
+import Work7 from "../../../assets/images/Portfolio/Work7/Work7.png"
 
 const Content = [
   {
@@ -57,8 +58,20 @@ const Content = [
     image: Work6, 
     title : "Implementation of a new doc solution for Ternoa",
     describe: "[Internship] Implementing foundations of a new Documentation Solution using Docusaurus for Ternoa, Evolutionary NFT Blockchain.",
-    keywords: "TypeScript • React JS • Markdown",
-    category: "Programming"
+    keywords: "TypeScript • React JS • Markdown • Docusaurus",
+    category: "Programming",
+    github: "https://github.com/capsule-corp-ternoa/ternoa-doc",
+    website: "https://docs.ternoa.network/",
+  },
+  {
+    id: 7, 
+    image: Work7, 
+    title : "Creating a UI/UX mockup for an application",
+    describe: "Fictional project as part of the Bachelor's degree in Application Development. Creating a UI/UX mockup using AdobeXD and design thinking.",
+    keywords: "Adobe XD • Design Thinking • Docusaurus",
+    category: "Ui/Ux Design",
+    website: "https://xd.adobe.com/view/7a725e9b-08a9-4da3-abc2-3a483b38b6b6-2f21/screen/0f2c9624-085d-4fd7-8231-d38578d9b646",
+    doc : "https://xd.adobe.com/view/cedfcb66-d9d3-48ba-9eb9-03adb98f6c04-9b8c/?fullscreen"
   },
 ];
 
