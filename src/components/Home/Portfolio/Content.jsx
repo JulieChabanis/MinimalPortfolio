@@ -12,7 +12,11 @@ const Content = [
     title : "Real Estate Software (Full Stack project)",
     describe : "A prototype of a Real Estate Rental Management software. It allows performing CRUD operations from a SpringBoot API that processes and stores the data.",
     keywords: "Java • SpringBoot • API • ReactJS • Axios • PostgreSQL",
-    category: "Programming"
+    category: "Programming",
+    github: "https://github.com/JulieChabanis/thegoodhome-frontend",
+    website: "https://thegoodhome.netlify.app/",
+    doc: "https://xd.adobe.com/view/db77207f-228d-4319-8028-c512ec6ff2cb-8e24/?fullscreen"
+
   },
   {
     id: 2, 
@@ -28,7 +32,9 @@ const Content = [
     title : "My first Portfolio and Resume",
     describe: "Welcome to my first portfolio! This project is also a playground for me where I can test various functionalities.",
     keywords: "Front-end • ReactJS • MUI • FramerMotion",
-    category: "Programming"
+    category: "Programming",
+    github: "https://github.com/JulieChabanis/MinimalPortfolio",
+    website: "https://juliechabanis-portfolio.netlify.app/",
   },
   {
     id: 4, 
@@ -50,7 +56,7 @@ const Content = [
     id: 6, 
     image: Work6, 
     title : "Implementation of a new doc solution for Ternoa",
-    describe: "[Internship at Capsule Corp Labs] Implementing foundations of a new Documentation Solution using Docusaurus for Ternoa, Evolutionary NFT Blockchain.",
+    describe: "[Internship] Implementing foundations of a new Documentation Solution using Docusaurus for Ternoa, Evolutionary NFT Blockchain.",
     keywords: "TypeScript • React JS • Markdown",
     category: "Programming"
   },

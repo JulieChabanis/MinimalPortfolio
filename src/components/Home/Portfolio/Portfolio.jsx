@@ -1,9 +1,10 @@
-import { Box, Typography, useTheme, Grid } from '@mui/material';
+import { Box, Typography, useTheme, Grid, Link } from '@mui/material';
 import React, { forwardRef, useState } from 'react';
 import styles from './Portfolio.module.css';
 import Content from './Content';
 import PaddingResizeSection from '../../hooks/PaddingResizeSection';
 import { tokens } from '../../Theme/theme';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Portfolio = forwardRef(() => {
   const theme = useTheme();
@@ -95,7 +96,7 @@ const Portfolio = forwardRef(() => {
 
           <Grid container className={styles.itemContainer}>
             {items.map((element) => {
-              const { id, image, title, describe, keywords, category } = element;
+              const { id, image, title, describe, keywords, category, github, website, doc  } = element;
               return (
                 <Grid 
                   item  xs={10} sm={5} md={3} lg={5} xl={10} 
@@ -112,15 +113,38 @@ const Portfolio = forwardRef(() => {
                   <Typography variant="h14" className={styles.itemDescribe}>{describe}</Typography>
                   <Typography variant="h15" className={styles.itemKeywords}>{keywords}</Typography>
 
+                  <Box className={styles.itemLinks}>
+                    {github && (
+                      <Typography>
+                        <Link sx={{ color: "#191919"}} href={github} target="_blank" rel="noopener noreferrer">
+                          <GitHubIcon />
+                        </Link>
+                      </Typography>
+                    )}
+                    
+                    {website && (
+                      <Typography variant="h6">
+                        <Link sx={{ color: "#191919"}} href={website} target="_blank" rel="noopener noreferrer">
+                          {"See in Live ->"}
+                        </Link>
+                      </Typography>
+                    )}
+                    
+                    {doc && (
+                      <Typography variant="h10">
+                        <Link sx={{ color: "#191919" }} href={doc} target="_blank" rel="noopener noreferrer">
+                          {"Doc"}
+                        </Link>
+                      </Typography>
+                     )}
+                  </Box> 
                 </Grid>
-              )
-
+              );
             })}
           </Grid>
-
       </Box>
     </Box>
   )
-})
+  })
 
 export default Portfolio;

@@ -139,6 +139,29 @@
 
 }
 
+.itemLinks {
+  display: flex;
+  align-items: center;
+  column-gap: 7rem;
+  color: #191919 !important;
+  margin: 0 0 0.98rem; 
+  padding: 0 1.25rem;
+  position: absolute;
+  top: 25.7rem; 
+  transform: translateY(30px);
+  transition: .3s;
+  opacity: 0;
+
+  @media (max-width: 1411px) {
+    top: 20rem; 
+    column-gap: 3rem;
+  }
+
+}
+
+
+
+
 .itemImgContainer {
   width: 450px;
   height: 450px ;
@@ -162,7 +185,8 @@
 .itemCard:hover .itemTitle,
 .itemCard:hover .itemCategory,
 .itemCard:hover .itemDescribe,
-.itemCard:hover .itemKeywords {
+.itemCard:hover .itemKeywords,
+.itemCard:hover .itemLinks{
   opacity: 1;
   transform: translateY(0);
 }
