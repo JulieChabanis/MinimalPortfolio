@@ -38,7 +38,7 @@ export const tokens = (mode) => ({
       500: "#b799ff",
     },
     grey: {
-      100: "#121212",
+      100: "#191919",
       200: "#C4DFDF", 
       300: "#C4DFDF",
       400: "#F5F0EC",
@@ -317,7 +317,73 @@ export const themeSettings = (mode) => {
         fontWeight: 200,
         lineHeight: 1.4,
         color: mode === "dark" ? colors.grey[100] : colors.grey[100],
-      }
+      },
+      // resume education title
+      h17 : {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        "@media (max-width: 600px)": {
+          fontSize: "1.4rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "1.8rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "1.5rem",
+        },
+        fontStyle: "italic",
+        fontWeight: 200,
+        lineHeight: 1.1,
+        paddingBottom: "0.5rem",
+        color: mode === "dark" ? colors.grey[400] : colors.grey[100],
+      },
+      // resume education date
+      h18: {
+        fontFamily: ["Lato", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "0.85rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "0.85rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "0.9rem",
+        },
+        fontWeight:800,
+        paddingBottom: "1rem",
+        color: mode === "dark" ? colors.grey[400] : colors.grey[100],
+      },
+      // resume education society
+      h19: {
+        fontFamily: ["Martian Mono", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "0.7rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "0.7rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "0.78rem",
+        },
+        fontWeight:600,
+        paddingBottom: "0.8rem",
+        color: mode === "dark" ? colors.grey[400] : colors.grey[100],
+      },
+      // resume education desc
+      h20: {
+        fontFamily: ["Martian Mono", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "0.7rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "0.7rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "0.78rem",
+        },
+        fontWeight:400,
+        color: mode === "dark" ? colors.grey[400] : colors.grey[100],
+      },
+      
     },
 
     breakpoints: {
