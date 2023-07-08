@@ -1,49 +1,72 @@
-import React, { forwardRef} from 'react';
+import React, { forwardRef } from 'react';
+import PaddingResizeSection from '../../hooks/PaddingResizeSection';
+import { Box, useTheme, Grid, Typography } from '@mui/material';
 import styles from './Resume.module.css';
-import { Box, Grid, useTheme } from "@mui/material";
-
-import EducationSection from "./EducationSection/EducationSection";
-import WorkTimelineSection from "./WorkTimelineSection/WorkTimelineSection";
-import SkillsSection from "./Skills/SkillsSection";
-
-import PaddingResizeSection from "../../hooks/PaddingResizeSection";
+import ResumeData from './ResumeData';
+import CardResume from './CardResume.jsx/CardResume';
 
 const Resume = forwardRef(() => {
   const theme = useTheme();
 
   return (
-    <Box id="resume-section" sx={{ padding: PaddingResizeSection()}}>
-      <Box sx={{ fontSize: theme.typography.h8, marginBottom: "2.2rem" }}>
-        <Box className={styles.titleSection}>
-         {'Resume'}
+    <Box id="resume-section">
+      <Box sx={{ padding: PaddingResizeSection() }}>
+
+        <Box sx={{ fontSize: theme.typography.h8, marginBottom: '3rem' }}>
+          <Box className={styles.titleSection}>{'Resume'}</Box>
         </Box>
-      </Box>
-      <Box className={styles.mainSkillsSection}>
-        <Grid container spacing={12}>
-          <Grid item xs={12} sm={12} md={12} lg={5}>
-              <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1rem"}}>
-                Education
-              </Box>
-              <Box>
-               <EducationSection />
-              </Box>
+
+        <Grid container spacing={4} className={styles.resumeContainer}>
+          <Grid item xs={12} sm={12} md={12} lg={4} xl={3}>
+          <Typography variant="h1">{"Education"}</Typography>
+            <Box 
+              className={styles.resumeTimeline}
+              sx={{
+                backgroundColor: theme.palette.mode === 'dark' ? '#cde7e6' : '#e1d1ff'
+              }}
+            >
+              {ResumeData.map((element, id) => {
+                if (element.category === 'education') {
+                  return (
+                    <CardResume
+                      key={id}
+                      icon={element.icon}
+                      title={element.title}
+                      year={element.year}
+                      society={element.society}
+                      desc={element.desc}
+                    />
+                  );
+                }
+                return null; // Added a return statement for non-matching elements
+              })}
+            </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={5}>
-            <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1rem"}}>
-                Work Timeline
+          <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+            <Typography variant="h1">{"Work Timeline"}</Typography>
+            <Box 
+              className={styles.resumeTimeline}
+              sx={{
+                backgroundColor: theme.palette.mode === 'dark' ? '#0A0A0A' : '#FFFAF3'
+              }}
+            >
+              {ResumeData.map((element, index) => {
+                if (element.category === 'experience') {
+                  return (
+                    <CardResume
+                      key={index}
+                      icon={element.icon}
+                      title={element.title}
+                      year={element.year}
+                      society={element.society}
+                      desc={element.desc}
+                    />
+                  );
+                }
+                return null; // Added a return statement for non-matching elements
+              })}
             </Box>
-            <Box>
-            <WorkTimelineSection />
-            </Box>
-          </Grid>  
-          <Grid item xs={12} sm={12} md={12} lg={10}>
-            <Box sx={{ fontSize: theme.typography.h2, marginBottom: "1rem"}}>
-              Skills
-            </Box>
-            <Box>
-            <SkillsSection />
-              </Box>
-            </Grid>
+          </Grid>
         </Grid>
       </Box>
     </Box>

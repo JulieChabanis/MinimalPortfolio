@@ -6,3 +6,10 @@
   display: flex;
   flex-direction: column;
 }
+
+.resumeTimeline {
+  padding: 1.875rem;
+  border-radius: 1%;
+  position: relative;
+  box-shadow: 2px;
+}

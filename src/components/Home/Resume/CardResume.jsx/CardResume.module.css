@@ -1,0 +1,30 @@
+
+.timelineItem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 3.215rem ;
+  padding-bottom: 3.125rem;
+}
+
+.timelineItem:last-child {
+  padding-bottom: 0;
+}
+
+.timelineItem::before {
+  content: '';
+  width: 1px; 
+  height: 100%;
+  background-color: aliceblue;
+  position: absolute;
+  left: 0rem;
+  top: 0; 
+  font-size: 10px;
+
+}
+
+.timelineIcon {
+  position: absolute;
+  left: -0.25rem;
+  background-color: black
+}
