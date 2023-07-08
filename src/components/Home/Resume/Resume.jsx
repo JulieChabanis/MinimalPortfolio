@@ -17,8 +17,14 @@ const Resume = forwardRef(() => {
         </Box>
 
         <Grid container spacing={4} className={styles.resumeContainer}>
+
+          <Grid item xs={12} sm={12} md={12} lg={1} xl={1}>
+          <Box className={styles.sectionEducation}> 
+              <Typography className={styles.sectionEducationText} variant="h21">{"Education"}</Typography>
+              </Box>
+          </Grid>
+          
           <Grid item xs={12} sm={12} md={12} lg={4} xl={3}>
-          <Typography variant="h1">{"Education"}</Typography>
             <Box 
               className={styles.resumeTimeline}
               sx={{
@@ -42,8 +48,8 @@ const Resume = forwardRef(() => {
               })}
             </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-            <Typography variant="h1">{"Work Timeline"}</Typography>
+          <Grid item xs={12} sm={12} md={12} lg={6} xl={8}>
+          <Typography variant="h1">{"Work Timeline"}</Typography>
             <Box 
               className={styles.resumeTimeline}
               sx={{

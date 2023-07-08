@@ -381,8 +381,25 @@ export const themeSettings = (mode) => {
           fontSize: "0.78rem",
         },
         fontWeight:400,
+        lineHeight: 2.1,
         color: mode === "dark" ? colors.grey[400] : colors.grey[100],
       },
+        // Hello, Bonjour ...
+      h21: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        "@media (max-width: 600px)": {
+         fontSize: "4rem",
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "4rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "5rem", 
+        },
+        fontWeight: 100,
+        fontStyle: "italic",
+        color: mode === "dark" ? "#8ec9c8" :  colors.primary[500],
+        },
       
     },
 

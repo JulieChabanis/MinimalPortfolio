@@ -8,7 +8,7 @@ const CardResume = (props) => {
     <Box 
       className={styles.timelineItem}
     >
-      <Typography className={styles.timelineIcon}>{props.icon}</Typography>
+      <Typography variant="h21" className={styles.timelineIcon}>{props.icon}</Typography>
       <Typography variant="h18" className={styles.timelineDate}>{props.year}</Typography>
       <Typography variant="h17" className={styles.timelineTitle}>{props.title}</Typography>
       <Typography variant="h19" className={styles.timelineSociety}>{props.society}</Typography>

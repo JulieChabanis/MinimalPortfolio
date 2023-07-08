@@ -3,7 +3,7 @@ const ResumeData = [
   {
     id: 1, 
     category: "experience",
-    icon: "•", 
+    icon: "❋", 
     year: "2017 - Present",
     title : "Co-founder & Graphic Designer (DPT)", 
     society: "La Kollective, FR",
@@ -13,7 +13,7 @@ const ResumeData = [
   {
     id: 2, 
     category: "experience",
-    icon: "•", 
+    icon: "❋", 
     year: "Oct-Nov 2022",
     title : "React JS Developper • Internship", 
     society: "Caspule Corp. Labs",
@@ -22,7 +22,7 @@ const ResumeData = [
   {
     id: 3, 
     category: "experience",
-    icon: "•", 
+    icon: "❋", 
     year: "2019-2021",
     title : "Communication Officer & Graphic Designer", 
     society: "Tourism Office, FR",
@@ -40,7 +40,7 @@ const ResumeData = [
   {
     id: 5, 
     category: "education",
-    icon: "•", 
+    icon: "❋", 
     year: "2023",
     title : "Bachelor Digital Solutions Developer", 
     society: "HETIC, FR",
@@ -50,7 +50,7 @@ const ResumeData = [
   {
     id: 6, 
     category: "education",
-    icon: "•", 
+    icon: "❋", 
     year: "2018",
     title : "Master's Degree in Communication & Marketing", 
     society: "Ecole de Journalisme et de Communication (EJCAM), Aix-en-Provence, FR",
@@ -59,7 +59,7 @@ const ResumeData = [
   {
     id: 7, 
     category: "education",
-    icon: "•", 
+    icon: "❋", 
     year: "2016",
     title : "Bachelor's Degree in Media & Strategy", 
     society: "Ecole de Journalisme et de Communication (EJCAM), Aix-en-Provence, FR",

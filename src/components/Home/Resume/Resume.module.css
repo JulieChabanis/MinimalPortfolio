@@ -7,9 +7,19 @@
   flex-direction: column;
 }
 
+.resumeContainer {
+  transform: translateX(-8%);
+}
+
 .resumeTimeline {
   padding: 1.875rem;
   border-radius: 1%;
   position: relative;
   box-shadow: 2px;
+}
+
+.sectionEducationText {
+  transform: rotate(-90deg) translateX(-174%) translateY(35%);
+  display: flex;
+
 }
