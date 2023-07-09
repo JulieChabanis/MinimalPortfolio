@@ -1,5 +1,5 @@
 .titleSection {
-  padding-top: 4.5rem;
+  padding-top: 3.5rem;
 }
 
 .mainSkillsSection {
@@ -8,18 +8,41 @@
 }
 
 .resumeContainer {
-  transform: translateX(-8%);
+  margin-left: -6.5rem;
+}
+
+.educationSection {
+  margin-top: 0rem;
+  background-image: linear-gradient(to top left,#B799FF, #9bcfce, #cde7e6, #B799FF);
+}
+
+.educationSection:hover {
+  background-image: linear-gradient(to top right,#B799FF, #9bcfce, #cde7e6, #B799FF);
+}
+
+.WorkSection {
+  margin-top: -3rem;
 }
 
 .resumeTimeline {
   padding: 1.875rem;
   border-radius: 1%;
   position: relative;
-  box-shadow: 2px;
+  /* box-shadow: 0 2px 2px rgba(224, 218, 218, 0.2); /*
+  /*background-image: linear-gradient(to top right, #e1d1ff, #cde7e6);*/
 }
+
+/*.resumeTimeline:hover {
+  background-image: linear-gradient(to top right, #cde7e6, #e1d1ff);
+}*/
 
 .sectionEducationText {
-  transform: rotate(-90deg) translateX(-174%) translateY(35%);
+  transform: rotate(-90deg) translateX(-85%) translateY(65%);
   display: flex;
-
 }
+
+.sectionWorkText {
+  display: flex;
+  justify-content: flex-end;
+}
+

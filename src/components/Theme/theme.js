@@ -320,7 +320,7 @@ export const themeSettings = (mode) => {
       },
       // resume education title
       h17 : {
-        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        fontFamily: ["Lato", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
           fontSize: "1.4rem", 
         },
@@ -328,12 +328,11 @@ export const themeSettings = (mode) => {
           fontSize: "1.8rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "1.5rem",
+          fontSize: "1.2rem",
         },
-        fontStyle: "italic",
-        fontWeight: 200,
+        fontWeight: 700,
         lineHeight: 1.1,
-        paddingBottom: "0.5rem",
+        paddingBottom: "0.3rem",
         color: mode === "dark" ? colors.grey[400] : colors.grey[100],
       },
       // resume education date
@@ -349,12 +348,12 @@ export const themeSettings = (mode) => {
           fontSize: "0.9rem",
         },
         fontWeight:800,
-        paddingBottom: "1rem",
-        color: mode === "dark" ? colors.grey[400] : colors.grey[100],
+        paddingBottom: "0.2rem",
+        color: mode === "dark" ? colors.blue[500] : colors.primary[200],
       },
       // resume education society
       h19: {
-        fontFamily: ["Martian Mono", "sans-serif"].join(","), 
+        fontFamily: ["Lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
           fontSize: "0.7rem", 
         },
@@ -362,10 +361,10 @@ export const themeSettings = (mode) => {
           fontSize: "0.7rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "0.78rem",
+          fontSize: "0.9rem",
         },
-        fontWeight:600,
-        paddingBottom: "0.8rem",
+        fontWeight:400,
+        paddingBottom: "0.5rem",
         color: mode === "dark" ? colors.grey[400] : colors.grey[100],
       },
       // resume education desc
@@ -378,13 +377,13 @@ export const themeSettings = (mode) => {
           fontSize: "0.7rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "0.78rem",
+          fontSize: "0.65rem",
         },
         fontWeight:400,
-        lineHeight: 2.1,
+        lineHeight: 1.6,
         color: mode === "dark" ? colors.grey[400] : colors.grey[100],
       },
-        // Hello, Bonjour ...
+        // title section in Resume Section
       h21: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
@@ -394,7 +393,7 @@ export const themeSettings = (mode) => {
           fontSize: "4rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "5rem", 
+          fontSize: "3.5rem", 
         },
         fontWeight: 100,
         fontStyle: "italic",

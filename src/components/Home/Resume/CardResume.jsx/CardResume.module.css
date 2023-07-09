@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-left: 3.215rem ;
-  padding-bottom: 3.125rem;
+  padding-left: 3rem;
+  padding-bottom: 1.6rem;
 }
 
 .timelineItem:last-child {
@@ -13,17 +13,26 @@
 
 .timelineItem::before {
   content: '';
-  width: 1px; 
+  width: 1px;
   height: 100%;
   position: absolute;
-  left: 0rem;
-  top: 0; 
-  font-size: 50px;
-
+  left: 0.8rem;
+  top: 0;
+  background-color: black; /* Remplacez par la couleur souhaitée */
 }
 
-.timelineIcon {
+.timelineDate {
   position: absolute;
-  left: -0.25rem;
-  font-size: 50px;
+  left: -0.60rem;
+  background-color: inherit;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  background-color: #232323;
+  border-radius: 3%;
 }
+
+.timelineTitle {
+  padding-top:  2.7rem;
+}
+
