@@ -16,25 +16,15 @@ const Resume = forwardRef(() => {
           <Box className={styles.titleSection}>{'Resume'}</Box>
         </Box>
 
-        <Box className={styles.resumeContainer}>
-        <Grid 
-          container 
-          spacing={6} 
-        >
-
+        <Box>
+        <Grid container spacing={6}>
 
           {/* EDUCATION SECTION */}
-          <Grid item xs={12} sm={12} md={12} lg={1} xl={1}>
-            <Typography className={styles.sectionEducationText} variant="h21">{"Education"}</Typography>
-          </Grid>
-
-          <Grid item xs={12} sm={12} md={12} lg={4} xl={3}>
+          <Grid item xs={12} sm={12} md={5} lg={4} xl={3} marginTop={-3}>
+          <Typography className={styles.sectionEducationText} variant="h21">{"Education"}</Typography>
             <Box className={styles.educationSection}>
               <Box 
                 className={styles.resumeTimeline}
-                sx={{
-                  /* backgroundColor: theme.palette.mode === 'dark' ? '#b4dbda' : '#e1d1ff'*/
-                }}
               >
                 {ResumeData.map((element, id) => {
                   if (element.category === 'education') {
@@ -55,7 +45,7 @@ const Resume = forwardRef(() => {
           </Grid>
 
           {/* WORK TIMELINE SECTION */}
-          <Grid item xs={12} sm={12} md={12} lg={6} xl={6.5}>
+          <Grid item xs={12} sm={12} md={6} lg={6} xl={6.5}>
             <Box className={styles.WorkSection}>
               <Typography className={styles.sectionWorkText} variant="h21">{"Work Timeline"}</Typography>
                 <Box 

@@ -322,13 +322,13 @@ export const themeSettings = (mode) => {
       h17 : {
         fontFamily: ["Lato", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-          fontSize: "1.4rem", 
+          fontSize: "1.3rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "1.8rem", 
+          fontSize: "1.4rem", 
         },
         "@media (min-width: 1300px)": {
-          fontSize: "1.2rem",
+          fontSize: "1.4rem",
         },
         fontWeight: 700,
         lineHeight: 1.1,
@@ -355,15 +355,15 @@ export const themeSettings = (mode) => {
       h19: {
         fontFamily: ["Lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "0.7rem", 
+          fontSize: "0.8rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "0.7rem", 
+          fontSize: "0.9rem", 
         },
         "@media (min-width: 1300px)": {
           fontSize: "0.9rem",
         },
-        fontWeight:400,
+        fontWeight:800,
         paddingBottom: "0.5rem",
         color: mode === "dark" ? colors.grey[400] : colors.grey[100],
       },
@@ -387,10 +387,10 @@ export const themeSettings = (mode) => {
       h21: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-         fontSize: "4rem",
+         fontSize: "2.2rem",
         },
         "@media (min-width: 601px)": {
-          fontSize: "4rem", 
+          fontSize: "3rem", 
         },
         "@media (min-width: 1300px)": {
           fontSize: "3.5rem", 
