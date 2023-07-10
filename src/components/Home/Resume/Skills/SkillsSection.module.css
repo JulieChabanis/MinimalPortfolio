@@ -1,0 +1,51 @@
+.skillsSection {
+  padding-top: 6rem;
+}
+
+.skillsElements {
+  margin: 3rem 20rem 0rem 0rem;
+
+  @media (max-width: 599px) {
+    margin: 4rem 1rem 0rem 1rem;
+  }
+  
+  @media (min-width: 600px) and (max-width: 959px) {
+    margin: 4rem 3rem 0rem 4rem;
+  }
+}
+
+.skillsCardsItem {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3rem 4rem 3rem;
+  border-radius: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.skillsCardsItem:hover {
+  background-image: linear-gradient(135deg, #a3c0ff, #B799FF, #cde7e6), url("https://grainy-gradients.vercel.app/noise.svg");
+  background-blend-mode: multiply; /* Mélange de la texture avec le dégradé */
+}
+
+
+.skillsTitle {
+  text-align: center !important;
+  margin-top: 2rem;
+}
+
+.skillsGroup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes avec largeur égale */
+  column-gap: 2rem;
+}
+
+.skillsItemListing {
+  display: grid;
+  justify-content: flex-start;
+  row-gap: 0.8rem;
+}
+
+.skillsIcon {
+  font-size: 1rem;
+  color: blueviolet;
+  margin-top: 2rem;
+}

@@ -77,12 +77,8 @@ const Resume = forwardRef(() => {
         </Box>
 
         {/*SKILLS SECTION RESUME*/}
-        <Grid container>
-          <Typography className={styles.sectionWorkText} variant="h21">{"Skills"}</Typography>
-          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <SkillsSection />
-          </Grid>
-        </Grid>
+        <SkillsSection />
+
       </Box>
     </Box>
   );
