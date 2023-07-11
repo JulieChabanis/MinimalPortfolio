@@ -1,11 +1,10 @@
-import { Box, Grid, Typography, useTheme } from '@mui/material'
+import { Box, Grid, Typography} from '@mui/material'
 import React from 'react'
 import styles from './SkillsSection.module.css'
 import AddIcon from '@mui/icons-material/Add';
 import { motion } from "framer-motion";
 
 const SkillsSection = () => {
-  const theme = useTheme();
 
   return (
     <Box className={styles.skillsSection}>
