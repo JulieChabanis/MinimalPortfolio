@@ -19,42 +19,42 @@ const SkillsSection = () => {
               whileHover={{ scale: 1.04}}
               className={styles.skillsCardsItem}
           >
-            <Typography variant="h16" className={styles.skillsTitle}>Programming</Typography>
+            <Typography variant="h22" className={styles.skillsTitle}>Programming</Typography>
             <Box
             className={styles.skillsGroup}>
               <Box className={styles.skillsItemListing}>
                 <AddIcon className={styles.skillsIcon} />
                   <Box className={styles.skillsItem}>
-                    <Typography variant="h14">{"HTML CSS"}</Typography>
-                    <Typography variant="h6">{"Responsive Web Design, CSS frameworks (Bootstrap, MUI)"}</Typography>
+                    <Typography variant="h23">{"HTML CSS"}</Typography>
+                    <Typography variant="h24">{"Responsive Web Design, CSS frameworks (Bootstrap, MUI)"}</Typography>
                   </Box>
               </Box>
               <Box className={styles.skillsItemListing}>
                 <AddIcon className={styles.skillsIcon} />
                   <Box className={styles.skillsItem}>
-                    <Typography variant="h14">{"JavasScript"}</Typography>
-                    <Typography variant="h6">{"ES6+, DOM manipulation, Axios, async programming"}</Typography>
+                    <Typography variant="h23">{"JavasScript"}</Typography>
+                    <Typography variant="h24">{"ES6+, DOM manipulation, Axios, async programming"}</Typography>
                   </Box>
               </Box>
               <Box className={styles.skillsItemListing}>
                 <AddIcon className={styles.skillsIcon} />
                   <Box className={styles.skillsItem}>
-                    <Typography variant="h14">{"React JS"}</Typography>
-                    <Typography>{"React Router, Hooks, component lifecycle, state management"}</Typography>
+                    <Typography variant="h23">{"React JS"}</Typography>
+                    <Typography variant="h24">{"React Router, Hooks, component lifecycle, state management"}</Typography>
                   </Box>
               </Box>
               <Box className={styles.skillsItemListing}>
                 <AddIcon className={styles.skillsIcon} />
                   <Box className={styles.skillsItem}>
-                    <Typography variant="h14">{"JAVA"}</Typography>
-                    <Typography variant="h6">{"Object-oriented programming, data structures, algorithms"}</Typography>
+                    <Typography variant="h23">{"JAVA"}</Typography>
+                    <Typography variant="h24">{"Object-oriented programming, data structures, algorithms"}</Typography>
                   </Box>
               </Box>
               <Box className={styles.skillsItemListing}>
                 <AddIcon className={styles.skillsIcon} />
                   <Box className={styles.skillsItem}>
-                    <Typography variant="h14">{"Spring / SpringBoot"}</Typography>
-                    <Typography variant="h6">{"MVC architecture, RESTful APIs"}</Typography>
+                    <Typography variant="h23">{"Spring / SpringBoot"}</Typography>
+                    <Typography variant="h24">{"MVC architecture, RESTful APIs"}</Typography>
                   </Box>
               </Box>
             </Box>

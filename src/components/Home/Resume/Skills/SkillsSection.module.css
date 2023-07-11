@@ -35,12 +35,17 @@
 .skillsGroup {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Deux colonnes avec largeur égale */
-  column-gap: 2rem;
+  column-gap: 2rem; 
+}
+
+.skillsItem {
+  display: flex;
+  flex-direction: column;
 }
 
 .skillsItemListing {
-  display: grid;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
   row-gap: 0.8rem;
 }
 
