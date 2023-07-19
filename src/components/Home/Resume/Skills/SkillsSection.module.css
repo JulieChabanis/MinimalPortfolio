@@ -3,12 +3,9 @@
 }
 
 .skillsElements {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; 
 
   @media (max-width: 599px) {
-    margin: 2rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
   }
 
 }
@@ -18,15 +15,12 @@
   border-radius: 1.25rem;
   transition: background-color 0.3s ease;
   width: 100%;
-  max-width: 410px;
-  margin-right: 3rem;
-  margin-bottom: 3rem;
   height: auto;
 
   @media (max-width: 599px) {
-    padding: 2rem 2rem 2rem 2rem;
-    width: 100%;
+    padding: 1.8rem 1.8rem 1.8rem 1.8rem;
     height: auto;
+    margin-bottom: -0.5rem;
   }
 }
 

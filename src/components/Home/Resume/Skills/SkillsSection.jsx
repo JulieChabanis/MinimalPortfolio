@@ -12,9 +12,10 @@ const SkillsSection = () => {
       <Typography variant="h21">{"Skills"}</Typography>
 
       <Box className={styles.skillsElements}>
+      <Grid container spacing={5}>
 
         {/*Programming Card*/}
-        <Grid item xs={12} sm={12} md={12} lg={3.66} xl={3.66}>
+        <Grid item xs={12} sm={6} md={6} lg={4} xl={3.5}>
           <motion.div whileHover={{scale: 1.02,}}>
             <Box
                 className={styles.skillsCardsItem}
@@ -71,7 +72,7 @@ const SkillsSection = () => {
         </Grid>
 
         {/*Creating Card*/}
-        <Grid item xs={12} sm={12} md={12} lg={3.66} xl={3.66}>
+        <Grid item xs={12} sm={6} md={5} lg={3} xl={3}>
           <motion.div whileHover={{scale: 1.02,}}>
             <Box
                 className={styles.skillsCardsItem}
@@ -114,7 +115,7 @@ const SkillsSection = () => {
         </Grid>
 
         {/*Other Card*/}
-        <Grid item xs={12} sm={12} md={12} lg={3.66} xl={3.66}>
+        <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
           <motion.div whileHover={{scale: 1.02,}}>
             <Box
                 className={styles.skillsCardsItem}
@@ -148,6 +149,7 @@ const SkillsSection = () => {
             </Box>
           </motion.div>
         </Grid>
+      </Grid>
     </Box>
     </Box>
   )
