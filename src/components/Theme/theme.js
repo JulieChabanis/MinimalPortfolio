@@ -260,7 +260,7 @@ export const themeSettings = (mode) => {
         fontWeight: 800,
         lineHeight: 1,
 
-        "@media (max-width: 1410px)" : {
+        "@media (max-width: 1637px)" : {
           fontSize: "1.7rem"
         }
       },
@@ -272,7 +272,7 @@ export const themeSettings = (mode) => {
         fontStyle: "italic",
         color: mode === "dark" ? colors.blue[500] :  colors.primary[200],
      
-        "@media (max-width: 1410px)" : {
+        "@media (max-width: 1637px)" : {
           fontSize: "1.3rem"
         }
      
@@ -285,7 +285,7 @@ export const themeSettings = (mode) => {
         fontWeight: 800,
         lineHeight: 1.3,
 
-        "@media (max-width: 1410px)" : {
+        "@media (max-width: 1637px)" : {
           fontSize: "1rem"
         }
       },
@@ -297,7 +297,7 @@ export const themeSettings = (mode) => {
         fontStyle: "italic",
         color: "#191919",
      
-        "@media (max-width: 1410px)" : {
+        "@media (max-width: 1637px)" : {
           fontSize: "1.rem"
         }
       },

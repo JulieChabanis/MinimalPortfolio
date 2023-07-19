@@ -102,7 +102,7 @@ const Portfolio = forwardRef(() => {
               const { id, image, title, describe, keywords, category, github, website, doc  } = element;
               return (
                 <Grid 
-                  item  xs={10} sm={5} md={3} lg={5} xl={10} 
+                  item xs={10} sm={5} md={3} lg={10} xl={10} 
                   className={styles.itemCard} 
                   key={id}
                 >
