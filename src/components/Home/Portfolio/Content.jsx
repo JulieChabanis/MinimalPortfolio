@@ -24,7 +24,7 @@ const Content = [
     id: 2, 
     image: Work22, 
     title : "Graphic design for electronic music event",
-    describe: "Illustration and promotion socials for electronic music events with La Kollective",
+    describe: "Illustration and promotion socials for electronic music events with La Kollective in Montpellier, FR.",
     keywords: "Adobe #Illustrator, #Photoshop",
     category: "Creative"
   },
@@ -60,7 +60,7 @@ const Content = [
     id: 5, 
     image: Work5, 
     title : "Graphic design for Funky Soul Events",
-    describe: "Illustration and promotion socials for electronic music events with La Kollective",
+    describe: "Illustration and promotion socials for electronic music events with La Kollective in Montpellier, FR",
     keywords: "Adobe • Illustrator • Photoshop",
     category: "Creative"
   },
@@ -71,7 +71,7 @@ const Content = [
     describe: "Fictional project as part of the Bachelor's degree in Application Development. Creating a UI/UX mockup using AdobeXD and design thinking.",
     keywords: "Adobe XD • Design Thinking • Wireframes",
     category: "Ui/Ux Design",
-    website: "https://xd.adobe.com/view/7a725e9b-08a9-4da3-abc2-3a483b38b6b6-2f21/screen/0f2c9624-085d-4fd7-8231-d38578d9b646",
+    website: "https://xd.adobe.com/view/7a725e9b-08a9-4da3-abc2-3a483b38b6b6-2f21/",
     doc : "https://xd.adobe.com/view/cedfcb66-d9d3-48ba-9eb9-03adb98f6c04-9b8c/?fullscreen"
   },
   {

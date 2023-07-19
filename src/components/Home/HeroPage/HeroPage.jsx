@@ -44,7 +44,7 @@ const HeroPage = forwardRef(() => {
         >
         {'Looking for '}
         <div></div>
-        {'{* a job as a'} 
+        {'{/* a job as a'} 
         </motion.div>
         </Typography>
         <Box sx={{ fontSize: theme.typography.h3}}>
@@ -56,7 +56,7 @@ const HeroPage = forwardRef(() => {
           }}
         >
          <div></div>
-         {'Developper *}'}
+         {'Developper */}'}
         </motion.div>
         </Box>
       </Box>
