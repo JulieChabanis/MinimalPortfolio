@@ -413,12 +413,12 @@ export const themeSettings = (mode) => {
         },
         fontStyle: "italic",
         fontWeight: 200,
-        color: mode === "dark" ? colors.grey[100] : colors.grey[100],
+        color: mode === "dark" ? colors.blue[200] : colors.grey[100],
       },
       // Skills Subtitle
       h23: {
         fontFamily: ["Lato", "sans-serif"].join(","),
-        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+        color: mode === "dark" ? colors.grey[100] : colors.grey[100],
         fontWeight: 800,
         fontSize: "1.1rem",
         lineHeight: 1.2,
@@ -438,7 +438,7 @@ export const themeSettings = (mode) => {
         },
         fontWeight: 200,
         lineHeight: 1.3, 
-        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+        color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       },
       
     },

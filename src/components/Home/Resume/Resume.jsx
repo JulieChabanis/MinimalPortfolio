@@ -40,7 +40,7 @@ const Resume = forwardRef(() => {
                         />
                       );
                     }
-                    return null; // Added a return statement for non-matching elements
+                    return null; 
                   })}
                 </Box>
               </Box>
@@ -53,7 +53,7 @@ const Resume = forwardRef(() => {
                   <Box 
                     className={styles.resumeTimeline}
                     sx={{
-                      backgroundColor: theme.palette.mode === 'dark' ? '#d8e5e2' : '#eee3ff',
+                      backgroundColor: theme.palette.mode === 'dark' ? '#b4dbda' : '#eee3ff',
                     }}
                   >
                     {ResumeData.map((element, index) => {

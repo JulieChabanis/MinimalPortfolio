@@ -5,6 +5,7 @@ import Work4 from "../../../assets/images/Portfolio/Work4/Work4.png"
 import Work5 from "../../../assets/images/Portfolio/Work5/Work5.png"
 import Work6 from "../../../assets/images/Portfolio/Work6/Work6.png"
 import Work7 from "../../../assets/images/Portfolio/Work7/Work7.png"
+import Work8 from "../../../assets/images/Portfolio/Work8/Work8.png"
 
 const Content = [
   {
@@ -68,11 +69,22 @@ const Content = [
     image: Work7, 
     title : "Creating a UI/UX mockup for an application",
     describe: "Fictional project as part of the Bachelor's degree in Application Development. Creating a UI/UX mockup using AdobeXD and design thinking.",
-    keywords: "Adobe XD • Design Thinking • Docusaurus",
+    keywords: "Adobe XD • Design Thinking • Wireframes",
     category: "Ui/Ux Design",
     website: "https://xd.adobe.com/view/7a725e9b-08a9-4da3-abc2-3a483b38b6b6-2f21/screen/0f2c9624-085d-4fd7-8231-d38578d9b646",
     doc : "https://xd.adobe.com/view/cedfcb66-d9d3-48ba-9eb9-03adb98f6c04-9b8c/?fullscreen"
   },
+  {
+    id: 8, 
+    image: Work8, 
+    title : "Music Composer using Tone.js",
+    describe: "My first personal learning project. Creation of a controller interface prototype using the Tone.js library for music composition.",
+    keywords: "Hooks • Styled-Components • ToneJS",
+    category: "Programming",
+    github: "https://github.com/JulieChabanis/Music-Compo",
+    website: "https://dreamy-arithmetic-e3b5ff.netlify.app/",
+
+  }
 ];
 
 export default Content; 

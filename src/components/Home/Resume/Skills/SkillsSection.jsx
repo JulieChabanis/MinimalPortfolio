@@ -1,10 +1,11 @@
-import { Box, Grid, Typography} from '@mui/material'
+import { Box, Grid, Typography, useTheme } from '@mui/material'
 import React from 'react'
 import styles from './SkillsSection.module.css'
 import AddIcon from '@mui/icons-material/Add';
 import { motion } from "framer-motion";
 
 const SkillsSection = () => {
+  const theme = useTheme();
 
   return (
     <Box className={styles.skillsSection}>
@@ -15,9 +16,16 @@ const SkillsSection = () => {
 
         {/*Programming Card*/}
         <Grid item xs={12} sm={12} md={12} lg={3.66} xl={3.66}>
-          <motion.div
-              whileHover={{ scale: 1.04}}
+          <Box
               className={styles.skillsCardsItem}
+              sx={{
+                border: theme.palette.mode === 'dark' ? '1px solid grey' : '1px solid rgba(0, 0, 0, 0.1)',
+                backgroundColor: theme.palette.mode === 'dark' ? '#121212' : 'inherit',
+                '&:hover': {
+                  backgroundImage: 'linear-gradient(135deg, #a3c0ff, #B799FF, #cde7e6), url("https://grainy-gradients.vercel.app/noise.svg")',
+                  backgroundBlendMode: 'multiply',
+                },
+              }}
           >
             <Typography variant="h22" className={styles.skillsTitle}>Programming</Typography>
             <Box
@@ -58,35 +66,43 @@ const SkillsSection = () => {
                   </Box>
               </Box>
             </Box>
-          </motion.div>
+          </Box>
         </Grid>
 
         {/*Creating Card*/}
         <Grid item xs={12} sm={12} md={12} lg={3.66} xl={3.66}>
           <motion.div
             whileHover={{ scale: 1.04 }} 
-            className={styles.skillsCardsItem}>
-              <Typography variant="h16" className={styles.skillsTitle}>Creating</Typography>
+            className={styles.skillsCardsItem}
+            css={{
+              border: theme.palette.mode === 'dark' ? '1px solid grey' : '1px solid rgba(0, 0, 0, 0.1)',
+              backgroundColor: theme.palette.mode === 'dark' ? '#121212' : 'inherit',
+              '&:hover': {
+                backgroundColor: theme.palette.mode === 'dark' ? '#d8e5e2' : '#eee3ff',
+              },
+            }}
+          >
+              <Typography variant="h22" className={styles.skillsTitle}>Creating</Typography>
               <Box className={styles.skillsGroup}>
                 <Box className={styles.skillsItemListing}>
                   <AddIcon className={styles.skillsIcon} />
                     <Box className={styles.skillsItem}>
-                      <Typography >{"DTP - PAO"}</Typography>
-                      <Typography>{"Adobe Illustrator, Indesign, Photosop. Print and Digital Layout Design, creation of vector illustrations"}</Typography>
+                      <Typography variant="h23">{"DTP - PAO"}</Typography>
+                      <Typography variant="h24">{"Adobe Illustrator, Indesign, Photosop. Print/Digital Layout Design, creation of vector illustrations"}</Typography>
                     </Box>
                 </Box>
                 <Box className={styles.skillsItemListing}>
                   <AddIcon className={styles.skillsIcon} />
                     <Box className={styles.skillsItem}>
-                      <Typography>{"UI/UX Design"}</Typography>
-                      <Typography>{"Adobe XD - Figma. Wireframes, mockups, interactive prototypes"}</Typography>
+                      <Typography variant="h23">{"UI/UX Design"}</Typography>
+                      <Typography variant="h24" >{"Adobe XD - Figma. Wireframes, mockups, interactive prototypes"}</Typography>
                     </Box>
                 </Box>
                 <Box className={styles.skillsItemListing}>
                   <AddIcon className={styles.skillsIcon} />
                     <Box className={styles.skillsItem}>
-                      <Typography>{"Design Thinking"}</Typography>
-                      <Typography>{"Brainstorming, User Journey Mapping, Persona Analysis, Ecosystem Mapping, Prototyping, User Testing"}</Typography>
+                      <Typography variant="h23">{"Design Thinking"}</Typography>
+                      <Typography variant="h24">{"Brainstorming, User Journey Mapping, Persona Analysis, Ecosystem Mapping..."}</Typography>
                     </Box>
                 </Box>
               </Box> 
@@ -97,21 +113,29 @@ const SkillsSection = () => {
         <Grid item xs={12} sm={12} md={12} lg={3.66} xl={3.66}>
           <motion.div 
             whileHover={{ scale: 1.04 }}
-            className={styles.skillsCardsItem}>
-              <Typography variant="h16" className={styles.skillsTitle}>Other</Typography>
+            className={styles.skillsCardsItem}
+            style={{
+              border: theme.palette.mode === 'dark' ? '1px solid grey' : '1px solid rgba(0, 0, 0, 0.1)',
+              backgroundColor: theme.palette.mode === 'dark' ? '#121212' : 'inherit',
+              "&:hover": {
+                backgroundColor: theme.palette.mode === 'dark' ? '#d8e5e2' : '#eee3ff',
+              }
+            }}
+          >
+              <Typography variant="h22" className={styles.skillsTitle}>Other</Typography>
               <Box className={styles.skillsGroup}>
                 <Box className={styles.skillsItemListing}>
                   <AddIcon className={styles.skillsIcon} />
                     <Box className={styles.skillsItem}>
-                      <Typography>{"Development Strategy"}</Typography>
-                      <Typography>{"Market Research, Benchmarking, SWOT Analysis, Technical specifications, Solutions"}</Typography>
+                      <Typography variant="h23">{"Development Strategy"}</Typography>
+                      <Typography variant="h24">{"Market Research, Benchmarking, SWOT Analysis, Technical specifications"}</Typography>
                     </Box>
                 </Box>
                 <Box className={styles.skillsItemListing}>
                   <AddIcon className={styles.skillsIcon} />
                     <Box className={styles.skillsItem}>
-                      <Typography>{"Brand Image"}</Typography>
-                      <Typography>{"Visual Identity, Logo, Brand Strategy, Positioning, Perceived Image, Communication Strategy"}</Typography>
+                      <Typography variant="h23">{"Brand Image"}</Typography>
+                      <Typography variant="h24">{"Visual Identity, Logo, Brand Strategy, Positioning"}</Typography>
                     </Box>
                 </Box>
               </Box>

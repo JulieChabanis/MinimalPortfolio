@@ -13,7 +13,7 @@ const ResumeData = [
     id: 2, 
     category: "experience",
     year: "Oct-Nov 2022",
-    title : "React JS Developper • Internship", 
+    title : "React JS Developper ❋ Internship", 
     society: "Caspule Corp. Labs - Ternoa",
     desc: "Full Remote +  FlexTime - Add functionnalities in React, Testing API axios Routh path. Implementation of a new documentation solution with Docusaurus. Async project management (Agile/Jira)",
   },
