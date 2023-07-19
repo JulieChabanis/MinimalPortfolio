@@ -78,7 +78,7 @@ const Content = [
     id: 8, 
     image: Work8, 
     title : "WebApp Music Composer using Tone.js",
-    describe: "My first personal learning project. Creation of a controller interface prototype using the Tone.js library for music composition.",
+    describe: "Sorry for the crappy design! It's my first personal learning project. Creation of a controller interface prototype using the Tone.js library for music composition.",
     keywords: "Hooks • Styled-Components • ToneJS",
     category: "Programming",
     github: "https://github.com/JulieChabanis/Music-Compo",
