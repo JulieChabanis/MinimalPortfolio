@@ -12,7 +12,6 @@ const SkillsSection = () => {
       <Typography variant="h21">{"Skills"}</Typography>
 
       <Box className={styles.skillsElements}>
-      <Grid container>
 
         {/*Programming Card*/}
         <Grid item xs={12} sm={12} md={12} lg={3.66} xl={3.66}>
@@ -149,7 +148,6 @@ const SkillsSection = () => {
             </Box>
           </motion.div>
         </Grid>
-      </Grid>
     </Box>
     </Box>
   )

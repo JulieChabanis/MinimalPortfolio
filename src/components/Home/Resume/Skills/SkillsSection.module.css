@@ -3,7 +3,9 @@
 }
 
 .skillsElements {
-  margin: 0.2rem 0rem 0rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
 
   @media (max-width: 599px) {
     margin: 2rem 0rem 0rem 0rem;
@@ -12,23 +14,22 @@
 }
 
 .skillsCardsItem {
-  padding: 2rem 2rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   border-radius: 1.25rem;
   transition: background-color 0.3s ease;
-  width: 410px;
-  height: 550px;
+  width: 100%;
+  max-width: 410px;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  height: auto;
 
   @media (max-width: 599px) {
-    padding: 2rem 1rem 0rem 2rem;
-    width: 310px;
-    max-height: 580px;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+    height: auto;
   }
 }
 
-/*.skillsCardsItem:hover {
-  background-image: linear-gradient(135deg, #a3c0ff, #B799FF, #cde7e6), url("https://grainy-gradients.vercel.app/noise.svg");
-  background-blend-mode: multiply; 
-}*/
 
 
 .skillsTitle {
