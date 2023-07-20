@@ -2,12 +2,13 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 
 const Footer = () => {
+
   return (
     <Box
      sx={{ 
       display: 'flex',
       justifyContent: 'center',
-      padding: '30px'
+      padding: '30px',
     }}
     >
       <Typography variant="h27">

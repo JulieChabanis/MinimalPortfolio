@@ -62,6 +62,7 @@ const Contact = forwardRef(() => {
             >
               <Typography 
                 variant="h26" 
+                className={styles.gradientText}
               >
                 {"Feel free to reach out to me on LinkedIn!"}
               </Typography>
@@ -73,12 +74,14 @@ const Contact = forwardRef(() => {
             >
               {/* Apply the animation controls to the button */}
               <Button 
-                variant="outlined" 
+                variant="outlined"
                 endIcon={<SendIcon />}
                 target="_blank"
                 href="https://www.linkedin.com/in/julie-chabanis-80695690/"
               >
+                <Typography variant='h27'>
                 {"Send me a message"}
+                </Typography>
               </Button>
             </motion.div>
           </Box>

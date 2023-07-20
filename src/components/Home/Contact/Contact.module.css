@@ -7,7 +7,7 @@
   align-items: flex-start;
 
   @media (max-width: 600px) {
-    padding: 18rem 2rem 18rem 2rem;
+    padding: 10rem 2rem 10rem 2rem;
     width: 100%;
   }
 
@@ -31,6 +31,19 @@
   margin: 0rem 0rem 2rem 0rem ;
 }
 
+/*
+.gradientText {
+  background-image: linear-gradient(135deg, #b392ff, #86ceff);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+*/
+
 .messageButton {
   margin: 0rem 0rem 0rem 0rem;
 }
+
