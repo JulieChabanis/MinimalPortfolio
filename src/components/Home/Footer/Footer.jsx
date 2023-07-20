@@ -7,11 +7,11 @@ const Footer = () => {
      sx={{ 
       display: 'flex',
       justifyContent: 'center',
-      marginBottom: '30px',
+      padding: '30px'
     }}
     >
       <Typography variant="h27">
-        {"©2023 Create from scratch with my beloved associate, Léon the pug."}
+        {"©2023 - Create from scratch with my beloved associate, Léon the pug"}
       </Typography>
     </Box>
   )
