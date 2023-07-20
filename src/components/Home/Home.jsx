@@ -1,4 +1,3 @@
-import styles from "./Home.module.css";
 import React, { useRef } from 'react'
 import { Box } from "@mui/system";
 
@@ -18,7 +17,7 @@ const Home = () => {
   const FooterRef = useRef(); 
 
   return (
-    <Box className={styles.mainHome}>
+    <Box>
       <HeroPage ref={heropageRef}/>
       <Portfolio ref={PortfolioRef}/>
       <Resume ref={ResumeRef} />
