@@ -1,37 +1,31 @@
-import { Box, useTheme } from '@mui/material'
-import React, { forwardRef, useEffect, useRef } from 'react'
+import { Box, Button, Typography } from '@mui/material'
+import React, { forwardRef } from 'react'
 import styles from './Contact.module.css'
+import SendIcon from '@mui/icons-material/Send';
 
 import PaddingResizeSection from '../../hooks/PaddingResizeSection';
 
 const Contact = forwardRef (() => {
-  const theme = useTheme();
-  const parallaxRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const elementTop = parallaxRef.current.offsetTop;
-      const distance = scrollY - elementTop;
-      const baseVelocity = 2; //  help : 2=leftToRight, -2=Right to left
-      const moveBy = baseVelocity * distance;
-      parallaxRef.current.style.transform = `translateX(${moveBy}px)`;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
-    <Box id="contact-section" className={styles.mainContactSection} sx={{ padding: PaddingResizeSection()}}>
-    <Box sx={{ fontSize: theme.typography.h8, marginBottom: "2.2rem" }}>
-      <Box className={styles.titleSection} ref={parallaxRef}>
-         {'• Contact me'}
+    <Box id="contact-section">
+      <Box sx={{ padding: PaddingResizeSection()}}>
+
+        {/*Content*/}
+        <Box>
+          <Box className={styles.contactBox}>
+            <Typography variant="h25" className={styles.titleBox}>
+              {"Interested in connecting?"}
+            </Typography>
+            <Typography variant="h26" className={styles.subtitleBox}>
+              {"Feel free to reach out to me on LinkedIn!"}
+            </Typography>
+            <Button className={styles.messageButton} variant="outlined" endIcon={<SendIcon />}>
+              Send me a message
+            </Button>
+          </Box>
         </Box>
-    </Box>
+      </Box>
     </Box>
   )
 })

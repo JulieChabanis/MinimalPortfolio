@@ -440,6 +440,39 @@ export const themeSettings = (mode) => {
         lineHeight: 1.3, 
         color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       },
+      // Contact Title
+      h25: {
+        fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
+        "@media (max-width: 600px)": {
+          fontSize: "3.2rem",
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "4.4rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "6rem", 
+        },
+        fontWeight: 100,
+        fontStyle: "italic",
+        lineHeight: 1, 
+        color: mode === "dark" ? colors.blue[500] :  colors.primary[500],
+      },
+      // Contact subtitle
+      h26: {
+        fontFamily: ["lato", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "3.1rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "4.5rem", 
+        },
+        "@media (min-width: 1300px)": {
+          fontSize: "6rem",
+        },
+        fontWeight:800,
+        lineHeight: 0.9,
+        color: mode === "dark" ? colors.blue[500] :  colors.grey[100],
+      }
       
     },
 
