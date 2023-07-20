@@ -444,10 +444,10 @@ export const themeSettings = (mode) => {
       h25: {
         fontFamily: ["Cormorant Garamond", "sans-serif"].join(","),
         "@media (max-width: 600px)": {
-          fontSize: "3.2rem",
+          fontSize: "3rem",
         },
         "@media (min-width: 601px)": {
-          fontSize: "4.4rem", 
+          fontSize: "5rem", 
         },
         "@media (min-width: 1300px)": {
           fontSize: "6rem", 
@@ -461,10 +461,10 @@ export const themeSettings = (mode) => {
       h26: {
         fontFamily: ["lato", "sans-serif"].join(","), 
         "@media (max-width: 600px)": {
-          fontSize: "3.1rem", 
+          fontSize: "2.8rem", 
         },
         "@media (min-width: 601px)": {
-          fontSize: "4.5rem", 
+          fontSize: "5rem", 
         },
         "@media (min-width: 1300px)": {
           fontSize: "6rem",
