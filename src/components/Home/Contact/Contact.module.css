@@ -1,8 +1,7 @@
 .contactBox {
   padding: 0rem 2rem 0rem 4rem;
   width: 65%;
-  height: 70vh;
-  display: flex;
+  height: 80vh;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
