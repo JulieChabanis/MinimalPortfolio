@@ -472,7 +472,20 @@ export const themeSettings = (mode) => {
         fontWeight:800,
         lineHeight: 0.9,
         color: mode === "dark" ? colors.blue[500] :  colors.grey[100],
-      }
+      },
+      // Footer
+      h27: {
+        fontFamily: ["Martian Mono", "sans-serif"].join(","), 
+        "@media (max-width: 600px)": {
+          fontSize: "0.7rem", 
+        },
+        "@media (min-width: 601px)": {
+          fontSize: "0.75rem", 
+        },
+        fontWeight: 200,
+        lineHeight: 1.3, 
+        color: mode === "dark" ? colors.blue[500] : colors.grey[100],
+      },
       
     },
 

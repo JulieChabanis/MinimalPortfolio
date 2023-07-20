@@ -7,6 +7,7 @@ import About from "./About/About";
 import Resume from "./Resume/Resume";
 import Portfolio from "./Portfolio/Portfolio";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
   const heropageRef = useRef(); 
@@ -14,6 +15,7 @@ const Home = () => {
   const ResumeRef = useRef();
   const PortfolioRef = useRef(); 
   const ContactRef = useRef(); 
+  const FooterRef = useRef(); 
 
   return (
     <Box className={styles.mainHome}>
@@ -22,6 +24,7 @@ const Home = () => {
       <Resume ref={ResumeRef} />
       <About ref={aboutRef} />
       <Contact ref={ContactRef}/>
+      <Footer ref={FooterRef}/>
     </Box>
   )
 }

@@ -75,8 +75,10 @@ const Contact = forwardRef(() => {
               <Button 
                 variant="outlined" 
                 endIcon={<SendIcon />}
+                target="_blank"
+                href="https://www.linkedin.com/in/julie-chabanis-80695690/"
               >
-                Send me a message
+                {"Send me a message"}
               </Button>
             </motion.div>
           </Box>
