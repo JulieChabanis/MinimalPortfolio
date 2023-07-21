@@ -1,22 +1,22 @@
 .contactBox {
-  padding: 17rem 10rem 19rem 4rem;
+  padding: 20.5rem 9rem 17rem 6rem;
   width: 65%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
   @media (max-width: 600px) {
-    padding: 15rem 2rem 10rem 2rem;
+    padding: 10rem 2rem 10rem 2rem;
     width: 100%;
   }
 
   @media (min-width: 601px) and (max-width: 1500px) {
-    padding: 17rem 5rem 14rem 2rem;
+    padding: 14rem 5rem 14rem 2rem;
     width: 100%;
   }
 
   @media (min-width: 1501px) and (max-width: 1900px) {
-    padding: 17rem 10rem 14rem 2rem;
+    padding: 16rem 10rem 16rem 2rem;
     width: 80%;
   }
 
