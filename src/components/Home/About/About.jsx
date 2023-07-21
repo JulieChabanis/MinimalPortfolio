@@ -43,7 +43,7 @@ const About = forwardRef(() => {
             </motion.div>
           </Grid>
 
-          <Grid item xs={12} sm={7} md={7} lg={7}>
+          <Grid item xs={12} sm={7} md={6} lg={6}>
           <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={controls}

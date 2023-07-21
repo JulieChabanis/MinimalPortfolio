@@ -143,7 +143,7 @@ export const themeSettings = (mode) => {
         },
         fontWeight:800,
         lineHeight: 1,
-        color: mode === "light" ? colors.grey[100] : colors.grey[100],
+        color: mode === "dark" ? colors.grey[100] : colors.grey[100],
       },
 
       // Based in Montpellier

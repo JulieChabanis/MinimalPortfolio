@@ -34,7 +34,7 @@ const HeroPage = forwardRef(() => {
         </motion.div>
         </Box>
 
-        <Typography variant="h3" className={styles.degradedText}>
+        <Typography variant="h3">
         <motion.div
           initial={{ y: "100%", opacity: 0 }}
           animate={{ 
