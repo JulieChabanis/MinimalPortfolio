@@ -96,9 +96,11 @@ const NavBar = () => {
               {/*icons Links*/}
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <ListItem>
-              <IconButton className={styles.navIcons}>
+                <a href="https://github.com/JulieChabanis" target="_blank" rel="noopener noreferrer">
+                <IconButton className={styles.navIcons}>
                     <GitHubIcon />
                   </IconButton>
+                </a>
               </ListItem>
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
