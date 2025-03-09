@@ -6,8 +6,22 @@ import Work5 from "../../../assets/images/Portfolio/Work5/Work5.png"
 import Work6 from "../../../assets/images/Portfolio/Work6/Work6.png"
 import Work7 from "../../../assets/images/Portfolio/Work7/Work7.png"
 import Work8 from "../../../assets/images/Portfolio/Work8/Work8.png"
+import Work9 from "../../../assets/images/Portfolio/Work9/Work9.png"
 
 const Content = [
+
+  {
+    id: 9, 
+    image: Work9, 
+    title : "2025 • Website for La Kollective company",
+    describe: "Design, implementation and SEO for LA KOLLECTIVE Company",
+    keywords: "Wordpress • Illustrator • CSS",
+    category: "Programming",
+
+    website: "https://lakollective.fr",
+
+  },
+  
   {
     id: 1, 
     image: Work1, 
@@ -84,7 +98,8 @@ const Content = [
     github: "https://github.com/JulieChabanis/Music-Compo",
     website: "https://dreamy-arithmetic-e3b5ff.netlify.app/",
 
-  }
+  },
+  
 ];
 
 export default Content; 
